@@ -60,6 +60,12 @@
     <Compile Include="SinglePlayer.Designer.cs">
       <DependentUpon>SinglePlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="TwoPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoPlayer.Designer.cs">
+      <DependentUpon>TwoPlayer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="SinglePlayer.resx">
       <DependentUpon>SinglePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwoPlayer.resx">
+      <DependentUpon>TwoPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
