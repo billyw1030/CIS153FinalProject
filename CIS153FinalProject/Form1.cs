@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CIS153FinalProject
 {
-    //test
+    //I got the test
     public partial class WelcomeForm : Form
     {
         public WelcomeForm()
