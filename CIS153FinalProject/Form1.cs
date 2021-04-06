@@ -24,7 +24,7 @@ namespace CIS153FinalProject
 
         private void btn_SinglePlayer_Click(object sender, EventArgs e)
         {
-
+            loadSinglePlayerForm();
         }
 
         private void btn_TwoPlayer_Click(object sender, EventArgs e)
@@ -43,18 +43,16 @@ namespace CIS153FinalProject
         }
 
 
-        //private void loadSinglePlayerForm()
-        //{
-        //    SinglePlayer formToLoad = new SinglePlayer(this);
-        //    SinglePlayer formToLoadNoOverload = new SinglePlayer();
+        private void loadSinglePlayerForm()
+        {
+            SinglePlayer formToLoad = new SinglePlayer(this);
+            SinglePlayer formToLoadNoOverload = new SinglePlayer();
 
-        //    formToLoadNoOverload.formPassedToMeTwo(this);
+            formToLoadNoOverload.FormPassedToMeTwo(this);
 
-        //    this.BackColor = Color.White;
-        //    formToLoad.Show();
-
-        //    //this.Close();
-        //    this.Hide();
-        //}
+            this.BackColor = Color.White;
+            formToLoad.Show();
+            this.Hide();
+        }
     }
 }
