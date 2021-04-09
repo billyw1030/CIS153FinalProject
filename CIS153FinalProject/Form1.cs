@@ -35,7 +35,7 @@ namespace CIS153FinalProject
 
         private void btn_Stats_Click(object sender, EventArgs e)
         {
-
+            loadStatisticsForm();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -66,6 +66,21 @@ namespace CIS153FinalProject
             this.BackColor = Color.White;
             formToLoad.Show();
             this.Hide();
+        }
+
+        private void loadStatisticsForm()
+        {
+            Statistics formToLoad = new Statistics(this);
+            Statistics formToLoadNoOverload = new Statistics();
+
+            formToLoadNoOverload.FormPassedToMeFour(this);
+
+            this.BackColor = Color.White;
+            formToLoad.Show();
+            this.Hide();
+
+
+
         }
     }
 }

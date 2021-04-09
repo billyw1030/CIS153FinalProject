@@ -120,6 +120,7 @@ namespace CIS153FinalProject
         private System.Windows.Forms.Button btn_TwoPlayer;
         private System.Windows.Forms.Button btn_Stats;
         private System.Windows.Forms.Label lbl_ConnectFour;
+        
     }
 }
 

@@ -60,12 +60,19 @@
     <Compile Include="SinglePlayer.Designer.cs">
       <DependentUpon>SinglePlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="TwoPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TwoPlayer.Designer.cs">
       <DependentUpon>TwoPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="WelcomeFormBase.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="SinglePlayer.resx">
       <DependentUpon>SinglePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TwoPlayer.resx">
       <DependentUpon>TwoPlayer.cs</DependentUpon>

@@ -78,6 +78,7 @@ namespace CIS153FinalProject
             this.Controls.Add(this.lbl_playerTurnTwo);
             this.Name = "TwoPlayer";
             this.Text = "TwoPlayer";
+            this.Load += new System.EventHandler(this.TwoPlayer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

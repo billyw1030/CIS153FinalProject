@@ -10,39 +10,29 @@ using System.Windows.Forms;
 
 namespace CIS153FinalProject
 {
-    public partial class SinglePlayer : Form
+    public partial class Statistics : Form
     {
         private new WelcomeForm Menu;
-        public SinglePlayer()
+        public Statistics()
         {
             InitializeComponent();
         }
 
-        public SinglePlayer(WelcomeForm main)
+
+        public Statistics(WelcomeForm main)
         {
             InitializeComponent();
             Menu = main;
         }
-
-        public void FormPassedToMeTwo(WelcomeForm mainMenu)
+        public void FormPassedToMeFour(WelcomeForm mainMenu)
         {
             Menu = mainMenu;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_Exit_Click(object sender, EventArgs e)
+        private void btn_mainmenu_Click(object sender, EventArgs e)
         {
             Menu.Show();
             this.Close();
-        }
-
-        private void SinglePlayer_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

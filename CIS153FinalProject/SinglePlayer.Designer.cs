@@ -78,6 +78,7 @@
             this.Controls.Add(this.Lbl_WhoTurn);
             this.Name = "SinglePlayer";
             this.Text = "SinglePlayer";
+            this.Load += new System.EventHandler(this.SinglePlayer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,5 +33,10 @@ namespace CIS153FinalProject
             Menu.Show();
             this.Close();
         }
+
+        private void TwoPlayer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
