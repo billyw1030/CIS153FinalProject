@@ -34,5 +34,10 @@ namespace CIS153FinalProject
             Menu.Show();
             this.Close();
         }
+
+        private void Button_close_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
 }

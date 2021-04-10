@@ -38,5 +38,10 @@ namespace CIS153FinalProject
         {
 
         }
+
+        private void Btn_close2_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
 }
