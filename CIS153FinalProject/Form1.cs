@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace CIS153FinalProject
 {
-    //I got the test
     public partial class WelcomeForm : Form
     {
         public WelcomeForm()
@@ -51,7 +50,6 @@ namespace CIS153FinalProject
 
             formToLoadNoOverload.FormPassedToMeTwo(this);
 
-            this.BackColor = Color.White;
             formToLoad.Show();
             this.Hide();
         }
@@ -63,7 +61,6 @@ namespace CIS153FinalProject
 
             formToLoadNoOverload.FormPassedToMeThree(this);
 
-            this.BackColor = Color.White;
             formToLoad.Show();
             this.Hide();
         }
@@ -75,7 +72,6 @@ namespace CIS153FinalProject
 
             formToLoadNoOverload.FormPassedToMeFour(this);
 
-            this.BackColor = Color.White;
             formToLoad.Show();
             this.Hide();
 
