@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//classes might be just a set up for our boards (single player, two player, ai, no ai, etc).
+
 namespace CIS153FinalProject
 {
     public partial class SinglePlayer : Form
