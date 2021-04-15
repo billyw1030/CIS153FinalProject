@@ -68,14 +68,12 @@ namespace CIS153FinalProject
         Cell FourtyTwo = new Cell(6, 5, 0);
         
         
-        
-    
-        
 
         public SinglePlayer()
         {
             InitializeComponent();
             singlePlayerBoard = new Board();
+            singlePlayerBoard.setGameBoardCell(One);
         }
 
         public SinglePlayer(WelcomeForm main)
