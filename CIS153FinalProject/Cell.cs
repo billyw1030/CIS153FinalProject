@@ -11,15 +11,15 @@ namespace CIS153FinalProject
         //every cell in the board can either be empty, player one, or player two.
         //we will decide what status each cell is by an int, 1 = player1, 2 = player2, and 0 = not taken.
         //we will identify every cell with x and y coordinate for the board.
-        private int x;
-        private int y;
+        private int c;
+        private int r;
         private int fill = 0;
         //Button btn; is also possible like in zack video, but our current way works as well.
         
-        Cell(int xc, int yc, int f)
+        public Cell(int co, int ro, int f)
         {
-            x = xc;
-            y = yc;
+            c = co;
+            r = ro;
             fill = f;
         }
         public void setPlayerOne()
@@ -32,14 +32,14 @@ namespace CIS153FinalProject
             fill = 2;
         }
 
-        public void setX(int Xcoordinate)
+        public void setC(int columns)
         {
-            x = Xcoordinate;
+            c = columns;
         }
 
-        public void setY(int Ycoordinate)
+        public void setR(int rows)
         {
-            y = Ycoordinate;
+            r = rows;
         }
 
         public int getFill()
@@ -47,14 +47,14 @@ namespace CIS153FinalProject
             return fill;
         }
 
-        public int getX()
+        public int getC()
         {
-            return x;
+            return c;
         }
 
-        public int getY()
+        public int getR()
         {
-            return y;
+            return r;
         }
     }
 }
