@@ -13,9 +13,11 @@ namespace CIS153FinalProject
     public partial class TwoPlayer : Form
     {
         private new WelcomeForm Menu;
+        private Board twoPlayerBoard;
         public TwoPlayer()
         {
             InitializeComponent();
+            twoPlayerBoard = new Board();
         }
         public TwoPlayer(WelcomeForm main)
         {

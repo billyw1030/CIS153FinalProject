@@ -14,6 +14,7 @@ namespace CIS153FinalProject
         private int x;
         private int y;
         private int fill = 0;
+        //Button btn; is also possible like in zack video, but our current way works as well.
         
         Cell(int xc, int yc, int f)
         {

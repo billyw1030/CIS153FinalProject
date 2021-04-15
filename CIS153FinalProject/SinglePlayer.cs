@@ -15,9 +15,11 @@ namespace CIS153FinalProject
     public partial class SinglePlayer : Form
     {
         private new WelcomeForm Menu;
+        private Board singlePlayerBoard;
         public SinglePlayer()
         {
             InitializeComponent();
+            singlePlayerBoard = new Board();
         }
 
         public SinglePlayer(WelcomeForm main)
