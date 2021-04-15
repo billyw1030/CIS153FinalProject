@@ -23,7 +23,7 @@ namespace CIS153FinalProject
         private static Color PlayerTwoColor = Color.FromArgb(100, 0, 0);
 
         //                  c  r  f
-        Cell One = new Cell(0, 0, 0);
+        Cell One = new Cell(0, 0, 0);        
         //singlePlayerBoard.setGameBoardCell(Cell One);
         Cell Two = new Cell(1, 0, 0);
         Cell Three = new Cell(2, 0, 0);
