@@ -74,6 +74,7 @@
             this.Btn_c2r0 = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c1r0 = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c0r0 = new ePOSOne.btnProduct.Button_WOC();
+            this.lbl_PlayerTwoTurn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_WhoTurn
@@ -106,7 +107,7 @@
             this.Lbl_PlayerTurn.AutoSize = true;
             this.Lbl_PlayerTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_PlayerTurn.ForeColor = System.Drawing.Color.White;
-            this.Lbl_PlayerTurn.Location = new System.Drawing.Point(139, 437);
+            this.Lbl_PlayerTurn.Location = new System.Drawing.Point(144, 437);
             this.Lbl_PlayerTurn.Name = "Lbl_PlayerTurn";
             this.Lbl_PlayerTurn.Size = new System.Drawing.Size(174, 46);
             this.Lbl_PlayerTurn.TabIndex = 2;
@@ -881,6 +882,18 @@
             this.Btn_c0r0.UseVisualStyleBackColor = true;
             this.Btn_c0r0.Click += new System.EventHandler(this.Btn_c0r0_Click);
             // 
+            // lbl_PlayerTwoTurn
+            // 
+            this.lbl_PlayerTwoTurn.AutoSize = true;
+            this.lbl_PlayerTwoTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PlayerTwoTurn.ForeColor = System.Drawing.Color.White;
+            this.lbl_PlayerTwoTurn.Location = new System.Drawing.Point(144, 437);
+            this.lbl_PlayerTwoTurn.Name = "lbl_PlayerTwoTurn";
+            this.lbl_PlayerTwoTurn.Size = new System.Drawing.Size(174, 46);
+            this.lbl_PlayerTwoTurn.TabIndex = 46;
+            this.lbl_PlayerTwoTurn.Text = "Player 2";
+            this.lbl_PlayerTwoTurn.Visible = false;
+            // 
             // SinglePlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -888,6 +901,7 @@
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(794, 537);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_PlayerTwoTurn);
             this.Controls.Add(this.Btn_c6r5);
             this.Controls.Add(this.Btn_c5r5);
             this.Controls.Add(this.Btn_c4r5);
@@ -990,5 +1004,6 @@
         private ePOSOne.btnProduct.Button_WOC Btn_c4r5;
         private ePOSOne.btnProduct.Button_WOC Btn_c5r5;
         private ePOSOne.btnProduct.Button_WOC Btn_c6r5;
+        private System.Windows.Forms.Label lbl_PlayerTwoTurn;
     }
 }

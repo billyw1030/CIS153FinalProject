@@ -115,6 +115,8 @@ namespace CIS153FinalProject
                 Btn_c0r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -122,6 +124,8 @@ namespace CIS153FinalProject
                 Btn_c0r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
 
         }
@@ -133,6 +137,8 @@ namespace CIS153FinalProject
                 Btn_c1r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Two.getFill() == 0 && PlayerTwoTurn)
@@ -140,6 +146,8 @@ namespace CIS153FinalProject
                 Btn_c1r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -150,6 +158,8 @@ namespace CIS153FinalProject
                 Btn_c2r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Three.getFill() == 0 && PlayerTwoTurn)
@@ -157,6 +167,8 @@ namespace CIS153FinalProject
                 Btn_c2r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -167,6 +179,8 @@ namespace CIS153FinalProject
                 Btn_c3r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Four.getFill() == 0 && PlayerTwoTurn)
@@ -174,6 +188,8 @@ namespace CIS153FinalProject
                 Btn_c3r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -184,6 +200,8 @@ namespace CIS153FinalProject
                 Btn_c4r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Five.getFill() == 0 && PlayerTwoTurn)
@@ -191,6 +209,8 @@ namespace CIS153FinalProject
                 Btn_c4r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -201,6 +221,8 @@ namespace CIS153FinalProject
                 Btn_c5r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Six.getFill() == 0 && PlayerTwoTurn)
@@ -208,6 +230,8 @@ namespace CIS153FinalProject
                 Btn_c5r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -218,6 +242,8 @@ namespace CIS153FinalProject
                 Btn_c6r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Seven.getFill() == 0 && PlayerTwoTurn)
@@ -225,6 +251,8 @@ namespace CIS153FinalProject
                 Btn_c6r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -235,6 +263,8 @@ namespace CIS153FinalProject
                 Btn_c0r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Eight.getFill() == 0 && PlayerTwoTurn)
@@ -242,6 +272,8 @@ namespace CIS153FinalProject
                 Btn_c0r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -252,6 +284,8 @@ namespace CIS153FinalProject
                 Btn_c1r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Nine.getFill() == 0 && PlayerTwoTurn)
@@ -259,6 +293,8 @@ namespace CIS153FinalProject
                 Btn_c1r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -269,6 +305,8 @@ namespace CIS153FinalProject
                 Btn_c2r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Ten.getFill() == 0 && PlayerTwoTurn)
@@ -276,6 +314,8 @@ namespace CIS153FinalProject
                 Btn_c2r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -286,6 +326,8 @@ namespace CIS153FinalProject
                 Btn_c3r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Eleven.getFill() == 0 && PlayerTwoTurn)
@@ -293,6 +335,8 @@ namespace CIS153FinalProject
                 Btn_c3r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -303,6 +347,8 @@ namespace CIS153FinalProject
                 Btn_c4r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Twelve.getFill() == 0 && PlayerTwoTurn)
@@ -310,6 +356,8 @@ namespace CIS153FinalProject
                 Btn_c4r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -320,6 +368,8 @@ namespace CIS153FinalProject
                 Btn_c5r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Thirteen.getFill() == 0 && PlayerTwoTurn)
@@ -327,6 +377,8 @@ namespace CIS153FinalProject
                 Btn_c5r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -337,6 +389,8 @@ namespace CIS153FinalProject
                 Btn_c6r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Fourteen.getFill() == 0 && PlayerTwoTurn)
@@ -344,6 +398,8 @@ namespace CIS153FinalProject
                 Btn_c6r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -354,6 +410,8 @@ namespace CIS153FinalProject
                 Btn_c0r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Fifteen.getFill() == 0 && PlayerTwoTurn)
@@ -361,6 +419,8 @@ namespace CIS153FinalProject
                 Btn_c0r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -371,6 +431,8 @@ namespace CIS153FinalProject
                 Btn_c1r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Sixteen.getFill() == 0 && PlayerTwoTurn)
@@ -378,6 +440,8 @@ namespace CIS153FinalProject
                 Btn_c1r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -388,6 +452,8 @@ namespace CIS153FinalProject
                 Btn_c2r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Seventeen.getFill() == 0 && PlayerTwoTurn)
@@ -395,6 +461,8 @@ namespace CIS153FinalProject
                 Btn_c2r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -405,6 +473,8 @@ namespace CIS153FinalProject
                 Btn_c3r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Eighteen.getFill() == 0 && PlayerTwoTurn)
@@ -412,6 +482,8 @@ namespace CIS153FinalProject
                 Btn_c3r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -422,6 +494,8 @@ namespace CIS153FinalProject
                 Btn_c4r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Nineteen.getFill() == 0 && PlayerTwoTurn)
@@ -429,6 +503,8 @@ namespace CIS153FinalProject
                 Btn_c4r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -439,6 +515,8 @@ namespace CIS153FinalProject
                 Btn_c5r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Twenty.getFill() == 0 && PlayerTwoTurn)
@@ -446,6 +524,8 @@ namespace CIS153FinalProject
                 Btn_c5r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -456,6 +536,8 @@ namespace CIS153FinalProject
                 Btn_c6r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyOne.getFill() == 0 && PlayerTwoTurn)
@@ -463,6 +545,8 @@ namespace CIS153FinalProject
                 Btn_c6r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -473,6 +557,8 @@ namespace CIS153FinalProject
                 Btn_c0r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyTwo.getFill() == 0 && PlayerTwoTurn)
@@ -480,6 +566,8 @@ namespace CIS153FinalProject
                 Btn_c0r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -490,6 +578,8 @@ namespace CIS153FinalProject
                 Btn_c1r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyThree.getFill() == 0 && PlayerTwoTurn)
@@ -497,6 +587,8 @@ namespace CIS153FinalProject
                 Btn_c1r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -507,6 +599,8 @@ namespace CIS153FinalProject
                 Btn_c2r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyFour.getFill() == 0 && PlayerTwoTurn)
@@ -514,6 +608,8 @@ namespace CIS153FinalProject
                 Btn_c2r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -524,6 +620,8 @@ namespace CIS153FinalProject
                 Btn_c3r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyFive.getFill() == 0 && PlayerTwoTurn)
@@ -531,6 +629,8 @@ namespace CIS153FinalProject
                 Btn_c3r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -541,6 +641,8 @@ namespace CIS153FinalProject
                 Btn_c4r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentySix.getFill() == 0 && PlayerTwoTurn)
@@ -548,6 +650,8 @@ namespace CIS153FinalProject
                 Btn_c4r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -558,6 +662,8 @@ namespace CIS153FinalProject
                 Btn_c5r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentySeven.getFill() == 0 && PlayerTwoTurn)
@@ -565,6 +671,8 @@ namespace CIS153FinalProject
                 Btn_c5r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -575,6 +683,8 @@ namespace CIS153FinalProject
                 Btn_c6r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyEight.getFill() == 0 && PlayerTwoTurn)
@@ -582,6 +692,8 @@ namespace CIS153FinalProject
                 Btn_c6r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -592,6 +704,8 @@ namespace CIS153FinalProject
                 Btn_c0r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (TwentyNine.getFill() == 0 && PlayerTwoTurn)
@@ -599,6 +713,8 @@ namespace CIS153FinalProject
                 Btn_c0r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -609,6 +725,8 @@ namespace CIS153FinalProject
                 Btn_c1r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Thirty.getFill() == 0 && PlayerTwoTurn)
@@ -616,6 +734,8 @@ namespace CIS153FinalProject
                 Btn_c1r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -626,6 +746,8 @@ namespace CIS153FinalProject
                 Btn_c2r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyOne.getFill() == 0 && PlayerTwoTurn)
@@ -633,6 +755,8 @@ namespace CIS153FinalProject
                 Btn_c2r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -643,6 +767,8 @@ namespace CIS153FinalProject
                 Btn_c3r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyTwo.getFill() == 0 && PlayerTwoTurn)
@@ -650,6 +776,8 @@ namespace CIS153FinalProject
                 Btn_c3r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -660,6 +788,8 @@ namespace CIS153FinalProject
                 Btn_c4r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyThree.getFill() == 0 && PlayerTwoTurn)
@@ -667,6 +797,8 @@ namespace CIS153FinalProject
                 Btn_c4r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -677,6 +809,8 @@ namespace CIS153FinalProject
                 Btn_c5r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyFour.getFill() == 0 && PlayerTwoTurn)
@@ -684,6 +818,8 @@ namespace CIS153FinalProject
                 Btn_c5r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -694,6 +830,8 @@ namespace CIS153FinalProject
                 Btn_c6r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyFive.getFill() == 0 && PlayerTwoTurn)
@@ -701,6 +839,8 @@ namespace CIS153FinalProject
                 Btn_c6r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -711,6 +851,8 @@ namespace CIS153FinalProject
                 Btn_c0r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtySix.getFill() == 0 && PlayerTwoTurn)
@@ -718,6 +860,8 @@ namespace CIS153FinalProject
                 Btn_c0r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -728,6 +872,8 @@ namespace CIS153FinalProject
                 Btn_c1r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtySeven.getFill() == 0 && PlayerTwoTurn)
@@ -735,6 +881,8 @@ namespace CIS153FinalProject
                 Btn_c1r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -745,6 +893,8 @@ namespace CIS153FinalProject
                 Btn_c2r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyEight.getFill() == 0 && PlayerTwoTurn)
@@ -752,6 +902,8 @@ namespace CIS153FinalProject
                 Btn_c2r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -762,6 +914,8 @@ namespace CIS153FinalProject
                 Btn_c3r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (ThirtyNine.getFill() == 0 && PlayerTwoTurn)
@@ -769,6 +923,8 @@ namespace CIS153FinalProject
                 Btn_c3r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -779,6 +935,8 @@ namespace CIS153FinalProject
                 Btn_c4r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (Fourty.getFill() == 0 && PlayerTwoTurn)
@@ -786,6 +944,8 @@ namespace CIS153FinalProject
                 Btn_c4r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -796,6 +956,8 @@ namespace CIS153FinalProject
                 Btn_c5r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (FourtyOne.getFill() == 0 && PlayerTwoTurn)
@@ -803,6 +965,8 @@ namespace CIS153FinalProject
                 Btn_c5r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
 
@@ -813,6 +977,8 @@ namespace CIS153FinalProject
                 Btn_c6r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
+                lbl_PlayerTwoTurn.Visible = true;
+                Lbl_PlayerTurn.Visible = false;
             }
 
             else if (FourtyTwo.getFill() == 0 && PlayerTwoTurn)
@@ -820,6 +986,8 @@ namespace CIS153FinalProject
                 Btn_c6r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
+                Lbl_PlayerTurn.Visible = true;
+                lbl_PlayerTwoTurn.Visible = false;
             }
         }
     }
