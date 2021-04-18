@@ -148,6 +148,8 @@ namespace CIS153FinalProject
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
                 One.setPlayerOne();
+                //Console.Write("Before setting boardcell");
+                //Console.Write(One);
                 twoPlayerBoard.setGameBoardCell(One);
             }
 

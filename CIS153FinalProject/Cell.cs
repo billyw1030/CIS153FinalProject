@@ -14,7 +14,7 @@ namespace CIS153FinalProject
         private int c;
         private int r;
         private int fill = 0;
-        //Button btn; is also possible like in zack video, but our current way works as well.
+        
         
         public Cell(int co, int ro, int f)
         {
