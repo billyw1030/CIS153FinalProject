@@ -72,6 +72,7 @@ namespace CIS153FinalProject
             // 
             // txt_stats
             // 
+            this.txt_stats.Font = new System.Drawing.Font("Times New Roman", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_stats.Location = new System.Drawing.Point(168, 131);
             this.txt_stats.Name = "txt_stats";
             this.txt_stats.Size = new System.Drawing.Size(496, 388);

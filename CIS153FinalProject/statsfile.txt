@@ -1,0 +1,6 @@
+Player Wins:  
+Ai wins:  
+Tie:  
+Total games played:  
+Player percentage:  
+Ai percentage:  
