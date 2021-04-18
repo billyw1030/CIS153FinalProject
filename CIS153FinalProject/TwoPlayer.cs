@@ -165,7 +165,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r0TwoP_Click(object sender, EventArgs e)
         {//Cell Two
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Two.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -176,7 +176,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Two);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Two.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r0TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -190,7 +190,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r0TwoP_Click(object sender, EventArgs e)
         {//Cell Three
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Three.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -201,7 +201,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Three);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Three.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r0TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -215,7 +215,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r0TwoP_Click(object sender, EventArgs e)
         {//Cell Four
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Four.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -226,7 +226,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Four);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Four.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r0TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -240,7 +240,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r0TwoP_Click(object sender, EventArgs e)
         {//Cell Five
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Five.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -251,7 +251,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Five);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Five.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r0TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -265,7 +265,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r0TwoP_Click(object sender, EventArgs e)
         {//Cell Six
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Six.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -276,7 +276,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Six);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Six.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r0TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -290,7 +290,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r0TwoP_Click(object sender, EventArgs e)
         {//Cell Seven
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Seven.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -301,7 +301,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Seven);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Seven.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r0TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -315,7 +315,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r1TwoP_Click(object sender, EventArgs e)
         {//Cell Eight
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Eight.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -326,7 +326,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Eight);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Eight.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -340,7 +340,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r1TwoP_Click(object sender, EventArgs e)
         {//Cell Nine
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Nine.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -351,7 +351,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Nine);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Nine.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -365,7 +365,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r1TwoP_Click(object sender, EventArgs e)
         {//Cell Ten
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Ten.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -376,7 +376,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Ten);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Ten.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -390,7 +390,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r1TwoP_Click(object sender, EventArgs e)
         {//Cell Eleven
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Eleven.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -401,7 +401,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Eleven);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Eleven.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -415,7 +415,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r1TwoP_Click(object sender, EventArgs e)
         {//Cell Twelve
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Twelve.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -426,7 +426,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Twelve);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Twelve.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -440,7 +440,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r1TwoP_Click(object sender, EventArgs e)
         {//Cell Thirteen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Thirteen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -451,7 +451,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Thirteen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Thirteen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -465,7 +465,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r1TwoP_Click(object sender, EventArgs e)
         {//Cell Fourteen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Fourteen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r1TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -476,7 +476,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Fourteen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Fourteen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r1TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -490,7 +490,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r2TwoP_Click(object sender, EventArgs e)
         {//Cell Fifteen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Fifteen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -501,7 +501,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Fifteen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Fifteen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -515,7 +515,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r2TwoP_Click(object sender, EventArgs e)
         {//Cell Sixteen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Sixteen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -526,7 +526,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Sixteen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Sixteen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -540,7 +540,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r2TwoP_Click(object sender, EventArgs e)
         {//Cell Seventeen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Seventeen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -551,7 +551,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Seventeen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Seventeen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -565,7 +565,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r2TwoP_Click(object sender, EventArgs e)
         {//Cell Eighteen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Eighteen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -576,7 +576,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Eighteen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Eighteen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -590,7 +590,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r2TwoP_Click(object sender, EventArgs e)
         {//Cell Nineteen
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Nineteen.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -601,7 +601,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Nineteen);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Nineteen.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -615,7 +615,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r2TwoP_Click(object sender, EventArgs e)
         {//Cell Twenty
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Twenty.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -626,7 +626,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Twenty);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Twenty.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -640,7 +640,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r2TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyOne
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyOne.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r2TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -651,7 +651,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyOne);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyOne.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r2TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -665,7 +665,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyTwo
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyTwo.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -676,7 +676,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyTwo);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyTwo.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -690,7 +690,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyThree
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyThree.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -701,7 +701,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyThree);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyThree.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -715,7 +715,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyFour
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyFour.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -726,7 +726,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyFour);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyFour.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -740,7 +740,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyFive
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyFive.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -751,7 +751,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyFive);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyFive.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -765,7 +765,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentySix
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentySix.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -776,7 +776,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentySix);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentySix.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -790,7 +790,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentySeven
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentySeven.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -801,7 +801,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentySeven);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentySeven.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -815,7 +815,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyEight
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyEight.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r3TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -826,7 +826,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyEight);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyEight.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r3TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -840,7 +840,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r4TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyNine
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (TwentyNine.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -851,7 +851,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(TwentyNine);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyNine.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -865,7 +865,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r4TwoP_Click(object sender, EventArgs e)
         {//Cell Thirty
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Thirty.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -876,7 +876,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Thirty);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Thirty.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -890,7 +890,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyOne
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyOne.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -901,7 +901,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyOne);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyOne.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -915,7 +915,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyTwo
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyTwo.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -926,7 +926,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyTwo);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyTwo.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -940,7 +940,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyThree
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyThree.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -951,7 +951,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyThree);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyThree.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -965,7 +965,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyFour
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyFour.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -976,7 +976,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyFour);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyFour.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -990,7 +990,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyFive
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyFive.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r4TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1001,7 +1001,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyFive);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyFive.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r4TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1015,7 +1015,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtySix
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtySix.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1026,7 +1026,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtySix);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtySix.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1040,7 +1040,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtySeven
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtySeven.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1051,7 +1051,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtySeven);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtySeven.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1065,7 +1065,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyEight
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyEight.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1076,7 +1076,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyEight);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyEight.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1090,7 +1090,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyNine
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyNine.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1101,7 +1101,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(ThirtyNine);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyNine.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1115,7 +1115,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r5TwoP_Click(object sender, EventArgs e)
         {//Cell Fourty
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (Fourty.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1126,7 +1126,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(Fourty);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (Fourty.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1140,7 +1140,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r5TwoP_Click(object sender, EventArgs e)
         {//Cell FourtyOne
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (FourtyOne.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1151,7 +1151,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(FourtyOne);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (FourtyOne.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -1165,7 +1165,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r5TwoP_Click(object sender, EventArgs e)
         {//Cell FourtyTwo
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (FourtyTwo.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r5TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -1176,7 +1176,7 @@ namespace CIS153FinalProject
                 twoPlayerBoard.setGameBoardCell(FourtyTwo);
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (FourtyTwo.getFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r5TwoP.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
