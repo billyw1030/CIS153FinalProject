@@ -63,7 +63,8 @@ namespace CIS153FinalProject
 
         private void Statistics_Load(object sender, EventArgs e)
         {
-            StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
+            StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
+            //StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
             string text = " ";
             string line;
             line = inputfile.ReadLine();
@@ -88,7 +89,8 @@ namespace CIS153FinalProject
         private void txt_stats_TextChanged(object sender, EventArgs e)
         {
             string text = "";
-            StreamWriter sw = new StreamWriter("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt");
+            StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
+            //StreamWriter sw = new StreamWriter("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt");
             playerstats user1 = new playerstats();
             user1.setPlayerwins(playerwins);
             user1.setAiwins(aiwins);
