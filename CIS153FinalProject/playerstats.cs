@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CIS153FinalProject
 {
 
-    class playerstats
+    class Playerstats
     {
         private string playerwins;
         private string aiwins;
@@ -17,33 +17,33 @@ namespace CIS153FinalProject
         private string aipercent;
 
 
-        public playerstats()
+        public Playerstats()
         {
             Console.WriteLine("New User Created:");
         }
 
         //================================= Setters ==================================
-        public void setPlayerwins(string pw)
+        public void SetPlayerwins(string pw)
         {
             playerwins = pw;
         }
-        public void setAiwins(string aw)
+        public void SetAiwins(string aw)
         {
             aiwins = aw;
         }
-        public void setTie(string t)
+        public void SetTie(string t)
         {
             tie = t;
         }
-        public void setTotalplayed(string tp)
+        public void SetTotalplayed(string tp)
         {
             totalplayed = tp;
         }
-        public void setPlayerpercent(string pp)
+        public void SetPlayerpercent(string pp)
         {
             playerpercent = pp;
         }
-        public void setAipercent(string ap)
+        public void SetAipercent(string ap)
         {
 
             aipercent = ap;
@@ -51,28 +51,28 @@ namespace CIS153FinalProject
         //==================================== End Setters ==============================
 
         //==================================== Getters ==================================
-        public string getPlayerwins()
+        public string GetPlayerwins()
         {
             return playerwins;
         }
-        public string getAiwins()
+        public string GetAiwins()
         {
             return aiwins;
 
         }
-        public string getTie()
+        public string GetTie()
         {
             return tie;
         }
-        public string getTotalplayed()
+        public string GetTotalplayed()
         {
             return totalplayed;
         }
-        public string getPlayerpercent()
+        public string GetPlayerpercent()
         {
             return playerpercent;
         }
-        public string getAipercent()
+        public string GetAipercent()
         {
             return aipercent;
         }

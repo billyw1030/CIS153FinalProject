@@ -46,7 +46,7 @@ namespace CIS153FinalProject
             this.btn_mainmenu.TabIndex = 0;
             this.btn_mainmenu.Text = "Main Menu";
             this.btn_mainmenu.UseVisualStyleBackColor = false;
-            this.btn_mainmenu.Click += new System.EventHandler(this.btn_mainmenu_Click);
+            this.btn_mainmenu.Click += new System.EventHandler(this.Btn_mainmenu_Click);
             // 
             // label1
             // 
@@ -78,7 +78,7 @@ namespace CIS153FinalProject
             this.txt_stats.Size = new System.Drawing.Size(496, 388);
             this.txt_stats.TabIndex = 4;
             this.txt_stats.Text = "";
-            this.txt_stats.TextChanged += new System.EventHandler(this.txt_stats_TextChanged);
+            this.txt_stats.TextChanged += new System.EventHandler(this.Txt_stats_TextChanged);
             // 
             // Statistics
             // 

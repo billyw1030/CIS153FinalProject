@@ -87,7 +87,7 @@
             this.Lbl_WhoTurn.Size = new System.Drawing.Size(117, 46);
             this.Lbl_WhoTurn.TabIndex = 0;
             this.Lbl_WhoTurn.Text = "Turn:";
-            this.Lbl_WhoTurn.Click += new System.EventHandler(this.label1_Click);
+            this.Lbl_WhoTurn.Click += new System.EventHandler(this.Label1_Click);
             // 
             // Btn_Exit
             // 

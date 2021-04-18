@@ -21,19 +21,19 @@ namespace CIS153FinalProject
         private string playerpercent;
         private string aipercent;
 
-        List<playerstats> listofplayerstats = new List<playerstats>();
+        List<Playerstats> listofplayerstats = new List<Playerstats>();
 
         public Statistics()
         {
             InitializeComponent();
 
-            playerstats user1 = new playerstats();
-            user1.setPlayerwins("");
-            user1.setAiwins("");
-            user1.setTie("");
-            user1.setTotalplayed("");
-            user1.setPlayerpercent("");
-            user1.setAipercent("");
+            Playerstats user1 = new Playerstats();
+            user1.SetPlayerwins("");
+            user1.SetAiwins("");
+            user1.SetTie("");
+            user1.SetTotalplayed("");
+            user1.SetPlayerpercent("");
+            user1.SetAipercent("");
 
         }
 
@@ -48,7 +48,7 @@ namespace CIS153FinalProject
            Menu = mainMenu;
         }
 
-        private void btn_mainmenu_Click(object sender, EventArgs e)
+        private void Btn_mainmenu_Click(object sender, EventArgs e)
         {
             Menu.Show();
             this.Close();
@@ -86,39 +86,39 @@ namespace CIS153FinalProject
 
         }
 
-        private void txt_stats_TextChanged(object sender, EventArgs e)
+        private void Txt_stats_TextChanged(object sender, EventArgs e)
         {
             string text = "";
-            StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
+            _ = new StreamReader("../../Resources/statsfile.txt");
             //StreamWriter sw = new StreamWriter("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt");
-            playerstats user1 = new playerstats();
-            user1.setPlayerwins(playerwins);
-            user1.setAiwins(aiwins);
-            user1.setTie(tie);
-            user1.setTotalplayed(totalplayed);
-            user1.setPlayerpercent(playerpercent);
-            user1.setAipercent(aipercent);
-            if (user1.getPlayerwins().Length > 0)
+            Playerstats user1 = new Playerstats();
+            user1.SetPlayerwins(playerwins);
+            user1.SetAiwins(aiwins);
+            user1.SetTie(tie);
+            user1.SetTotalplayed(totalplayed);
+            user1.SetPlayerpercent(playerpercent);
+            user1.SetAipercent(aipercent);
+            if (user1.GetPlayerwins().Length > 0)
             {
-                if (user1.getAiwins().Length > 0)
+                if (user1.GetAiwins().Length > 0)
                 {
-                    if (user1.getTie().Length > 0)
+                    if (user1.GetTie().Length > 0)
                     {
 
-                        if (user1.getTotalplayed().Length > 0)
+                        if (user1.GetTotalplayed().Length > 0)
                         {
 
-                            if (user1.getPlayerpercent().Length > 0)
+                            if (user1.GetPlayerpercent().Length > 0)
                             {
-                                if (user1.getAipercent().Length > 0)
+                                if (user1.GetAipercent().Length > 0)
                                 {
                                     listofplayerstats.Add(user1);
 
                                     for (int i = 0; i < listofplayerstats.Count(); i++)
                                     {
                                         txt_stats.Text = "";
-                                        text = text + "Player Wins: " + listofplayerstats[i].getPlayerwins() + Environment.NewLine + "Ai wins: " + listofplayerstats[i].getAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].getTie()
-                                         + Environment.NewLine + "Total games played: " + listofplayerstats[i].getTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].getPlayerpercent() + Environment.NewLine + "Ai percentage: " + listofplayerstats[i].getAipercent();
+                                        text = text + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "Ai wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
+                                         + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "Ai percentage: " + listofplayerstats[i].GetAipercent();
 
                                         txt_stats.Text = text;
 
@@ -145,8 +145,8 @@ namespace CIS153FinalProject
             }
 
 
-            sw.WriteLine(text);
-            sw.Close();
+            //sw.WriteLine(text);
+            //sw.Close();
 
 
 

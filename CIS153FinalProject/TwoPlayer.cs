@@ -69,6 +69,47 @@ namespace CIS153FinalProject
             InitializeComponent();
             twoPlayerBoard = new Board();
             twoPlayerBoard.setGameBoardCell(One);
+            twoPlayerBoard.setGameBoardCell(Two);
+            twoPlayerBoard.setGameBoardCell(Three);
+            twoPlayerBoard.setGameBoardCell(Four);
+            twoPlayerBoard.setGameBoardCell(Five);
+            twoPlayerBoard.setGameBoardCell(Six);
+            twoPlayerBoard.setGameBoardCell(Seven);
+            twoPlayerBoard.setGameBoardCell(Eight);
+            twoPlayerBoard.setGameBoardCell(Nine);
+            twoPlayerBoard.setGameBoardCell(Ten);
+            twoPlayerBoard.setGameBoardCell(Eleven);
+            twoPlayerBoard.setGameBoardCell(Twelve);
+            twoPlayerBoard.setGameBoardCell(Thirteen);
+            twoPlayerBoard.setGameBoardCell(Fourteen);
+            twoPlayerBoard.setGameBoardCell(Fifteen);
+            twoPlayerBoard.setGameBoardCell(Sixteen);
+            twoPlayerBoard.setGameBoardCell(Seventeen);
+            twoPlayerBoard.setGameBoardCell(Eighteen);
+            twoPlayerBoard.setGameBoardCell(Nineteen);
+            twoPlayerBoard.setGameBoardCell(Twenty);
+            twoPlayerBoard.setGameBoardCell(TwentyOne);
+            twoPlayerBoard.setGameBoardCell(TwentyTwo);
+            twoPlayerBoard.setGameBoardCell(TwentyThree);
+            twoPlayerBoard.setGameBoardCell(TwentyFour);
+            twoPlayerBoard.setGameBoardCell(TwentyFive);
+            twoPlayerBoard.setGameBoardCell(TwentySix);
+            twoPlayerBoard.setGameBoardCell(TwentySeven);
+            twoPlayerBoard.setGameBoardCell(TwentyEight);
+            twoPlayerBoard.setGameBoardCell(TwentyNine);
+            twoPlayerBoard.setGameBoardCell(Thirty);
+            twoPlayerBoard.setGameBoardCell(ThirtyOne);
+            twoPlayerBoard.setGameBoardCell(ThirtyTwo);
+            twoPlayerBoard.setGameBoardCell(ThirtyThree);
+            twoPlayerBoard.setGameBoardCell(ThirtyFour);
+            twoPlayerBoard.setGameBoardCell(ThirtyFive);
+            twoPlayerBoard.setGameBoardCell(ThirtySix);
+            twoPlayerBoard.setGameBoardCell(ThirtySeven);
+            twoPlayerBoard.setGameBoardCell(ThirtyEight);
+            twoPlayerBoard.setGameBoardCell(ThirtyNine);
+            twoPlayerBoard.setGameBoardCell(Fourty);
+            twoPlayerBoard.setGameBoardCell(FourtyOne);
+            twoPlayerBoard.setGameBoardCell(FourtyTwo);
         }
         public TwoPlayer(WelcomeForm main)
         {
@@ -98,7 +139,7 @@ namespace CIS153FinalProject
         }
         
         private void Btn_c0r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell One
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r0TwoP.ButtonColor = PlayerOneColor;
@@ -106,6 +147,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                One.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(One);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -114,12 +157,14 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
-                lbl_playerTurnTwo.Visible = false;                
+                lbl_playerTurnTwo.Visible = false;
+                One.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(One);
             }
         }
 
         private void Btn_c1r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Two
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r0TwoP.ButtonColor = PlayerOneColor;
@@ -127,6 +172,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Two.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Two);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -136,11 +183,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Two.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Two);
             }
         }
 
         private void Btn_c2r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Three
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r0TwoP.ButtonColor = PlayerOneColor;
@@ -148,6 +197,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Three.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Three);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -157,11 +208,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Three.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Three);
             }
         }
 
         private void Btn_c3r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Four
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r0TwoP.ButtonColor = PlayerOneColor;
@@ -169,6 +222,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Four.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Four);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -178,11 +233,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Four.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Four);
             }
         }
 
         private void Btn_c4r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Five
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r0TwoP.ButtonColor = PlayerOneColor;
@@ -190,6 +247,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Five.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Five);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -199,11 +258,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Five.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Five);
             }
         }
 
         private void Btn_c5r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Six
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r0TwoP.ButtonColor = PlayerOneColor;
@@ -211,6 +272,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Six.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Six);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -220,11 +283,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Six.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Six);
             }
         }
 
         private void Btn_c6r0TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Seven
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r0TwoP.ButtonColor = PlayerOneColor;
@@ -232,6 +297,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Seven.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Seven);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -241,11 +308,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Seven.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Seven);
             }
         }
 
         private void Btn_c0r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Eight
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r1TwoP.ButtonColor = PlayerOneColor;
@@ -253,6 +322,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Eight.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Eight);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -262,11 +333,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Eight.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Eight);
             }
         }
 
         private void Btn_c1r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Nine
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r1TwoP.ButtonColor = PlayerOneColor;
@@ -274,6 +347,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Nine.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Nine);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -283,11 +358,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Nine.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Nine);
             }
         }
 
         private void Btn_c2r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Ten
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r1TwoP.ButtonColor = PlayerOneColor;
@@ -295,6 +372,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Ten.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Ten);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -304,11 +383,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Ten.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Ten);
             }
         }
 
         private void Btn_c3r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Eleven
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r1TwoP.ButtonColor = PlayerOneColor;
@@ -316,6 +397,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Eleven.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Eleven);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -325,11 +408,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Eleven.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Eleven);
             }
         }
 
         private void Btn_c4r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Twelve
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r1TwoP.ButtonColor = PlayerOneColor;
@@ -337,6 +422,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Twelve.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Twelve);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -346,11 +433,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Twelve.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Twelve);
             }
         }
 
         private void Btn_c5r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Thirteen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r1TwoP.ButtonColor = PlayerOneColor;
@@ -358,6 +447,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Thirteen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Thirteen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -367,11 +458,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Thirteen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Thirteen);
             }
         }
 
         private void Btn_c6r1TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Fourteen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r1TwoP.ButtonColor = PlayerOneColor;
@@ -379,6 +472,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Fourteen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Fourteen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -388,11 +483,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Fourteen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Fourteen);
             }
         }
 
         private void Btn_c0r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Fifteen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r2TwoP.ButtonColor = PlayerOneColor;
@@ -400,6 +497,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Fifteen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Fifteen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -409,11 +508,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Fifteen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Fifteen);
             }
         }
 
         private void Btn_c1r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Sixteen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r2TwoP.ButtonColor = PlayerOneColor;
@@ -421,6 +522,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Sixteen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Sixteen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -430,11 +533,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Sixteen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Sixteen);
             }
         }
 
         private void Btn_c2r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Seventeen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r2TwoP.ButtonColor = PlayerOneColor;
@@ -442,6 +547,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Seventeen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Seventeen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -451,11 +558,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Seventeen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Seventeen);
             }
         }
 
         private void Btn_c3r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Eighteen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r2TwoP.ButtonColor = PlayerOneColor;
@@ -463,6 +572,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Eighteen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Eighteen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -472,11 +583,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Eighteen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Eighteen);
             }
         }
 
         private void Btn_c4r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Nineteen
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r2TwoP.ButtonColor = PlayerOneColor;
@@ -484,6 +597,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Nineteen.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Nineteen);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -493,11 +608,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Nineteen.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Nineteen);
             }
         }
 
         private void Btn_c5r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Twenty
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r2TwoP.ButtonColor = PlayerOneColor;
@@ -505,6 +622,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Twenty.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Twenty);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -514,11 +633,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Twenty.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Twenty);
             }
         }
 
         private void Btn_c6r2TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyOne
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r2TwoP.ButtonColor = PlayerOneColor;
@@ -526,6 +647,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyOne.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyOne);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -535,11 +658,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyOne.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyOne);
             }
         }
 
         private void Btn_c0r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyTwo
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r3TwoP.ButtonColor = PlayerOneColor;
@@ -547,6 +672,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyTwo.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyTwo);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -556,11 +683,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyTwo.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyTwo);
             }
         }
 
         private void Btn_c1r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyThree
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r3TwoP.ButtonColor = PlayerOneColor;
@@ -568,6 +697,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyThree.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyThree);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -577,11 +708,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyThree.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyThree);
             }
         }
 
         private void Btn_c2r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyFour
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r3TwoP.ButtonColor = PlayerOneColor;
@@ -589,6 +722,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyFour.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyFour);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -598,11 +733,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyFour.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyFour);
             }
         }
 
         private void Btn_c3r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyFive
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r3TwoP.ButtonColor = PlayerOneColor;
@@ -610,6 +747,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyFive.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyFive);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -619,11 +758,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyFive.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyFive);
             }
         }
 
         private void Btn_c4r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentySix
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r3TwoP.ButtonColor = PlayerOneColor;
@@ -631,6 +772,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentySix.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentySix);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -640,11 +783,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentySix.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentySix);
             }
         }
 
         private void Btn_c5r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentySeven
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r3TwoP.ButtonColor = PlayerOneColor;
@@ -652,6 +797,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentySeven.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentySeven);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -661,11 +808,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentySeven.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentySeven);
             }
         }
 
         private void Btn_c6r3TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyEight
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r3TwoP.ButtonColor = PlayerOneColor;
@@ -673,6 +822,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyEight.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyEight);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -682,11 +833,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyEight.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyEight);
             }
         }
 
         private void Btn_c0r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell TwentyNine
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r4TwoP.ButtonColor = PlayerOneColor;
@@ -694,6 +847,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                TwentyNine.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(TwentyNine);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -703,11 +858,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                TwentyNine.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(TwentyNine);
             }
         }
 
         private void Btn_c1r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Thirty
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r4TwoP.ButtonColor = PlayerOneColor;
@@ -715,6 +872,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Thirty.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Thirty);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -724,11 +883,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Thirty.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Thirty);
             }
         }
 
         private void Btn_c2r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyOne
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r4TwoP.ButtonColor = PlayerOneColor;
@@ -736,6 +897,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyOne.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyOne);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -745,11 +908,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyOne.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyOne);
             }
         }
 
         private void Btn_c3r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyTwo
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r4TwoP.ButtonColor = PlayerOneColor;
@@ -757,6 +922,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyTwo.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyTwo);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -766,11 +933,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyTwo.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyTwo);
             }
         }
 
         private void Btn_c4r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyThree
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r4TwoP.ButtonColor = PlayerOneColor;
@@ -778,6 +947,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyThree.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyThree);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -787,11 +958,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyThree.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyThree);
             }
         }
 
         private void Btn_c5r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyFour
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r4TwoP.ButtonColor = PlayerOneColor;
@@ -799,6 +972,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyFour.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyFour);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -808,11 +983,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyFour.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyFour);
             }
         }
 
         private void Btn_c6r4TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyFive
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r4TwoP.ButtonColor = PlayerOneColor;
@@ -820,6 +997,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyFive.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyFive);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -829,11 +1008,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyFive.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyFive);
             }
         }
 
         private void Btn_c0r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtySix
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r5TwoP.ButtonColor = PlayerOneColor;
@@ -841,6 +1022,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtySix.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtySix);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -850,11 +1033,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtySix.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtySix);
             }
         }
 
         private void Btn_c1r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtySeven
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r5TwoP.ButtonColor = PlayerOneColor;
@@ -862,6 +1047,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtySeven.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtySeven);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -871,11 +1058,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtySeven.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtySeven);
             }
         }
 
         private void Btn_c2r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyEight
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r5TwoP.ButtonColor = PlayerOneColor;
@@ -883,6 +1072,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyEight.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyEight);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -892,11 +1083,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyEight.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyEight);
             }
         }
 
         private void Btn_c3r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell ThirtyNine
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r5TwoP.ButtonColor = PlayerOneColor;
@@ -904,6 +1097,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                ThirtyNine.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(ThirtyNine);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -913,11 +1108,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                ThirtyNine.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(ThirtyNine);
             }
         }
 
         private void Btn_c4r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell Fourty
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r5TwoP.ButtonColor = PlayerOneColor;
@@ -925,6 +1122,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                Fourty.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(Fourty);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -934,11 +1133,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                Fourty.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(Fourty);
             }
         }
 
         private void Btn_c5r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell FourtyOne
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r5TwoP.ButtonColor = PlayerOneColor;
@@ -946,6 +1147,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                FourtyOne.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(FourtyOne);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -955,11 +1158,13 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                FourtyOne.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(FourtyOne);
             }
         }
 
         private void Btn_c6r5TwoP_Click(object sender, EventArgs e)
-        {
+        {//Cell FourtyTwo
             if (One.getFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r5TwoP.ButtonColor = PlayerOneColor;
@@ -967,6 +1172,8 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                FourtyTwo.setPlayerOne();
+                twoPlayerBoard.setGameBoardCell(FourtyTwo);
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)
@@ -976,6 +1183,8 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                FourtyTwo.setPlayerTwo();
+                twoPlayerBoard.setGameBoardCell(FourtyTwo);
             }
         }
         
