@@ -21,7 +21,7 @@ namespace CIS153FinalProject
         // forms are loaded. 
         private static int cols = 7, rows = 6;
 
-        Cell[,] board = new Cell[cols, rows];
+        Cell[,] board = new Cell[rows, cols];
         public int getNumRows()
         {
             return rows;
