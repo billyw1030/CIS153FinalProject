@@ -22,7 +22,7 @@ namespace CIS153FinalProject
 
         //                  c  r  f
         Cell One = new Cell(0, 0, 0);        
-        Cell Two = new Cell(1, 0, 0);
+        Cell Two = new Cell(0, 1, 0);
         Cell Three = new Cell(2, 0, 0);
         Cell Four = new Cell(3, 0, 0);
         Cell Five = new Cell(4, 0, 0);
@@ -110,6 +110,8 @@ namespace CIS153FinalProject
             twoPlayerBoard.setGameBoardCell(Fourty);
             twoPlayerBoard.setGameBoardCell(FourtyOne);
             twoPlayerBoard.setGameBoardCell(FourtyTwo);
+
+            Console.WriteLine(twoPlayerBoard.getCell(3, 3).getFill());
         }
         public TwoPlayer(WelcomeForm main)
         {
@@ -135,6 +137,9 @@ namespace CIS153FinalProject
         
         private void Btn_close2_Click(object sender, EventArgs e)
         {
+            //Console.WriteLine(One.getC());
+            //Console.WriteLine(One.getR());
+            //Console.WriteLine(One.getFill());
             System.Environment.Exit(0);
         }
         
@@ -148,9 +153,14 @@ namespace CIS153FinalProject
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
                 One.setPlayerOne();
-                //Console.Write("Before setting boardcell");
-                //Console.Write(One);
                 twoPlayerBoard.setGameBoardCell(One);
+                //Console.WriteLine(twoPlayerBoard.getCell(One.getC(), One.getR()).getC());
+                //Console.Write("Before setting boardcell");
+                //Console.WriteLine(One.getC());
+                //Console.WriteLine(One.getR());
+                //Console.WriteLine(One.getFill());
+                
+                //twoPlayerBoard.getCell(One.getC(), One.getR()).setPlayerOne();
             }
 
             else if (One.getFill() == 0 && PlayerTwoTurn)

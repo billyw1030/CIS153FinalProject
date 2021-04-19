@@ -21,7 +21,7 @@ namespace CIS153FinalProject
         // forms are loaded. 
         private static int cols = 7, rows = 6;
 
-        Cell[,] board = new Cell[rows, cols];
+        Cell[,] board = new Cell[cols, rows];
         public int getNumRows()
         {
             return rows;
@@ -36,14 +36,14 @@ namespace CIS153FinalProject
             return board;
         }
 
-        public Cell getCell(int r, int c)
+        public Cell getCell(int c, int r)
         {
-            return board[r, c];
+            return board[c, r];
         }
 
         public void setGameBoardCell(Cell cell)
         {
-            board[cell.getR(), cell.getC()] = cell;
+            board[cell.getC(), cell.getR()] = cell;
         }
     }
 }
