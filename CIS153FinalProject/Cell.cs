@@ -16,7 +16,7 @@ namespace CIS153FinalProject
         private int fill = 0;
         
         
-        public Cell(int co, int ro, int f)
+        public Cell(int ro, int co, int f)
         {
             c = co;
             r = ro;

@@ -46,9 +46,6 @@ namespace CIS153FinalProject
         private void loadSinglePlayerForm()
         {
             SinglePlayer formToLoad = new SinglePlayer(this);
-            SinglePlayer formToLoadNoOverload = new SinglePlayer();
-
-            formToLoadNoOverload.FormPassedToMeTwo(this);
 
             formToLoad.Show();
             this.Hide();
@@ -57,9 +54,6 @@ namespace CIS153FinalProject
         private void loadTwoPlayerForm()
         {
             TwoPlayer formToLoad = new TwoPlayer(this);
-            TwoPlayer formToLoadNoOverload = new TwoPlayer();
-
-            formToLoadNoOverload.FormPassedToMeThree(this);
 
             formToLoad.Show();
             this.Hide();
@@ -74,8 +68,6 @@ namespace CIS153FinalProject
 
             formToLoad.Show();
             this.Hide();
-
-
 
         }
 

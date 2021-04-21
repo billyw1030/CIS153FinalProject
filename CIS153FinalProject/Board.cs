@@ -16,12 +16,9 @@ namespace CIS153FinalProject
         //  29  30  31  32  33  34  35 
         //  36  37  38  39  40  41  42
         
-        //I dont think we need to make each single and two player boards, we can
-        //use a board and create a new board every time single and two player
-        // forms are loaded. 
-        private static int cols = 7, rows = 6;
+        private const int cols = 7, rows = 6;
 
-        Cell[,] board = new Cell[cols, rows];
+        Cell[,] board = new Cell[rows, cols];
         public int getNumRows()
         {
             return rows;
@@ -36,14 +33,14 @@ namespace CIS153FinalProject
             return board;
         }
 
-        public Cell getCell(int c, int r)
+        public Cell getCell(int r, int c)
         {
-            return board[c, r];
+            return board[r, c];
         }
 
         public void setGameBoardCell(Cell cell)
         {
-            board[cell.getC(), cell.getR()] = cell;
+            board[cell.getR(), cell.getC()] = cell;
         }
     }
 }
