@@ -309,7 +309,315 @@ namespace CIS153FinalProject
                 Btn_c3r1TwoP.ButtonColor = PlayerTwoColor;
             }
 
+            if (cell == Twelve && playerTurn == 1)
+            {
+                Btn_c4r1TwoP.ButtonColor = PlayerOneColor;
+            }
 
+            if (cell == Twelve && playerTurn == 2)
+            {
+                Btn_c4r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Thirteen && playerTurn == 1)
+            {
+                Btn_c5r1TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Thirteen && playerTurn == 2)
+            {
+                Btn_c5r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Fourteen && playerTurn == 1)
+            {
+                Btn_c6r1TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Fourteen && playerTurn == 2)
+            {
+                Btn_c6r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Fifteen && playerTurn == 1)
+            {
+                Btn_c0r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Fifteen && playerTurn == 2)
+            {
+                Btn_c0r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Sixteen && playerTurn == 1)
+            {
+                Btn_c1r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Sixteen && playerTurn == 2)
+            {
+                Btn_c1r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Seventeen && playerTurn == 1)
+            {
+                Btn_c2r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Seventeen && playerTurn == 2)
+            {
+                Btn_c2r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Eighteen && playerTurn == 1)
+            {
+                Btn_c3r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Eighteen && playerTurn == 2)
+            {
+                Btn_c3r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Nineteen && playerTurn == 1)
+            {
+                Btn_c4r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Nineteen && playerTurn == 2)
+            {
+                Btn_c4r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Twenty && playerTurn == 1)
+            {
+                Btn_c5r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Twenty && playerTurn == 2)
+            {
+                Btn_c5r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyOne && playerTurn == 1)
+            {
+                Btn_c6r2TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyOne && playerTurn == 2)
+            {
+                Btn_c6r2TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyTwo && playerTurn == 1)
+            {
+                Btn_c0r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyTwo && playerTurn == 2)
+            {
+                Btn_c0r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyThree && playerTurn == 1)
+            {
+                Btn_c1r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyThree && playerTurn == 2)
+            {
+                Btn_c1r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyFour && playerTurn == 1)
+            {
+                Btn_c2r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyFour && playerTurn == 2)
+            {
+                Btn_c2r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyFive && playerTurn == 1)
+            {
+                Btn_c3r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyFive && playerTurn == 2)
+            {
+                Btn_c3r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentySix && playerTurn == 1)
+            {
+                Btn_c4r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentySix && playerTurn == 2)
+            {
+                Btn_c4r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentySeven && playerTurn == 1)
+            {
+                Btn_c5r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentySeven && playerTurn == 2)
+            {
+                Btn_c5r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyEight && playerTurn == 1)
+            {
+                Btn_c6r3TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyEight && playerTurn == 2)
+            {
+                Btn_c6r3TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == TwentyNine && playerTurn == 1)
+            {
+                Btn_c0r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == TwentyNine && playerTurn == 2)
+            {
+                Btn_c0r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Thirty && playerTurn == 1)
+            {
+                Btn_c1r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Thirty && playerTurn == 2)
+            {
+                Btn_c1r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyOne && playerTurn == 1)
+            {
+                Btn_c2r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyOne && playerTurn == 2)
+            {
+                Btn_c2r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyTwo && playerTurn == 1)
+            {
+                Btn_c3r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyTwo && playerTurn == 2)
+            {
+                Btn_c3r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyThree && playerTurn == 1)
+            {
+                Btn_c4r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyThree && playerTurn == 2)
+            {
+                Btn_c4r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyFour && playerTurn == 1)
+            {
+                Btn_c5r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyFour && playerTurn == 2)
+            {
+                Btn_c5r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyFive && playerTurn == 1)
+            {
+                Btn_c6r4TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyFive && playerTurn == 2)
+            {
+                Btn_c6r4TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtySix && playerTurn == 1)
+            {
+                Btn_c0r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtySix && playerTurn == 2)
+            {
+                Btn_c0r5TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtySeven && playerTurn == 1)
+            {
+                Btn_c1r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtySeven && playerTurn == 2)
+            {
+                Btn_c1r5TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyEight && playerTurn == 1)
+            {
+                Btn_c2r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyEight && playerTurn == 2)
+            {
+                Btn_c2r5TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == ThirtyNine && playerTurn == 1)
+            {
+                Btn_c3r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == ThirtyNine && playerTurn == 2)
+            {
+                Btn_c3r5TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Fourty && playerTurn == 1)
+            {
+                Btn_c4r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Fourty && playerTurn == 2)
+            {
+                Btn_c4r5TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == FourtyOne && playerTurn == 1)
+            {
+                Btn_c5r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == FourtyOne && playerTurn == 2)
+            {
+                Btn_c5r5TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == FourtyTwo && playerTurn == 1)
+            {
+                Btn_c6r5TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == FourtyTwo && playerTurn == 2)
+            {
+                Btn_c6r5TwoP.ButtonColor = PlayerTwoColor;
+            }
 
         }
 
