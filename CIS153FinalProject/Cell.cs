@@ -14,7 +14,7 @@ namespace CIS153FinalProject
         private int c;
         private int r;
         private int fill = 0;
-        Cell cellBelow = null;
+        Cell cellBelow;
         
         public Cell()
         {
