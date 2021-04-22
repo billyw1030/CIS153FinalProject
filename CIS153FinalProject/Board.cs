@@ -19,28 +19,28 @@ namespace CIS153FinalProject
         private const int cols = 7, rows = 6;
 
         Cell[,] board = new Cell[rows, cols];
-        public int getNumRows()
+        public int GetNumRows()
         {
             return rows;
         }
-        public int getNumCols()
+        public int GetNumCols()
         {
             return cols;
         }
 
-        public Cell[,] getGameBoard()
+        public Cell[,] GetGameBoard()
         {
             return board;
         }
 
-        public Cell getCell(int r, int c)
+        public Cell GetCell(int r, int c)
         {
             return board[r, c];
         }
 
-        public void setGameBoardCell(Cell cell)
+        public void SetGameBoardCell(Cell cell)
         {
-            board[cell.getR(), cell.getC()] = cell;
+            board[cell.GetR(), cell.GetC()] = cell;
         }
     }
 }

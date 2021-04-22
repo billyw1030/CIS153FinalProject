@@ -66,7 +66,6 @@ namespace CIS153FinalProject
         Cell FourtyOne = new Cell(5, 5, 0);
         Cell FourtyTwo = new Cell(5, 6, 0);
 
-
         public TwoPlayer()
         {
             InitializeComponent();
@@ -83,7 +82,7 @@ namespace CIS153FinalProject
             Menu = mainMenu;
         }
 
-        private void btn_exitTwoPlayer_Click(object sender, EventArgs e)
+        private void Btn_exitTwoPlayer_Click(object sender, EventArgs e)
         {
             Menu.Show();
             this.Close();
@@ -91,95 +90,95 @@ namespace CIS153FinalProject
 
         private void TwoPlayer_Load(object sender, EventArgs e)
         {
-            twoPlayerBoard.setGameBoardCell(One);
-            twoPlayerBoard.setGameBoardCell(Two);
-            twoPlayerBoard.setGameBoardCell(Three);
-            twoPlayerBoard.setGameBoardCell(Four);
-            twoPlayerBoard.setGameBoardCell(Five);
-            twoPlayerBoard.setGameBoardCell(Six);
-            twoPlayerBoard.setGameBoardCell(Seven);
-            twoPlayerBoard.setGameBoardCell(Eight);
-            twoPlayerBoard.setGameBoardCell(Nine);
-            twoPlayerBoard.setGameBoardCell(Ten);
-            twoPlayerBoard.setGameBoardCell(Eleven);
-            twoPlayerBoard.setGameBoardCell(Twelve);
-            twoPlayerBoard.setGameBoardCell(Thirteen);
-            twoPlayerBoard.setGameBoardCell(Fourteen);
-            twoPlayerBoard.setGameBoardCell(Fifteen);
-            twoPlayerBoard.setGameBoardCell(Sixteen);
-            twoPlayerBoard.setGameBoardCell(Seventeen);
-            twoPlayerBoard.setGameBoardCell(Eighteen);
-            twoPlayerBoard.setGameBoardCell(Nineteen);
-            twoPlayerBoard.setGameBoardCell(Twenty);
-            twoPlayerBoard.setGameBoardCell(TwentyOne);
-            twoPlayerBoard.setGameBoardCell(TwentyTwo);
-            twoPlayerBoard.setGameBoardCell(TwentyThree);
-            twoPlayerBoard.setGameBoardCell(TwentyFour);
-            twoPlayerBoard.setGameBoardCell(TwentyFive);
-            twoPlayerBoard.setGameBoardCell(TwentySix);
-            twoPlayerBoard.setGameBoardCell(TwentySeven);
-            twoPlayerBoard.setGameBoardCell(TwentyEight);
-            twoPlayerBoard.setGameBoardCell(TwentyNine);
-            twoPlayerBoard.setGameBoardCell(Thirty);
-            twoPlayerBoard.setGameBoardCell(ThirtyOne);
-            twoPlayerBoard.setGameBoardCell(ThirtyTwo);
-            twoPlayerBoard.setGameBoardCell(ThirtyThree);
-            twoPlayerBoard.setGameBoardCell(ThirtyFour);
-            twoPlayerBoard.setGameBoardCell(ThirtyFive);
-            twoPlayerBoard.setGameBoardCell(ThirtySix);
-            twoPlayerBoard.setGameBoardCell(ThirtySeven);
-            twoPlayerBoard.setGameBoardCell(ThirtyEight);
-            twoPlayerBoard.setGameBoardCell(ThirtyNine);
-            twoPlayerBoard.setGameBoardCell(Fourty);
-            twoPlayerBoard.setGameBoardCell(FourtyOne);
-            twoPlayerBoard.setGameBoardCell(FourtyTwo);
+            twoPlayerBoard.SetGameBoardCell(One);
+            twoPlayerBoard.SetGameBoardCell(Two);
+            twoPlayerBoard.SetGameBoardCell(Three);
+            twoPlayerBoard.SetGameBoardCell(Four);
+            twoPlayerBoard.SetGameBoardCell(Five);
+            twoPlayerBoard.SetGameBoardCell(Six);
+            twoPlayerBoard.SetGameBoardCell(Seven);
+            twoPlayerBoard.SetGameBoardCell(Eight);
+            twoPlayerBoard.SetGameBoardCell(Nine);
+            twoPlayerBoard.SetGameBoardCell(Ten);
+            twoPlayerBoard.SetGameBoardCell(Eleven);
+            twoPlayerBoard.SetGameBoardCell(Twelve);
+            twoPlayerBoard.SetGameBoardCell(Thirteen);
+            twoPlayerBoard.SetGameBoardCell(Fourteen);
+            twoPlayerBoard.SetGameBoardCell(Fifteen);
+            twoPlayerBoard.SetGameBoardCell(Sixteen);
+            twoPlayerBoard.SetGameBoardCell(Seventeen);
+            twoPlayerBoard.SetGameBoardCell(Eighteen);
+            twoPlayerBoard.SetGameBoardCell(Nineteen);
+            twoPlayerBoard.SetGameBoardCell(Twenty);
+            twoPlayerBoard.SetGameBoardCell(TwentyOne);
+            twoPlayerBoard.SetGameBoardCell(TwentyTwo);
+            twoPlayerBoard.SetGameBoardCell(TwentyThree);
+            twoPlayerBoard.SetGameBoardCell(TwentyFour);
+            twoPlayerBoard.SetGameBoardCell(TwentyFive);
+            twoPlayerBoard.SetGameBoardCell(TwentySix);
+            twoPlayerBoard.SetGameBoardCell(TwentySeven);
+            twoPlayerBoard.SetGameBoardCell(TwentyEight);
+            twoPlayerBoard.SetGameBoardCell(TwentyNine);
+            twoPlayerBoard.SetGameBoardCell(Thirty);
+            twoPlayerBoard.SetGameBoardCell(ThirtyOne);
+            twoPlayerBoard.SetGameBoardCell(ThirtyTwo);
+            twoPlayerBoard.SetGameBoardCell(ThirtyThree);
+            twoPlayerBoard.SetGameBoardCell(ThirtyFour);
+            twoPlayerBoard.SetGameBoardCell(ThirtyFive);
+            twoPlayerBoard.SetGameBoardCell(ThirtySix);
+            twoPlayerBoard.SetGameBoardCell(ThirtySeven);
+            twoPlayerBoard.SetGameBoardCell(ThirtyEight);
+            twoPlayerBoard.SetGameBoardCell(ThirtyNine);
+            twoPlayerBoard.SetGameBoardCell(Fourty);
+            twoPlayerBoard.SetGameBoardCell(FourtyOne);
+            twoPlayerBoard.SetGameBoardCell(FourtyTwo);
 
 
-            One.setCellBelow(Eight);
-            Two.setCellBelow(Nine);
-            Three.setCellBelow(Ten);
-            Four.setCellBelow(Eleven);
-            Five.setCellBelow(Twelve);
-            Six.setCellBelow(Thirteen);
-            Seven.setCellBelow(Fourteen);
-            Eight.setCellBelow(Fifteen);
-            Nine.setCellBelow(Sixteen);
-            Ten.setCellBelow(Seventeen);
-            Eleven.setCellBelow(Eighteen);
-            Twelve.setCellBelow(Nineteen);
-            Thirteen.setCellBelow(Twenty);
-            Fourteen.setCellBelow(TwentyOne);
-            Fifteen.setCellBelow(TwentyTwo);
-            Sixteen.setCellBelow(TwentyThree);
-            Seventeen.setCellBelow(TwentyFour);
-            Eighteen.setCellBelow(TwentyFive);
-            Nineteen.setCellBelow(TwentySix);
-            Twenty.setCellBelow(TwentySeven);
-            TwentyOne.setCellBelow(TwentyEight);
-            TwentyTwo.setCellBelow(TwentyNine);
-            TwentyThree.setCellBelow(Thirty);
-            TwentyFour.setCellBelow(ThirtyOne);
-            TwentyFive.setCellBelow(ThirtyTwo);
-            TwentySix.setCellBelow(ThirtyThree);
-            TwentySeven.setCellBelow(ThirtyFour);
-            TwentyEight.setCellBelow(ThirtyFive);
-            TwentyNine.setCellBelow(ThirtySix);
-            Thirty.setCellBelow(ThirtySeven);
-            ThirtyOne.setCellBelow(ThirtyEight);
-            ThirtyTwo.setCellBelow(ThirtyNine);
-            ThirtyThree.setCellBelow(Fourty);
-            ThirtyFour.setCellBelow(FourtyOne);
-            ThirtyFive.setCellBelow(FourtyTwo);
+            One.SetCellBelow(Eight);
+            Two.SetCellBelow(Nine);
+            Three.SetCellBelow(Ten);
+            Four.SetCellBelow(Eleven);
+            Five.SetCellBelow(Twelve);
+            Six.SetCellBelow(Thirteen);
+            Seven.SetCellBelow(Fourteen);
+            Eight.SetCellBelow(Fifteen);
+            Nine.SetCellBelow(Sixteen);
+            Ten.SetCellBelow(Seventeen);
+            Eleven.SetCellBelow(Eighteen);
+            Twelve.SetCellBelow(Nineteen);
+            Thirteen.SetCellBelow(Twenty);
+            Fourteen.SetCellBelow(TwentyOne);
+            Fifteen.SetCellBelow(TwentyTwo);
+            Sixteen.SetCellBelow(TwentyThree);
+            Seventeen.SetCellBelow(TwentyFour);
+            Eighteen.SetCellBelow(TwentyFive);
+            Nineteen.SetCellBelow(TwentySix);
+            Twenty.SetCellBelow(TwentySeven);
+            TwentyOne.SetCellBelow(TwentyEight);
+            TwentyTwo.SetCellBelow(TwentyNine);
+            TwentyThree.SetCellBelow(Thirty);
+            TwentyFour.SetCellBelow(ThirtyOne);
+            TwentyFive.SetCellBelow(ThirtyTwo);
+            TwentySix.SetCellBelow(ThirtyThree);
+            TwentySeven.SetCellBelow(ThirtyFour);
+            TwentyEight.SetCellBelow(ThirtyFive);
+            TwentyNine.SetCellBelow(ThirtySix);
+            Thirty.SetCellBelow(ThirtySeven);
+            ThirtyOne.SetCellBelow(ThirtyEight);
+            ThirtyTwo.SetCellBelow(ThirtyNine);
+            ThirtyThree.SetCellBelow(Fourty);
+            ThirtyFour.SetCellBelow(FourtyOne);
+            ThirtyFive.SetCellBelow(FourtyTwo);
         }
 
         private Cell ChipFall(Cell cell)
         {
 
-            if (cell.getR() != 5)
+            if (cell.GetR() != 5)
             {
-                while (cell.getCellBelow().getFill() == 0)
+                while (cell.GetCellBelow().GetFill() == 0)
                 {
-                    cell = cell.getCellBelow();
+                    cell = cell.GetCellBelow();
                 }
 
                 return cell;
@@ -622,22 +621,22 @@ namespace CIS153FinalProject
         
         private void Btn_c0r0TwoP_Click(object sender, EventArgs e)
         {//Cell One
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (One.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(One);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (One.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(One);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -647,22 +646,22 @@ namespace CIS153FinalProject
 
         private void Btn_c1r0TwoP_Click(object sender, EventArgs e)
         {//Cell Two
-            if (Two.getFill() == 0 && PlayerOneTurn)
+            if (Two.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Two);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Two.getFill() == 0 && PlayerTwoTurn)
+            else if (Two.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Two);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -672,22 +671,22 @@ namespace CIS153FinalProject
 
         private void Btn_c2r0TwoP_Click(object sender, EventArgs e)
         {//Cell Three
-            if (Three.getFill() == 0 && PlayerOneTurn)
+            if (Three.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Three);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Three.getFill() == 0 && PlayerTwoTurn)
+            else if (Three.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Three);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -697,22 +696,22 @@ namespace CIS153FinalProject
 
         private void Btn_c3r0TwoP_Click(object sender, EventArgs e)
         {//Cell Four
-            if (Four.getFill() == 0 && PlayerOneTurn)
+            if (Four.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Four);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Four.getFill() == 0 && PlayerTwoTurn)
+            else if (Four.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Four);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -722,22 +721,22 @@ namespace CIS153FinalProject
 
         private void Btn_c4r0TwoP_Click(object sender, EventArgs e)
         {//Cell Five
-            if (Five.getFill() == 0 && PlayerOneTurn)
+            if (Five.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Five);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Five.getFill() == 0 && PlayerTwoTurn)
+            else if (Five.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Five);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -747,22 +746,22 @@ namespace CIS153FinalProject
 
         private void Btn_c5r0TwoP_Click(object sender, EventArgs e)
         {//Cell Six
-            if (Six.getFill() == 0 && PlayerOneTurn)
+            if (Six.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Six);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Six.getFill() == 0 && PlayerTwoTurn)
+            else if (Six.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Six);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -772,22 +771,22 @@ namespace CIS153FinalProject
 
         private void Btn_c6r0TwoP_Click(object sender, EventArgs e)
         {//Cell Seven
-            if (Seven.getFill() == 0 && PlayerOneTurn)
+            if (Seven.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Seven);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Seven.getFill() == 0 && PlayerTwoTurn)
+            else if (Seven.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Seven);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -797,22 +796,22 @@ namespace CIS153FinalProject
 
         private void Btn_c0r1TwoP_Click(object sender, EventArgs e)
         {//Cell Eight
-            if (Eight.getFill() == 0 && PlayerOneTurn)
+            if (Eight.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Eight);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Eight.getFill() == 0 && PlayerTwoTurn)
+            else if (Eight.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Eight);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -822,22 +821,22 @@ namespace CIS153FinalProject
 
         private void Btn_c1r1TwoP_Click(object sender, EventArgs e)
         {//Cell Nine
-            if (Nine.getFill() == 0 && PlayerOneTurn)
+            if (Nine.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Nine);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Nine.getFill() == 0 && PlayerTwoTurn)
+            else if (Nine.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Nine);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -847,22 +846,22 @@ namespace CIS153FinalProject
 
         private void Btn_c2r1TwoP_Click(object sender, EventArgs e)
         {//Cell Ten
-            if (Ten.getFill() == 0 && PlayerOneTurn)
+            if (Ten.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Ten);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Ten.getFill() == 0 && PlayerTwoTurn)
+            else if (Ten.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Ten);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -872,22 +871,22 @@ namespace CIS153FinalProject
 
         private void Btn_c3r1TwoP_Click(object sender, EventArgs e)
         {//Cell Eleven
-            if (Eleven.getFill() == 0 && PlayerOneTurn)
+            if (Eleven.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Eleven);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Eleven.getFill() == 0 && PlayerTwoTurn)
+            else if (Eleven.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Eleven);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -897,22 +896,22 @@ namespace CIS153FinalProject
 
         private void Btn_c4r1TwoP_Click(object sender, EventArgs e)
         {//Cell Twelve
-            if (Twelve.getFill() == 0 && PlayerOneTurn)
+            if (Twelve.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Twelve);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Twelve.getFill() == 0 && PlayerTwoTurn)
+            else if (Twelve.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Twelve);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -922,22 +921,22 @@ namespace CIS153FinalProject
 
         private void Btn_c5r1TwoP_Click(object sender, EventArgs e)
         {//Cell Thirteen
-            if (Thirteen.getFill() == 0 && PlayerOneTurn)
+            if (Thirteen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Thirteen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Thirteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Thirteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Thirteen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -947,22 +946,22 @@ namespace CIS153FinalProject
 
         private void Btn_c6r1TwoP_Click(object sender, EventArgs e)
         {//Cell Fourteen
-            if (Fourteen.getFill() == 0 && PlayerOneTurn)
+            if (Fourteen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Fourteen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Fourteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Fourteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Fourteen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -972,22 +971,22 @@ namespace CIS153FinalProject
 
         private void Btn_c0r2TwoP_Click(object sender, EventArgs e)
         {//Cell Fifteen
-            if (Fifteen.getFill() == 0 && PlayerOneTurn)
+            if (Fifteen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Fifteen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Fifteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Fifteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Fifteen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -997,22 +996,22 @@ namespace CIS153FinalProject
 
         private void Btn_c1r2TwoP_Click(object sender, EventArgs e)
         {//Cell Sixteen
-            if (Sixteen.getFill() == 0 && PlayerOneTurn)
+            if (Sixteen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Sixteen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Sixteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Sixteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Sixteen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1022,22 +1021,22 @@ namespace CIS153FinalProject
 
         private void Btn_c2r2TwoP_Click(object sender, EventArgs e)
         {//Cell Seventeen
-            if (Seventeen.getFill() == 0 && PlayerOneTurn)
+            if (Seventeen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Seventeen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Seventeen.getFill() == 0 && PlayerTwoTurn)
+            else if (Seventeen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Seventeen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1047,22 +1046,22 @@ namespace CIS153FinalProject
 
         private void Btn_c3r2TwoP_Click(object sender, EventArgs e)
         {//Cell Eighteen
-            if (Eighteen.getFill() == 0 && PlayerOneTurn)
+            if (Eighteen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Eighteen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Eighteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Eighteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Eighteen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1072,22 +1071,22 @@ namespace CIS153FinalProject
 
         private void Btn_c4r2TwoP_Click(object sender, EventArgs e)
         {//Cell Nineteen
-            if (Nineteen.getFill() == 0 && PlayerOneTurn)
+            if (Nineteen.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Nineteen);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Nineteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Nineteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Nineteen);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1097,22 +1096,22 @@ namespace CIS153FinalProject
 
         private void Btn_c5r2TwoP_Click(object sender, EventArgs e)
         {//Cell Twenty
-            if (Twenty.getFill() == 0 && PlayerOneTurn)
+            if (Twenty.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Twenty);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Twenty.getFill() == 0 && PlayerTwoTurn)
+            else if (Twenty.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Twenty);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1122,22 +1121,22 @@ namespace CIS153FinalProject
 
         private void Btn_c6r2TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyOne
-            if (TwentyOne.getFill() == 0 && PlayerOneTurn)
+            if (TwentyOne.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyOne);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyOne.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyOne.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyOne);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1147,22 +1146,22 @@ namespace CIS153FinalProject
 
         private void Btn_c0r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyTwo
-            if (TwentyTwo.getFill() == 0 && PlayerOneTurn)
+            if (TwentyTwo.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyTwo);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyTwo.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyTwo.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyTwo);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1172,22 +1171,22 @@ namespace CIS153FinalProject
 
         private void Btn_c1r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyThree
-            if (TwentyThree.getFill() == 0 && PlayerOneTurn)
+            if (TwentyThree.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyThree);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyThree.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyThree.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyThree);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1197,22 +1196,22 @@ namespace CIS153FinalProject
 
         private void Btn_c2r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyFour
-            if (TwentyFour.getFill() == 0 && PlayerOneTurn)
+            if (TwentyFour.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyFour);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyFour.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyFour.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyFour);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1222,22 +1221,22 @@ namespace CIS153FinalProject
 
         private void Btn_c3r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyFive
-            if (TwentyFive.getFill() == 0 && PlayerOneTurn)
+            if (TwentyFive.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyFive);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyFive.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyFive.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyFive);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1247,22 +1246,22 @@ namespace CIS153FinalProject
 
         private void Btn_c4r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentySix
-            if (TwentySix.getFill() == 0 && PlayerOneTurn)
+            if (TwentySix.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentySix);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentySix.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentySix.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentySix);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1272,22 +1271,22 @@ namespace CIS153FinalProject
 
         private void Btn_c5r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentySeven
-            if (TwentySeven.getFill() == 0 && PlayerOneTurn)
+            if (TwentySeven.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentySeven);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentySeven.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentySeven.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentySeven);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1297,22 +1296,22 @@ namespace CIS153FinalProject
 
         private void Btn_c6r3TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyEight
-            if (TwentyEight.getFill() == 0 && PlayerOneTurn)
+            if (TwentyEight.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyEight);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyEight.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyEight.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyEight);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1322,22 +1321,22 @@ namespace CIS153FinalProject
 
         private void Btn_c0r4TwoP_Click(object sender, EventArgs e)
         {//Cell TwentyNine
-            if (TwentyNine.getFill() == 0 && PlayerOneTurn)
+            if (TwentyNine.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(TwentyNine);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (TwentyNine.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyNine.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(TwentyNine);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1347,22 +1346,22 @@ namespace CIS153FinalProject
 
         private void Btn_c1r4TwoP_Click(object sender, EventArgs e)
         {//Cell Thirty
-            if (Thirty.getFill() == 0 && PlayerOneTurn)
+            if (Thirty.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Thirty);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Thirty.getFill() == 0 && PlayerTwoTurn)
+            else if (Thirty.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Thirty);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1372,22 +1371,22 @@ namespace CIS153FinalProject
 
         private void Btn_c2r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyOne
-            if (ThirtyOne.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyOne.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyOne);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyOne.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyOne.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyOne);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1397,22 +1396,22 @@ namespace CIS153FinalProject
 
         private void Btn_c3r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyTwo
-            if (ThirtyTwo.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyTwo.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyTwo);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyTwo.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyTwo.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyTwo);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1422,22 +1421,22 @@ namespace CIS153FinalProject
 
         private void Btn_c4r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyThree
-            if (ThirtyThree.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyThree.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyThree);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyThree.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyThree.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyThree);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1447,22 +1446,22 @@ namespace CIS153FinalProject
 
         private void Btn_c5r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyFour
-            if (ThirtyFour.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyFour.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyFour);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyFour.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyFour.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyFour);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1472,22 +1471,22 @@ namespace CIS153FinalProject
 
         private void Btn_c6r4TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyFive
-            if (ThirtyFive.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyFive.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyFive);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyFive.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyFive.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyFive);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1497,22 +1496,22 @@ namespace CIS153FinalProject
 
         private void Btn_c0r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtySix
-            if (ThirtySix.getFill() == 0 && PlayerOneTurn)
+            if (ThirtySix.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtySix);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtySix.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtySix.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtySix);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1522,22 +1521,22 @@ namespace CIS153FinalProject
 
         private void Btn_c1r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtySeven
-            if (ThirtySeven.getFill() == 0 && PlayerOneTurn)
+            if (ThirtySeven.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtySeven);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtySeven.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtySeven.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtySeven);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1547,22 +1546,22 @@ namespace CIS153FinalProject
 
         private void Btn_c2r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyEight
-            if (ThirtyEight.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyEight.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyEight);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyEight.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyEight.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyEight);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1572,22 +1571,22 @@ namespace CIS153FinalProject
 
         private void Btn_c3r5TwoP_Click(object sender, EventArgs e)
         {//Cell ThirtyNine
-            if (ThirtyNine.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyNine.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(ThirtyNine);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (ThirtyNine.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyNine.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(ThirtyNine);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1597,22 +1596,22 @@ namespace CIS153FinalProject
 
         private void Btn_c4r5TwoP_Click(object sender, EventArgs e)
         {//Cell Fourty
-            if (Fourty.getFill() == 0 && PlayerOneTurn)
+            if (Fourty.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(Fourty);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (Fourty.getFill() == 0 && PlayerTwoTurn)
+            else if (Fourty.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(Fourty);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1622,22 +1621,22 @@ namespace CIS153FinalProject
 
         private void Btn_c5r5TwoP_Click(object sender, EventArgs e)
         {//Cell FourtyOne
-            if (FourtyOne.getFill() == 0 && PlayerOneTurn)
+            if (FourtyOne.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(FourtyOne);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (FourtyOne.getFill() == 0 && PlayerTwoTurn)
+            else if (FourtyOne.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(FourtyOne);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
@@ -1647,22 +1646,22 @@ namespace CIS153FinalProject
 
         private void Btn_c6r5TwoP_Click(object sender, EventArgs e)
         {//Cell FourtyTwo
-            if (FourtyTwo.getFill() == 0 && PlayerOneTurn)
+            if (FourtyTwo.GetFill() == 0 && PlayerOneTurn)
             {
                 dropCell = ChipFall(FourtyTwo);
                 DeclareButton(dropCell, 1);
-                dropCell.setPlayerOne();
+                dropCell.SetPlayerOne();
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
             }
 
-            else if (FourtyTwo.getFill() == 0 && PlayerTwoTurn)
+            else if (FourtyTwo.GetFill() == 0 && PlayerTwoTurn)
             {
                 dropCell = ChipFall(FourtyTwo);
                 DeclareButton(dropCell, 2);
-                dropCell.setPlayerTwo();
+                dropCell.SetPlayerTwo();
                 PlayerTwoTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;

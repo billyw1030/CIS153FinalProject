@@ -116,7 +116,7 @@ namespace CIS153FinalProject
             this.btn_exitTwoPlayer.TabIndex = 5;
             this.btn_exitTwoPlayer.Text = "Main Menu";
             this.btn_exitTwoPlayer.UseVisualStyleBackColor = false;
-            this.btn_exitTwoPlayer.Click += new System.EventHandler(this.btn_exitTwoPlayer_Click);
+            this.btn_exitTwoPlayer.Click += new System.EventHandler(this.Btn_exitTwoPlayer_Click);
             // 
             // Btn_close2
             // 

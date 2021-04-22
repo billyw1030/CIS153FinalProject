@@ -27,47 +27,47 @@ namespace CIS153FinalProject
             r = ro;
             fill = f;
         }
-        public void setPlayerOne()
+        public void SetPlayerOne()
         {
             fill = 1;
         }
 
-        public void setPlayerTwo()
+        public void SetPlayerTwo()
         {
             fill = 2;
         }
 
-        public void setC(int columns)
+        public void SetC(int columns)
         {
             c = columns;
         }
 
-        public void setR(int rows)
+        public void SetR(int rows)
         {
             r = rows;
         }
 
-        public void setCellBelow(Cell c)
+        public void SetCellBelow(Cell c)
         {
             cellBelow = c;
         }
 
-        public int getFill()
+        public int GetFill()
         {
             return fill;
         }
 
-        public int getC()
+        public int GetC()
         {
             return c;
         }
 
-        public int getR()
+        public int GetR()
         {
             return r;
         }
 
-        public Cell getCellBelow()
+        public Cell GetCellBelow()
         {
             return cellBelow;
         }
