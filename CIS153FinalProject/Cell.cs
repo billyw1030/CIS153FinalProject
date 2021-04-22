@@ -14,8 +14,13 @@ namespace CIS153FinalProject
         private int c;
         private int r;
         private int fill = 0;
+        Cell cellBelow = null;
         
-        
+        public Cell()
+        {
+
+        }
+
         public Cell(int ro, int co, int f)
         {
             c = co;
@@ -42,6 +47,11 @@ namespace CIS153FinalProject
             r = rows;
         }
 
+        public void setCellBelow(Cell c)
+        {
+            cellBelow = c;
+        }
+
         public int getFill()
         {
             return fill;
@@ -55,6 +65,11 @@ namespace CIS153FinalProject
         public int getR()
         {
             return r;
+        }
+
+        public Cell getCellBelow()
+        {
+            return cellBelow;
         }
     }
 }

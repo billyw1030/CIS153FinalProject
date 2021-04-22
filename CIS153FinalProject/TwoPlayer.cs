@@ -133,7 +133,186 @@ namespace CIS153FinalProject
             twoPlayerBoard.setGameBoardCell(FourtyOne);
             twoPlayerBoard.setGameBoardCell(FourtyTwo);
         }
-        
+
+        private Cell ChipFall(Cell cell)
+        {
+            //   1   2   3   4   5   6   7
+            //   8   9  10  11  12  13  14
+            //  15  16  17  18  19  20  21
+            //  22  23  24  25  26  27  28
+            //  29  30  31  32  33  34  35 
+            //  36  37  38  39  40  41  42
+
+            One.setCellBelow(Eight);
+            Two.setCellBelow(Nine);
+            Three.setCellBelow(Ten);
+            Four.setCellBelow(Eleven);
+            Five.setCellBelow(Twelve);
+            Six.setCellBelow(Thirteen);
+            Seven.setCellBelow(Fourteen);
+            Eight.setCellBelow(Fifteen);
+            Nine.setCellBelow(Sixteen);
+            Ten.setCellBelow(Seventeen);
+            Eleven.setCellBelow(Eighteen);
+            Twelve.setCellBelow(Nineteen);
+            Thirteen.setCellBelow(Twenty);
+            Fourteen.setCellBelow(TwentyOne);
+            Fifteen.setCellBelow(TwentyTwo);
+            Sixteen.setCellBelow(TwentyThree);
+            Seventeen.setCellBelow(TwentyFour);
+            Eighteen.setCellBelow(TwentyFive);
+            Nineteen.setCellBelow(TwentySix);
+            Twenty.setCellBelow(TwentySeven);
+            TwentyOne.setCellBelow(TwentyEight);
+            TwentyTwo.setCellBelow(TwentyNine);
+            TwentyThree.setCellBelow(Thirty);
+            TwentyFour.setCellBelow(ThirtyOne);
+            TwentyFive.setCellBelow(ThirtyTwo);
+            TwentySix.setCellBelow(ThirtyThree);
+            TwentySeven.setCellBelow(ThirtyFour);
+            TwentyEight.setCellBelow(ThirtyFive);
+            TwentyNine.setCellBelow(ThirtySix);
+            Thirty.setCellBelow(ThirtySeven);
+            ThirtyOne.setCellBelow(ThirtyEight);
+            ThirtyTwo.setCellBelow(ThirtyNine);
+            ThirtyThree.setCellBelow(Fourty);
+            ThirtyFour.setCellBelow(FourtyOne);
+            ThirtyFive.setCellBelow(FourtyTwo);
+
+
+
+            if (cell.getR() != 5)
+            {
+                while (cell.getCellBelow().getFill() == 0)
+                {
+                    cell = cell.getCellBelow();
+                }
+
+                return cell;
+            }
+
+            else
+            {
+                return cell;
+            }
+        }
+
+        private void DeclareButton(Cell cell, int playerTurn)
+        {
+            if (cell == One && playerTurn == 1)
+            {
+                Btn_c0r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == One && playerTurn == 2)
+            {
+                Btn_c0r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Two && playerTurn == 1)
+            {
+                Btn_c1r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Two && playerTurn == 2)
+            {
+                Btn_c1r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Three && playerTurn == 1)
+            {
+                Btn_c2r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Three && playerTurn == 2)
+            {
+                Btn_c2r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Four && playerTurn == 1)
+            {
+                Btn_c3r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Four && playerTurn == 2)
+            {
+                Btn_c3r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Five && playerTurn == 1)
+            {
+                Btn_c4r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Five && playerTurn == 2)
+            {
+                Btn_c4r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Six && playerTurn == 1)
+            {
+                Btn_c5r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Six && playerTurn == 2)
+            {
+                Btn_c5r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Seven && playerTurn == 1)
+            {
+                Btn_c6r0TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Seven && playerTurn == 2)
+            {
+                Btn_c6r0TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Eight && playerTurn == 1)
+            {
+                Btn_c0r1TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Eight && playerTurn == 2)
+            {
+                Btn_c0r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Nine && playerTurn == 1)
+            {
+                Btn_c1r1TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Nine && playerTurn == 2)
+            {
+                Btn_c1r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Ten && playerTurn == 1)
+            {
+                Btn_c2r1TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Ten && playerTurn == 2)
+            {
+                Btn_c2r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+            if (cell == Eleven && playerTurn == 1)
+            {
+                Btn_c3r1TwoP.ButtonColor = PlayerOneColor;
+            }
+
+            if (cell == Eleven && playerTurn == 2)
+            {
+                Btn_c3r1TwoP.ButtonColor = PlayerTwoColor;
+            }
+
+
+
+        }
+
         private void Btn_close2_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
@@ -143,6 +322,7 @@ namespace CIS153FinalProject
         {//Cell One
             if (One.getFill() == 0 && PlayerOneTurn)
             {
+                
                 Btn_c0r0TwoP.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
                 PlayerTwoTurn = true;
