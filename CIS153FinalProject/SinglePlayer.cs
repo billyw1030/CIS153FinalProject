@@ -24,7 +24,7 @@ namespace CIS153FinalProject
 
         //                  r  c  f
         Cell One = new Cell(0, 0, 0);        
-        //singlePlayerBoard.setGameBoardCell(Cell One);
+        //singlePlayerBoard.SetGameBoardCell(Cell One);
         Cell Two = new Cell(0, 1, 0);
         Cell Three = new Cell(0, 2, 0);
         Cell Four = new Cell(0, 3, 0);
@@ -73,7 +73,7 @@ namespace CIS153FinalProject
         {
             InitializeComponent();
             singlePlayerBoard = new Board();
-            singlePlayerBoard.setGameBoardCell(One);
+            singlePlayerBoard.SetGameBoardCell(One);
         }
 
         public SinglePlayer(WelcomeForm main)
@@ -110,7 +110,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r0_Click(object sender, EventArgs e)
         {//Cell One
-            if (One.getFill() == 0 && PlayerOneTurn)
+            if (One.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -119,7 +119,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (One.getFill() == 0 && PlayerTwoTurn)
+            else if (One.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -132,7 +132,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r0_Click(object sender, EventArgs e)
         {//Cell Two
-            if (Two.getFill() == 0 && PlayerOneTurn)
+            if (Two.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -141,7 +141,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Two.getFill() == 0 && PlayerTwoTurn)
+            else if (Two.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -153,7 +153,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r0_Click(object sender, EventArgs e)
         {//Cell Three
-            if (Three.getFill() == 0 && PlayerOneTurn)
+            if (Three.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -162,7 +162,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Three.getFill() == 0 && PlayerTwoTurn)
+            else if (Three.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -174,7 +174,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r0_Click(object sender, EventArgs e)
         {//Cell Four
-            if (Four.getFill() == 0 && PlayerOneTurn)
+            if (Four.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -183,7 +183,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Four.getFill() == 0 && PlayerTwoTurn)
+            else if (Four.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -195,7 +195,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r0_Click(object sender, EventArgs e)
         {//Cell Five
-            if (Five.getFill() == 0 && PlayerOneTurn)
+            if (Five.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -204,7 +204,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Five.getFill() == 0 && PlayerTwoTurn)
+            else if (Five.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -216,7 +216,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r0_Click(object sender, EventArgs e)
         {//Cell Six
-            if (Six.getFill() == 0 && PlayerOneTurn)
+            if (Six.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -225,7 +225,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Six.getFill() == 0 && PlayerTwoTurn)
+            else if (Six.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -237,7 +237,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r0_Click(object sender, EventArgs e)
         {//Cell Seven
-            if (Seven.getFill() == 0 && PlayerOneTurn)
+            if (Seven.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r0.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -246,7 +246,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Seven.getFill() == 0 && PlayerTwoTurn)
+            else if (Seven.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r0.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -258,7 +258,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r1_Click(object sender, EventArgs e)
         {//Cell Eight
-            if (Eight.getFill() == 0 && PlayerOneTurn)
+            if (Eight.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -267,7 +267,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Eight.getFill() == 0 && PlayerTwoTurn)
+            else if (Eight.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -279,7 +279,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r1_Click(object sender, EventArgs e)
         {//Cell Nine
-            if (Nine.getFill() == 0 && PlayerOneTurn)
+            if (Nine.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -288,7 +288,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Nine.getFill() == 0 && PlayerTwoTurn)
+            else if (Nine.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -300,7 +300,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r1_Click(object sender, EventArgs e)
         {//Cell Ten
-            if (Ten.getFill() == 0 && PlayerOneTurn)
+            if (Ten.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -309,7 +309,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Ten.getFill() == 0 && PlayerTwoTurn)
+            else if (Ten.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -321,7 +321,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r1_Click(object sender, EventArgs e)
         {//Cell Eleven
-            if (Eleven.getFill() == 0 && PlayerOneTurn)
+            if (Eleven.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -330,7 +330,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Eleven.getFill() == 0 && PlayerTwoTurn)
+            else if (Eleven.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -342,7 +342,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r1_Click(object sender, EventArgs e)
         {//Cell Twelve
-            if (Twelve.getFill() == 0 && PlayerOneTurn)
+            if (Twelve.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -351,7 +351,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Twelve.getFill() == 0 && PlayerTwoTurn)
+            else if (Twelve.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -363,7 +363,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r1_Click(object sender, EventArgs e)
         {//Cell Thirteen
-            if (Thirteen.getFill() == 0 && PlayerOneTurn)
+            if (Thirteen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -372,7 +372,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Thirteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Thirteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -384,7 +384,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r1_Click(object sender, EventArgs e)
         {//Cell Fourteen
-            if (Fourteen.getFill() == 0 && PlayerOneTurn)
+            if (Fourteen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r1.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -393,7 +393,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Fourteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Fourteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r1.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -405,7 +405,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r2_Click(object sender, EventArgs e)
         {//Cell Fifteen
-            if (Fifteen.getFill() == 0 && PlayerOneTurn)
+            if (Fifteen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -414,7 +414,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Fifteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Fifteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -426,7 +426,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r2_Click(object sender, EventArgs e)
         {//Cell Sixteen
-            if (Sixteen.getFill() == 0 && PlayerOneTurn)
+            if (Sixteen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -435,7 +435,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Sixteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Sixteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -447,7 +447,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r2_Click(object sender, EventArgs e)
         {//Cell Seventeen
-            if (Seventeen.getFill() == 0 && PlayerOneTurn)
+            if (Seventeen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -456,7 +456,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Seventeen.getFill() == 0 && PlayerTwoTurn)
+            else if (Seventeen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -468,7 +468,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r2_Click(object sender, EventArgs e)
         {//Cell Eighteen
-            if (Eighteen.getFill() == 0 && PlayerOneTurn)
+            if (Eighteen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -477,7 +477,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Eighteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Eighteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -489,7 +489,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r2_Click(object sender, EventArgs e)
         {//Cell Nineteen
-            if (Nineteen.getFill() == 0 && PlayerOneTurn)
+            if (Nineteen.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -498,7 +498,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Nineteen.getFill() == 0 && PlayerTwoTurn)
+            else if (Nineteen.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -510,7 +510,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r2_Click(object sender, EventArgs e)
         {//Cell Twenty
-            if (Twenty.getFill() == 0 && PlayerOneTurn)
+            if (Twenty.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -519,7 +519,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Twenty.getFill() == 0 && PlayerTwoTurn)
+            else if (Twenty.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -531,7 +531,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r2_Click(object sender, EventArgs e)
         {//Cell TwentyOne
-            if (TwentyOne.getFill() == 0 && PlayerOneTurn)
+            if (TwentyOne.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r2.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -540,7 +540,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyOne.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyOne.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r2.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -552,7 +552,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r3_Click(object sender, EventArgs e)
         {//Cell TwentyTwo
-            if (TwentyTwo.getFill() == 0 && PlayerOneTurn)
+            if (TwentyTwo.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -561,7 +561,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyTwo.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyTwo.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -573,7 +573,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r3_Click(object sender, EventArgs e)
         {//Cell TwentyThree
-            if (TwentyThree.getFill() == 0 && PlayerOneTurn)
+            if (TwentyThree.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -582,7 +582,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyThree.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyThree.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -594,7 +594,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r3_Click(object sender, EventArgs e)
         {//Cell TwentyFour
-            if (TwentyFour.getFill() == 0 && PlayerOneTurn)
+            if (TwentyFour.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -603,7 +603,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyFour.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyFour.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -615,7 +615,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r3_Click(object sender, EventArgs e)
         {//Cell TwentyFive
-            if (TwentyFive.getFill() == 0 && PlayerOneTurn)
+            if (TwentyFive.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -624,7 +624,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyFive.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyFive.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -636,7 +636,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r3_Click(object sender, EventArgs e)
         {//Cell Twenty Six
-            if (TwentySix.getFill() == 0 && PlayerOneTurn)
+            if (TwentySix.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -645,7 +645,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentySix.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentySix.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -657,7 +657,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r3_Click(object sender, EventArgs e)
         {//Cell TwentySeven
-            if (TwentySeven.getFill() == 0 && PlayerOneTurn)
+            if (TwentySeven.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -666,7 +666,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentySeven.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentySeven.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -678,7 +678,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r3_Click(object sender, EventArgs e)
         {//Cell TwentyEight
-            if (TwentyEight.getFill() == 0 && PlayerOneTurn)
+            if (TwentyEight.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r3.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -687,7 +687,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyEight.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyEight.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r3.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -699,7 +699,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r4_Click(object sender, EventArgs e)
         {//Cell TwentyNine
-            if (TwentyNine.getFill() == 0 && PlayerOneTurn)
+            if (TwentyNine.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -708,7 +708,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (TwentyNine.getFill() == 0 && PlayerTwoTurn)
+            else if (TwentyNine.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -720,7 +720,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r4_Click(object sender, EventArgs e)
         {//Cell Thirty
-            if (Thirty.getFill() == 0 && PlayerOneTurn)
+            if (Thirty.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -729,7 +729,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Thirty.getFill() == 0 && PlayerTwoTurn)
+            else if (Thirty.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -741,7 +741,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r4_Click(object sender, EventArgs e)
         {//Cell ThirtyOne
-            if (ThirtyOne.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyOne.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -750,7 +750,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyOne.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyOne.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -762,7 +762,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r4_Click(object sender, EventArgs e)
         {//Cell ThirtyTwo
-            if (ThirtyTwo.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyTwo.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -771,7 +771,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyTwo.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyTwo.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -783,7 +783,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r4_Click(object sender, EventArgs e)
         {//Cell ThirtyThree
-            if (ThirtyThree.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyThree.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -792,7 +792,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyThree.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyThree.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -804,7 +804,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r4_Click(object sender, EventArgs e)
         {//Cell ThirtyFour
-            if (ThirtyFour.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyFour.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -813,7 +813,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyFour.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyFour.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -825,7 +825,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r4_Click(object sender, EventArgs e)
         {//Cell ThirtyFive
-            if (ThirtyFive.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyFive.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r4.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -834,7 +834,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyFive.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyFive.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r4.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -846,7 +846,7 @@ namespace CIS153FinalProject
 
         private void Btn_c0r5_Click(object sender, EventArgs e)
         {//Cell ThirtySix
-            if (ThirtySix.getFill() == 0 && PlayerOneTurn)
+            if (ThirtySix.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c0r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -855,7 +855,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtySix.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtySix.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c0r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -867,7 +867,7 @@ namespace CIS153FinalProject
 
         private void Btn_c1r5_Click(object sender, EventArgs e)
         {//Cell ThirtySeven
-            if (ThirtySeven.getFill() == 0 && PlayerOneTurn)
+            if (ThirtySeven.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c1r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -876,7 +876,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtySeven.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtySeven.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c1r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -888,7 +888,7 @@ namespace CIS153FinalProject
 
         private void Btn_c2r5_Click(object sender, EventArgs e)
         {//Cell ThirtyEight
-            if (ThirtyEight.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyEight.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c2r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -897,7 +897,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyEight.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyEight.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c2r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -909,7 +909,7 @@ namespace CIS153FinalProject
 
         private void Btn_c3r5_Click(object sender, EventArgs e)
         {//Cell ThirtyNine
-            if (ThirtyNine.getFill() == 0 && PlayerOneTurn)
+            if (ThirtyNine.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c3r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -918,7 +918,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (ThirtyNine.getFill() == 0 && PlayerTwoTurn)
+            else if (ThirtyNine.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c3r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -930,7 +930,7 @@ namespace CIS153FinalProject
 
         private void Btn_c4r5_Click(object sender, EventArgs e)
         {//Cell Fourty
-            if (Fourty.getFill() == 0 && PlayerOneTurn)
+            if (Fourty.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c4r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -939,7 +939,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (Fourty.getFill() == 0 && PlayerTwoTurn)
+            else if (Fourty.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c4r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -951,7 +951,7 @@ namespace CIS153FinalProject
 
         private void Btn_c5r5_Click(object sender, EventArgs e)
         {//Cell FourtyOne
-            if (FourtyOne.getFill() == 0 && PlayerOneTurn)
+            if (FourtyOne.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c5r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -960,7 +960,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (FourtyOne.getFill() == 0 && PlayerTwoTurn)
+            else if (FourtyOne.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c5r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
@@ -972,7 +972,7 @@ namespace CIS153FinalProject
 
         private void Btn_c6r5_Click(object sender, EventArgs e)
         {//Cell FourtyTwo
-            if (FourtyTwo.getFill() == 0 && PlayerOneTurn)
+            if (FourtyTwo.GetFill() == 0 && PlayerOneTurn)
             {
                 Btn_c6r5.ButtonColor = PlayerOneColor;
                 PlayerOneTurn = false;
@@ -981,7 +981,7 @@ namespace CIS153FinalProject
                 Lbl_PlayerTurn.Visible = false;
             }
 
-            else if (FourtyTwo.getFill() == 0 && PlayerTwoTurn)
+            else if (FourtyTwo.GetFill() == 0 && PlayerTwoTurn)
             {
                 Btn_c6r5.ButtonColor = PlayerTwoColor;
                 PlayerTwoTurn = false;
