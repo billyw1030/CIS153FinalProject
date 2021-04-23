@@ -135,6 +135,10 @@ namespace CIS153FinalProject
 
 
             One.SetCellBelow(Eight);
+            //Console.WriteLine(One.GetCellBelow().GetC());
+            //Console.WriteLine(One.GetCellBelow().GetR());
+            //Console.WriteLine(One.GetCellBelow().GetFill());
+
             Two.SetCellBelow(Nine);
             Three.SetCellBelow(Ten);
             Four.SetCellBelow(Eleven);
@@ -173,6 +177,9 @@ namespace CIS153FinalProject
 
         private Cell ChipFall(Cell cell)
         {
+            Console.WriteLine(cell.GetCellBelow().GetC());
+            Console.WriteLine(cell.GetCellBelow().GetR());
+            Console.WriteLine(cell.GetCellBelow().GetFill());
 
             if (cell.GetR() != 5)
             {
