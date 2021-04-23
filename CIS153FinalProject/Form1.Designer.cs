@@ -93,6 +93,7 @@ namespace CIS153FinalProject
             this.lbl_ConnectFour.Size = new System.Drawing.Size(274, 46);
             this.lbl_ConnectFour.TabIndex = 4;
             this.lbl_ConnectFour.Text = "Connect Four!";
+            this.lbl_ConnectFour.Click += new System.EventHandler(this.lbl_ConnectFour_Click);
             // 
             // WelcomeForm
             // 

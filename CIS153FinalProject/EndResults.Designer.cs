@@ -29,7 +29,16 @@ namespace CIS153FinalProject
         /// </summary>
         private void InitializeComponent()
         {
+            this.Lbl_Results = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // Lbl_Results
+            // 
+            this.Lbl_Results.AutoSize = true;
+            this.Lbl_Results.Location = new System.Drawing.Point(336, 40);
+            this.Lbl_Results.Name = "Lbl_Results";
+            this.Lbl_Results.Size = new System.Drawing.Size(0, 13);
+            this.Lbl_Results.TabIndex = 0;
             // 
             // EndResults
             // 
@@ -38,13 +47,18 @@ namespace CIS153FinalProject
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(786, 462);
             this.ControlBox = false;
+            this.Controls.Add(this.Lbl_Results);
             this.Name = "EndResults";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EndResults";
+            this.Load += new System.EventHandler(this.EndResults_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label Lbl_Results;
     }
 }

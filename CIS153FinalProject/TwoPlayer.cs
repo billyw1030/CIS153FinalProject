@@ -173,15 +173,55 @@ namespace CIS153FinalProject
             ThirtyFive.SetCellBelow(FourtyTwo);
         }
 
+        public void GameIsOver()
+        {
+            Btn_c0r0TwoP.Enabled = false;
+            Btn_c1r0TwoP.Enabled = false;
+            Btn_c2r0TwoP.Enabled = false;
+            Btn_c3r0TwoP.Enabled = false;
+            Btn_c4r0TwoP.Enabled = false;
+            Btn_c5r0TwoP.Enabled = false;
+            Btn_c6r0TwoP.Enabled = false;
+            Btn_c0r1TwoP.Enabled = false;
+            Btn_c1r1TwoP.Enabled = false;
+            Btn_c2r1TwoP.Enabled = false;
+            Btn_c3r1TwoP.Enabled = false;
+            Btn_c4r1TwoP.Enabled = false;
+            Btn_c5r1TwoP.Enabled = false;
+            Btn_c6r1TwoP.Enabled = false;
+            Btn_c0r2TwoP.Enabled = false;
+            Btn_c1r2TwoP.Enabled = false;
+            Btn_c2r2TwoP.Enabled = false;
+            Btn_c3r2TwoP.Enabled = false;
+            Btn_c4r2TwoP.Enabled = false;
+            Btn_c5r2TwoP.Enabled = false;
+            Btn_c6r2TwoP.Enabled = false;
+            Btn_c0r3TwoP.Enabled = false;
+            Btn_c1r3TwoP.Enabled = false;
+            Btn_c2r3TwoP.Enabled = false;
+            Btn_c3r3TwoP.Enabled = false;
+            Btn_c4r3TwoP.Enabled = false;
+            Btn_c5r3TwoP.Enabled = false;
+            Btn_c6r3TwoP.Enabled = false;
+            Btn_c0r4TwoP.Enabled = false;
+            Btn_c1r4TwoP.Enabled = false;
+            Btn_c2r4TwoP.Enabled = false;
+            Btn_c3r4TwoP.Enabled = false;
+            Btn_c4r4TwoP.Enabled = false;
+            Btn_c5r4TwoP.Enabled = false;
+            Btn_c6r4TwoP.Enabled = false;
+            Btn_c0r5TwoP.Enabled = false;
+            Btn_c1r5TwoP.Enabled = false;
+            Btn_c2r5TwoP.Enabled = false;
+            Btn_c3r5TwoP.Enabled = false;
+            Btn_c4r5TwoP.Enabled = false;
+            Btn_c5r5TwoP.Enabled = false;
+            Btn_c6r5TwoP.Enabled = false;
+        }
+
         private void EndGame()
         {
-            //   1   2   3   4   5   6   7
-            //   8   9  10  11  12  13  14
-            //  15  16  17  18  19  20  21
-            //  22  23  24  25  26  27  28
-            //  29  30  31  32  33  34  35 
-            //  36  37  38  39  40  41  42
-
+        
             //Horizontal Posibilities for Player One
 
             if(One.GetFill() == 1 && Two.GetFill() == 1 && Three.GetFill() == 1 && Four.GetFill() == 1)
@@ -886,6 +926,36 @@ namespace CIS153FinalProject
                 PlayerTwoWins = true;
             }
 
+            //If there is a winner or draw
+
+            if (PlayerOneWins)
+            {
+                EndResults form = new EndResults("Player 1 Wins!");
+                form.Show();
+                GameIsOver();
+            }
+
+            if (PlayerTwoWins)
+            {
+                EndResults form = new EndResults("Player 2 Wins!");
+                form.Show();
+                GameIsOver();
+            }
+
+            if (One.GetFill() != 0 && Two.GetFill() != 0 && Three.GetFill() != 0 && Four.GetFill() != 0 && Five.GetFill() != 0 && Six.GetFill() != 0
+                 && Seven.GetFill() != 0 && Eight.GetFill() != 0 && Nine.GetFill() != 0 && Ten.GetFill() != 0 && Eleven.GetFill() != 0 && Twelve.GetFill() != 0
+                 && Thirteen.GetFill() != 0 && Fourteen.GetFill() != 0 && Fifteen.GetFill() != 0 && Sixteen.GetFill() != 0 && Seventeen.GetFill() != 0
+                 && Eighteen.GetFill() != 0 && Nineteen.GetFill() != 0 && Twenty.GetFill() != 0 && TwentyOne.GetFill() != 0 && TwentyTwo.GetFill() != 0
+                 && TwentyThree.GetFill() != 0 && TwentyFour.GetFill() != 0 && TwentyFive.GetFill() != 0 && TwentySix.GetFill() != 0 && TwentySeven.GetFill() != 0
+                 && TwentyEight.GetFill() != 0 && TwentyNine.GetFill() != 0 && Thirty.GetFill() != 0 && ThirtyOne.GetFill() != 0 && ThirtyTwo.GetFill() != 0
+                 && ThirtyThree.GetFill() != 0 && ThirtyFour.GetFill() != 0 && ThirtyFive.GetFill() != 0 && ThirtySix.GetFill() != 0 && ThirtySeven.GetFill() != 0
+                 && ThirtyEight.GetFill() != 0 && ThirtyNine.GetFill() != 0 && Fourty.GetFill() != 0 && FourtyOne.GetFill() != 0 && FourtyTwo.GetFill() != 0)
+            {
+                EndResults form = new EndResults("Draw!");
+                form.Show();
+                GameIsOver();
+            }
+
         }
 
         private Cell ChipFall(Cell cell)
@@ -1332,6 +1402,7 @@ namespace CIS153FinalProject
 
         }
 
+
         private void Btn_close2_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
@@ -1348,6 +1419,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (One.GetFill() == 0 && PlayerTwoTurn)
@@ -1359,6 +1431,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1373,6 +1446,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Two.GetFill() == 0 && PlayerTwoTurn)
@@ -1384,6 +1458,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1398,6 +1473,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Three.GetFill() == 0 && PlayerTwoTurn)
@@ -1409,6 +1485,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1423,6 +1500,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Four.GetFill() == 0 && PlayerTwoTurn)
@@ -1434,6 +1512,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1448,6 +1527,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Five.GetFill() == 0 && PlayerTwoTurn)
@@ -1459,6 +1539,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1473,6 +1554,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Six.GetFill() == 0 && PlayerTwoTurn)
@@ -1484,6 +1566,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1498,6 +1581,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Seven.GetFill() == 0 && PlayerTwoTurn)
@@ -1509,6 +1593,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1523,6 +1608,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Eight.GetFill() == 0 && PlayerTwoTurn)
@@ -1534,6 +1620,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1548,6 +1635,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Nine.GetFill() == 0 && PlayerTwoTurn)
@@ -1559,6 +1647,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1573,6 +1662,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Ten.GetFill() == 0 && PlayerTwoTurn)
@@ -1584,6 +1674,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1598,6 +1689,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Eleven.GetFill() == 0 && PlayerTwoTurn)
@@ -1609,6 +1701,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1623,6 +1716,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Twelve.GetFill() == 0 && PlayerTwoTurn)
@@ -1634,6 +1728,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1648,6 +1743,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Thirteen.GetFill() == 0 && PlayerTwoTurn)
@@ -1659,6 +1755,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1673,6 +1770,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Fourteen.GetFill() == 0 && PlayerTwoTurn)
@@ -1684,6 +1782,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1698,6 +1797,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Fifteen.GetFill() == 0 && PlayerTwoTurn)
@@ -1709,6 +1809,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1723,6 +1824,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Sixteen.GetFill() == 0 && PlayerTwoTurn)
@@ -1734,6 +1836,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1748,6 +1851,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Seventeen.GetFill() == 0 && PlayerTwoTurn)
@@ -1759,6 +1863,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1773,6 +1878,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Eighteen.GetFill() == 0 && PlayerTwoTurn)
@@ -1784,6 +1890,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1798,6 +1905,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Nineteen.GetFill() == 0 && PlayerTwoTurn)
@@ -1809,6 +1917,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1823,6 +1932,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Twenty.GetFill() == 0 && PlayerTwoTurn)
@@ -1834,6 +1944,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1848,6 +1959,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyOne.GetFill() == 0 && PlayerTwoTurn)
@@ -1859,6 +1971,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1873,6 +1986,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyTwo.GetFill() == 0 && PlayerTwoTurn)
@@ -1884,6 +1998,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1898,6 +2013,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyThree.GetFill() == 0 && PlayerTwoTurn)
@@ -1909,6 +2025,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1923,6 +2040,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyFour.GetFill() == 0 && PlayerTwoTurn)
@@ -1934,6 +2052,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1948,6 +2067,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyFive.GetFill() == 0 && PlayerTwoTurn)
@@ -1959,6 +2079,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1973,6 +2094,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentySix.GetFill() == 0 && PlayerTwoTurn)
@@ -1984,6 +2106,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -1998,6 +2121,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentySeven.GetFill() == 0 && PlayerTwoTurn)
@@ -2009,6 +2133,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2023,6 +2148,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyEight.GetFill() == 0 && PlayerTwoTurn)
@@ -2034,6 +2160,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2048,6 +2175,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (TwentyNine.GetFill() == 0 && PlayerTwoTurn)
@@ -2059,6 +2187,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2073,6 +2202,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Thirty.GetFill() == 0 && PlayerTwoTurn)
@@ -2084,6 +2214,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2098,6 +2229,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyOne.GetFill() == 0 && PlayerTwoTurn)
@@ -2109,6 +2241,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2123,6 +2256,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyTwo.GetFill() == 0 && PlayerTwoTurn)
@@ -2134,6 +2268,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2148,6 +2283,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyThree.GetFill() == 0 && PlayerTwoTurn)
@@ -2159,6 +2295,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2173,6 +2310,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyFour.GetFill() == 0 && PlayerTwoTurn)
@@ -2184,6 +2322,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2198,6 +2337,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyFive.GetFill() == 0 && PlayerTwoTurn)
@@ -2209,6 +2349,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2223,6 +2364,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtySix.GetFill() == 0 && PlayerTwoTurn)
@@ -2234,6 +2376,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2248,6 +2391,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtySeven.GetFill() == 0 && PlayerTwoTurn)
@@ -2259,6 +2403,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2273,6 +2418,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyEight.GetFill() == 0 && PlayerTwoTurn)
@@ -2284,6 +2430,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2298,6 +2445,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (ThirtyNine.GetFill() == 0 && PlayerTwoTurn)
@@ -2309,6 +2457,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2323,6 +2472,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (Fourty.GetFill() == 0 && PlayerTwoTurn)
@@ -2334,6 +2484,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2348,6 +2499,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (FourtyOne.GetFill() == 0 && PlayerTwoTurn)
@@ -2359,6 +2511,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
 
@@ -2373,6 +2526,7 @@ namespace CIS153FinalProject
                 PlayerTwoTurn = true;
                 lbl_playerTurnTwo.Visible = true;
                 lbl_playerTurnOne.Visible = false;
+                EndGame();
             }
 
             else if (FourtyTwo.GetFill() == 0 && PlayerTwoTurn)
@@ -2384,6 +2538,7 @@ namespace CIS153FinalProject
                 PlayerOneTurn = true;
                 lbl_playerTurnOne.Visible = true;
                 lbl_playerTurnTwo.Visible = false;
+                EndGame();
             }
         }
         

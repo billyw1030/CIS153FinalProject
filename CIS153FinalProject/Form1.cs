@@ -71,6 +71,9 @@ namespace CIS153FinalProject
 
         }
 
-        
+        private void lbl_ConnectFour_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
