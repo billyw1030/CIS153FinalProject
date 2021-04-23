@@ -49,6 +49,7 @@ namespace CIS153FinalProject
 
         public void SetCellBelow(Cell c)
         {
+            //Console.WriteLine("Cell set");
             cellBelow = c;
         }
 
