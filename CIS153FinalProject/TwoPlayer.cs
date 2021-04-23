@@ -177,13 +177,16 @@ namespace CIS153FinalProject
 
         private Cell ChipFall(Cell cell)
         {
-            Console.WriteLine(cell.GetCellBelow().GetC());
-            Console.WriteLine(cell.GetCellBelow().GetR());
-            Console.WriteLine(cell.GetCellBelow().GetFill());
+            //Console.WriteLine(cell.GetCellBelow().GetC());
+            //Console.WriteLine(cell.GetCellBelow().GetR());
+            //Console.WriteLine(cell.GetCellBelow().GetFill());
 
             if (cell.GetR() != 5)
             {
-                while (cell.GetCellBelow().GetFill() == 0)
+                //Console.WriteLine(cell.GetCellBelow().GetC());
+                //Console.WriteLine(cell.GetCellBelow().GetR());
+                //Console.WriteLine(cell.GetCellBelow().GetFill());
+                while (cell.GetR() != 5 && cell.GetCellBelow().GetFill() == 0)
                 {
                     cell = cell.GetCellBelow();
                 }
