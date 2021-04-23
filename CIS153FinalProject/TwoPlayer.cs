@@ -17,6 +17,8 @@ namespace CIS153FinalProject
 
         private bool PlayerOneTurn = true;
         private bool PlayerTwoTurn = false;
+        private bool PlayerOneWins = false;
+        private bool PlayerTwoWins = false;
         private static Color PlayerOneColor = Color.FromArgb(0, 0, 50);
         private static Color PlayerTwoColor = Color.FromArgb(100, 0, 0);
         private Cell dropCell = new Cell();
@@ -135,10 +137,6 @@ namespace CIS153FinalProject
 
 
             One.SetCellBelow(Eight);
-            //Console.WriteLine(One.GetCellBelow().GetC());
-            //Console.WriteLine(One.GetCellBelow().GetR());
-            //Console.WriteLine(One.GetCellBelow().GetFill());
-
             Two.SetCellBelow(Nine);
             Three.SetCellBelow(Ten);
             Four.SetCellBelow(Eleven);
@@ -175,17 +173,727 @@ namespace CIS153FinalProject
             ThirtyFive.SetCellBelow(FourtyTwo);
         }
 
+        private void EndGame()
+        {
+            //   1   2   3   4   5   6   7
+            //   8   9  10  11  12  13  14
+            //  15  16  17  18  19  20  21
+            //  22  23  24  25  26  27  28
+            //  29  30  31  32  33  34  35 
+            //  36  37  38  39  40  41  42
+
+            //Horizontal Posibilities for Player One
+
+            if(One.GetFill() == 1 && Two.GetFill() == 1 && Three.GetFill() == 1 && Four.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Two.GetFill() == 1 && Three.GetFill() == 1 && Four.GetFill() == 1 && Five.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Three.GetFill() == 1 && Four.GetFill() == 1 && Five.GetFill() == 1 && Six.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Four.GetFill() == 1 && Five.GetFill() == 1 && Six.GetFill() == 1 && Seven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eight.GetFill() == 1 && Nine.GetFill() == 1 && Ten.GetFill() == 1 && Eleven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Nine.GetFill() == 1 && Ten.GetFill() == 1 && Eleven.GetFill() == 1 && Twelve.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Ten.GetFill() == 1 && Eleven.GetFill() == 1 && Twelve.GetFill() == 1 && Thirteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eleven.GetFill() == 1 && Twelve.GetFill() == 1 && Thirteen.GetFill() == 1 && Fourteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Fifteen.GetFill() == 1 && Sixteen.GetFill() == 1 && Seventeen.GetFill() == 1 && Eighteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Sixteen.GetFill() == 1 && Seventeen.GetFill() == 1 && Eighteen.GetFill() == 1 && Nineteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Seventeen.GetFill() == 1 && Eighteen.GetFill() == 1 && Nineteen.GetFill() == 1 && Twenty.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eighteen.GetFill() == 1 && Nineteen.GetFill() == 1 && Twenty.GetFill() == 1 && TwentyOne.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyTwo.GetFill() == 1 && TwentyThree.GetFill() == 1 && TwentyFour.GetFill() == 1 && TwentyFive.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyThree.GetFill() == 1 && TwentyFour.GetFill() == 1 && TwentyFive.GetFill() == 1 && TwentySix.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyFour.GetFill() == 1 && TwentyFive.GetFill() == 1 && TwentySix.GetFill() == 1 && TwentySeven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyFive.GetFill() == 1 && TwentySix.GetFill() == 1 && TwentySeven.GetFill() == 1 && TwentyEight.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyNine.GetFill() == 1 && Thirty.GetFill() == 1 && ThirtyOne.GetFill() == 1 && ThirtyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Thirty.GetFill() == 1 && ThirtyOne.GetFill() == 1 && ThirtyTwo.GetFill() == 1 && ThirtyThree.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyOne.GetFill() == 1 && ThirtyTwo.GetFill() == 1 && ThirtyThree.GetFill() == 1 && ThirtyFour.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyTwo.GetFill() == 1 && ThirtyThree.GetFill() == 1 && ThirtyFour.GetFill() == 1 && ThirtyFive.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtySix.GetFill() == 1 && ThirtySeven.GetFill() == 1 && ThirtyEight.GetFill() == 1 && ThirtyNine.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtySeven.GetFill() == 1 && ThirtyEight.GetFill() == 1 && ThirtyNine.GetFill() == 1 && Fourty.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyEight.GetFill() == 1 && ThirtyNine.GetFill() == 1 && Fourty.GetFill() == 1 && FourtyOne.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyNine.GetFill() == 1 && Fourty.GetFill() == 1 && FourtyOne.GetFill() == 1 && FourtyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            //Vertical Posibilities for Player One
+
+            if (One.GetFill() == 1 && Eight.GetFill() == 1 && Fifteen.GetFill() == 1 && TwentyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eight.GetFill() == 1 && Fifteen.GetFill() == 1 && TwentyTwo.GetFill() == 1 && TwentyNine.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Fifteen.GetFill() == 1 && TwentyTwo.GetFill() == 1 && TwentyNine.GetFill() == 1 && ThirtySix.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Two.GetFill() == 1 && Nine.GetFill() == 1 && Sixteen.GetFill() == 1 && TwentyThree.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Nine.GetFill() == 1 && Sixteen.GetFill() == 1 && TwentyThree.GetFill() == 1 && Thirty.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Sixteen.GetFill() == 1 && TwentyThree.GetFill() == 1 && Thirty.GetFill() == 1 && ThirtySeven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Three.GetFill() == 1 && Ten.GetFill() == 1 && Seventeen.GetFill() == 1 && TwentyFour.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Ten.GetFill() == 1 && Seventeen.GetFill() == 1 && TwentyFour.GetFill() == 1 && ThirtyOne.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Seventeen.GetFill() == 1 && TwentyFour.GetFill() == 1 && ThirtyOne.GetFill() == 1 && ThirtyEight.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Four.GetFill() == 1 && Eleven.GetFill() == 1 && Eighteen.GetFill() == 1 && TwentyFive.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eleven.GetFill() == 1 && Eighteen.GetFill() == 1 && TwentyFive.GetFill() == 1 && ThirtyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eighteen.GetFill() == 1 && TwentyFive.GetFill() == 1 && ThirtyTwo.GetFill() == 1 && ThirtyNine.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Five.GetFill() == 1 && Twelve.GetFill() == 1 && Nineteen.GetFill() == 1 && TwentySix.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Twelve.GetFill() == 1 && Nineteen.GetFill() == 1 && TwentySix.GetFill() == 1 && ThirtyThree.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Nineteen.GetFill() == 1 && TwentySix.GetFill() == 1 && ThirtyThree.GetFill() == 1 && Fourty.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Six.GetFill() == 1 && Thirteen.GetFill() == 1 && Twenty.GetFill() == 1 && TwentySeven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Thirteen.GetFill() == 1 && Twenty.GetFill() == 1 && TwentySeven.GetFill() == 1 && ThirtyFour.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Twenty.GetFill() == 1 && TwentySeven.GetFill() == 1 && ThirtyFour.GetFill() == 1 && FourtyOne.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Seven.GetFill() == 1 && Fourteen.GetFill() == 1 && TwentyOne.GetFill() == 1 && TwentyEight.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Fourteen.GetFill() == 1 && TwentyOne.GetFill() == 1 && TwentyEight.GetFill() == 1 && ThirtyFive.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyOne.GetFill() == 1 && TwentyEight.GetFill() == 1 && ThirtyFive.GetFill() == 1 && FourtyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            //Diagonal Posibilities for Player One
+
+            //Diagonal TopLeft to Bottom Right
+            if (One.GetFill() == 1 && Nine.GetFill() == 1 && Seventeen.GetFill() == 1 && TwentyFive.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eight.GetFill() == 1 && Sixteen.GetFill() == 1 && TwentyFour.GetFill() == 1 && ThirtyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Fifteen.GetFill() == 1 && TwentyThree.GetFill() == 1 && ThirtyOne.GetFill() == 1 && ThirtyNine.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Two.GetFill() == 1 && Ten.GetFill() == 1 && Eighteen.GetFill() == 1 && TwentySix.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Nine.GetFill() == 1 && Seventeen.GetFill() == 1 && TwentyFive.GetFill() == 1 && ThirtyThree.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Sixteen.GetFill() == 1 && TwentyFour.GetFill() == 1 && ThirtyTwo.GetFill() == 1 && Fourty.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Three.GetFill() == 1 && Eleven.GetFill() == 1 && Nineteen.GetFill() == 1 && TwentySeven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Ten.GetFill() == 1 && Eighteen.GetFill() == 1 && TwentySix.GetFill() == 1 && ThirtyFour.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Seventeen.GetFill() == 1 && TwentyFive.GetFill() == 1 && ThirtyThree.GetFill() == 1 && FourtyOne.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Four.GetFill() == 1 && Twelve.GetFill() == 1 && Twenty.GetFill() == 1 && TwentyEight.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eleven.GetFill() == 1 && Nineteen.GetFill() == 1 && TwentySeven.GetFill() == 1 && ThirtyFive.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Eighteen.GetFill() == 1 && TwentySix.GetFill() == 1 && ThirtyFour.GetFill() == 1 && FourtyTwo.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+            //Diagonal BottomLeft to TopRight
+            if (TwentyTwo.GetFill() == 1 && Sixteen.GetFill() == 1 && Ten.GetFill() == 1 && Four.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyNine.GetFill() == 1 && TwentyThree.GetFill() == 1 && Seventeen.GetFill() == 1 && Eleven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtySix.GetFill() == 1 && Thirty.GetFill() == 1 && TwentyFour.GetFill() == 1 && Eighteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyThree.GetFill() == 1 && Seventeen.GetFill() == 1 && Eleven.GetFill() == 1 && Five.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (Thirty.GetFill() == 1 && TwentyFour.GetFill() == 1 && Eighteen.GetFill() == 1 && Twelve.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtySeven.GetFill() == 1 && ThirtyOne.GetFill() == 1 && TwentyFive.GetFill() == 1 && Nineteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyFour.GetFill() == 1 && Eighteen.GetFill() == 1 && Twelve.GetFill() == 1 && Six.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyOne.GetFill() == 1 && TwentyFive.GetFill() == 1 && Nineteen.GetFill() == 1 && Thirteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyEight.GetFill() == 1 && ThirtyTwo.GetFill() == 1 && TwentySix.GetFill() == 1 && Twenty.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (TwentyFive.GetFill() == 1 && Nineteen.GetFill() == 1 && Thirteen.GetFill() == 1 && Seven.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyTwo.GetFill() == 1 && TwentySix.GetFill() == 1 && Twenty.GetFill() == 1 && Fourteen.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            if (ThirtyNine.GetFill() == 1 && ThirtyThree.GetFill() == 1 && TwentySeven.GetFill() == 1 && TwentyOne.GetFill() == 1)
+            {
+                PlayerOneWins = true;
+            }
+
+            //Horizontal Posibilities for Player Two
+
+            if (One.GetFill() == 2 && Two.GetFill() == 2 && Three.GetFill() == 2 && Four.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Two.GetFill() == 2 && Three.GetFill() == 2 && Four.GetFill() == 2 && Five.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Three.GetFill() == 2 && Four.GetFill() == 2 && Five.GetFill() == 2 && Six.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Four.GetFill() == 2 && Five.GetFill() == 2 && Six.GetFill() == 2 && Seven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eight.GetFill() == 2 && Nine.GetFill() == 2 && Ten.GetFill() == 2 && Eleven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Nine.GetFill() == 2 && Ten.GetFill() == 2 && Eleven.GetFill() == 2 && Twelve.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Ten.GetFill() == 2 && Eleven.GetFill() == 2 && Twelve.GetFill() == 2 && Thirteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eleven.GetFill() == 2 && Twelve.GetFill() == 2 && Thirteen.GetFill() == 2 && Fourteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Fifteen.GetFill() == 2 && Sixteen.GetFill() == 2 && Seventeen.GetFill() == 2 && Eighteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Sixteen.GetFill() == 2 && Seventeen.GetFill() == 2 && Eighteen.GetFill() == 2 && Nineteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Seventeen.GetFill() == 2 && Eighteen.GetFill() == 2 && Nineteen.GetFill() == 2 && Twenty.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eighteen.GetFill() == 2 && Nineteen.GetFill() == 2 && Twenty.GetFill() == 2 && TwentyOne.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyTwo.GetFill() == 2 && TwentyThree.GetFill() == 2 && TwentyFour.GetFill() == 2 && TwentyFive.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyThree.GetFill() == 2 && TwentyFour.GetFill() == 2 && TwentyFive.GetFill() == 2 && TwentySix.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyFour.GetFill() == 2 && TwentyFive.GetFill() == 2 && TwentySix.GetFill() == 2 && TwentySeven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyFive.GetFill() == 2 && TwentySix.GetFill() == 2 && TwentySeven.GetFill() == 2 && TwentyEight.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyNine.GetFill() == 2 && Thirty.GetFill() == 2 && ThirtyOne.GetFill() == 2 && ThirtyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Thirty.GetFill() == 2 && ThirtyOne.GetFill() == 2 && ThirtyTwo.GetFill() == 2 && ThirtyThree.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyOne.GetFill() == 2 && ThirtyTwo.GetFill() == 2 && ThirtyThree.GetFill() == 2 && ThirtyFour.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyTwo.GetFill() == 2 && ThirtyThree.GetFill() == 2 && ThirtyFour.GetFill() == 2 && ThirtyFive.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtySix.GetFill() == 2 && ThirtySeven.GetFill() == 2 && ThirtyEight.GetFill() == 2 && ThirtyNine.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtySeven.GetFill() == 2 && ThirtyEight.GetFill() == 2 && ThirtyNine.GetFill() == 2 && Fourty.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyEight.GetFill() == 2 && ThirtyNine.GetFill() == 2 && Fourty.GetFill() == 2 && FourtyOne.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyNine.GetFill() == 2 && Fourty.GetFill() == 2 && FourtyOne.GetFill() == 2 && FourtyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            //Vertical Posibilities for Player Two
+
+            if (One.GetFill() == 2 && Eight.GetFill() == 2 && Fifteen.GetFill() == 2 && TwentyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eight.GetFill() == 2 && Fifteen.GetFill() == 2 && TwentyTwo.GetFill() == 2 && TwentyNine.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Fifteen.GetFill() == 2 && TwentyTwo.GetFill() == 2 && TwentyNine.GetFill() == 2 && ThirtySix.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Two.GetFill() == 2 && Nine.GetFill() == 2 && Sixteen.GetFill() == 2 && TwentyThree.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Nine.GetFill() == 2 && Sixteen.GetFill() == 2 && TwentyThree.GetFill() == 2 && Thirty.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Sixteen.GetFill() == 2 && TwentyThree.GetFill() == 2 && Thirty.GetFill() == 2 && ThirtySeven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Three.GetFill() == 2 && Ten.GetFill() == 2 && Seventeen.GetFill() == 2 && TwentyFour.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Ten.GetFill() == 2 && Seventeen.GetFill() == 2 && TwentyFour.GetFill() == 2 && ThirtyOne.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Seventeen.GetFill() == 2 && TwentyFour.GetFill() == 2 && ThirtyOne.GetFill() == 2 && ThirtyEight.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Four.GetFill() == 2 && Eleven.GetFill() == 2 && Eighteen.GetFill() == 2 && TwentyFive.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eleven.GetFill() == 2 && Eighteen.GetFill() == 2 && TwentyFive.GetFill() == 2 && ThirtyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eighteen.GetFill() == 2 && TwentyFive.GetFill() == 2 && ThirtyTwo.GetFill() == 2 && ThirtyNine.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Five.GetFill() == 2 && Twelve.GetFill() == 2 && Nineteen.GetFill() == 2 && TwentySix.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Twelve.GetFill() == 2 && Nineteen.GetFill() == 2 && TwentySix.GetFill() == 2 && ThirtyThree.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Nineteen.GetFill() == 2 && TwentySix.GetFill() == 2 && ThirtyThree.GetFill() == 2 && Fourty.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Six.GetFill() == 2 && Thirteen.GetFill() == 2 && Twenty.GetFill() == 2 && TwentySeven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Thirteen.GetFill() == 2 && Twenty.GetFill() == 2 && TwentySeven.GetFill() == 2 && ThirtyFour.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Twenty.GetFill() == 2 && TwentySeven.GetFill() == 2 && ThirtyFour.GetFill() == 2 && FourtyOne.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Seven.GetFill() == 2 && Fourteen.GetFill() == 2 && TwentyOne.GetFill() == 2 && TwentyEight.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Fourteen.GetFill() == 2 && TwentyOne.GetFill() == 2 && TwentyEight.GetFill() == 2 && ThirtyFive.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyOne.GetFill() == 2 && TwentyEight.GetFill() == 2 && ThirtyFive.GetFill() == 2 && FourtyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            //Diagonal Posibilities for Player Two
+
+            //Diagonal TopLeft to Bottom Right
+            if (One.GetFill() == 2 && Nine.GetFill() == 2 && Seventeen.GetFill() == 2 && TwentyFive.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eight.GetFill() == 2 && Sixteen.GetFill() == 2 && TwentyFour.GetFill() == 2 && ThirtyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Fifteen.GetFill() == 2 && TwentyThree.GetFill() == 2 && ThirtyOne.GetFill() == 2 && ThirtyNine.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Two.GetFill() == 2 && Ten.GetFill() == 2 && Eighteen.GetFill() == 2 && TwentySix.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Nine.GetFill() == 2 && Seventeen.GetFill() == 2 && TwentyFive.GetFill() == 2 && ThirtyThree.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Sixteen.GetFill() == 2 && TwentyFour.GetFill() == 2 && ThirtyTwo.GetFill() == 2 && Fourty.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Three.GetFill() == 2 && Eleven.GetFill() == 2 && Nineteen.GetFill() == 2 && TwentySeven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Ten.GetFill() == 2 && Eighteen.GetFill() == 2 && TwentySix.GetFill() == 2 && ThirtyFour.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Seventeen.GetFill() == 2 && TwentyFive.GetFill() == 2 && ThirtyThree.GetFill() == 2 && FourtyOne.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Four.GetFill() == 2 && Twelve.GetFill() == 2 && Twenty.GetFill() == 2 && TwentyEight.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eleven.GetFill() == 2 && Nineteen.GetFill() == 2 && TwentySeven.GetFill() == 2 && ThirtyFive.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Eighteen.GetFill() == 2 && TwentySix.GetFill() == 2 && ThirtyFour.GetFill() == 2 && FourtyTwo.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+            //Diagonal BottomLeft to TopRight
+            if (TwentyTwo.GetFill() == 2 && Sixteen.GetFill() == 2 && Ten.GetFill() == 2 && Four.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyNine.GetFill() == 2 && TwentyThree.GetFill() == 2 && Seventeen.GetFill() == 2 && Eleven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtySix.GetFill() == 2 && Thirty.GetFill() == 2 && TwentyFour.GetFill() == 2 && Eighteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyThree.GetFill() == 2 && Seventeen.GetFill() == 2 && Eleven.GetFill() == 2 && Five.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (Thirty.GetFill() == 2 && TwentyFour.GetFill() == 2 && Eighteen.GetFill() == 2 && Twelve.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtySeven.GetFill() == 2 && ThirtyOne.GetFill() == 2 && TwentyFive.GetFill() == 2 && Nineteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyFour.GetFill() == 2 && Eighteen.GetFill() == 2 && Twelve.GetFill() == 2 && Six.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyOne.GetFill() == 2 && TwentyFive.GetFill() == 2 && Nineteen.GetFill() == 2 && Thirteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyEight.GetFill() == 2 && ThirtyTwo.GetFill() == 2 && TwentySix.GetFill() == 2 && Twenty.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (TwentyFive.GetFill() == 2 && Nineteen.GetFill() == 2 && Thirteen.GetFill() == 2 && Seven.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyTwo.GetFill() == 2 && TwentySix.GetFill() == 2 && Twenty.GetFill() == 2 && Fourteen.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+            if (ThirtyNine.GetFill() == 2 && ThirtyThree.GetFill() == 2 && TwentySeven.GetFill() == 2 && TwentyOne.GetFill() == 2)
+            {
+                PlayerTwoWins = true;
+            }
+
+        }
+
         private Cell ChipFall(Cell cell)
         {
-            //Console.WriteLine(cell.GetCellBelow().GetC());
-            //Console.WriteLine(cell.GetCellBelow().GetR());
-            //Console.WriteLine(cell.GetCellBelow().GetFill());
 
             if (cell.GetR() != 5)
             {
-                //Console.WriteLine(cell.GetCellBelow().GetC());
-                //Console.WriteLine(cell.GetCellBelow().GetR());
-                //Console.WriteLine(cell.GetCellBelow().GetFill());
+
                 while (cell.GetR() != 5 && cell.GetCellBelow().GetFill() == 0)
                 {
                     cell = cell.GetCellBelow();
