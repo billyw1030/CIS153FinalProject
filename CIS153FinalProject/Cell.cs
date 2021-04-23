@@ -69,6 +69,7 @@ namespace CIS153FinalProject
 
         public Cell GetCellBelow()
         {
+            //Console.WriteLine("Grabbing cell below");
             return cellBelow;
         }
     }

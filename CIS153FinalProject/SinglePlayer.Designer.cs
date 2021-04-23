@@ -949,6 +949,7 @@
             this.Controls.Add(this.Btn_Exit);
             this.Controls.Add(this.Lbl_WhoTurn);
             this.Name = "SinglePlayer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SinglePlayer";
             this.Load += new System.EventHandler(this.SinglePlayer_Load);
             this.ResumeLayout(false);

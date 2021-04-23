@@ -93,6 +93,7 @@ namespace CIS153FinalProject
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_mainmenu);
             this.Name = "Statistics";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Statistics";
             this.Load += new System.EventHandler(this.Statistics_Load);
             this.ResumeLayout(false);
