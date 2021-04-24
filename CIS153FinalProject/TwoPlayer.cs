@@ -71,12 +71,6 @@ namespace CIS153FinalProject
         public TwoPlayer()
         {
             InitializeComponent();
-
-            //MouseState currentMouseState = Mouse.GetState();
-            //if (Btn_c0r0TwoP.Contains(currentMouseState.Position))
-            //{
-            //    isMouseIn = true;
-            //}
         }
         
         public TwoPlayer(WelcomeForm main)
@@ -1410,6 +1404,52 @@ namespace CIS153FinalProject
             }
 
         }
+
+        //EXAMPLE:
+
+        //private void roundButton_MouseEnter(object sender, EventArgs e)
+        //{
+        //    RoundButton roundButton = sender as RoundButton;
+
+        //    Cell cell = FindOpenCell(roundButton);
+
+        //    if (!cell.IsPlaced)
+        //    {
+        //        cell.Button.ChangeHoverColor(PlayerTurn == 1 ? "Red" : "Yellow");
+        //    }
+        //}
+        //private void roundButton_MouseLeave(object sender, EventArgs e)
+        //{
+        //    RoundButton roundButton = sender as RoundButton;
+
+        //    Cell cell = FindOpenCell(roundButton);
+
+        //    if (!cell.IsPlaced)
+        //    {
+        //        cell.Button.ChangeHoverColor("Default");
+        //    }
+        //}
+
+        //THIS IS OUR IMPLEMENTATION:
+
+        //private void One_MouseEnter(object sender, EventArgs e)
+        //{
+        //    Cell cell = ChipFall(One);
+
+        //    if (cell.GetFill() == 0)
+        //    {
+        //        Btn_c0r0TwoP.ChangeHoverColor(PlayerTurn == 1 ? "Red" : "Yellow");
+        //    }
+        //}
+        //private void One_MouseLeave(object sender, EventArgs e)
+        //{
+        //    Cell cell = ChipFall(One);
+
+        //    if (cell.GetFill() == 0)
+        //    {
+        //        Btn_c0r0TwoP.ChangeHoverColor();
+        //    }
+        //}
 
 
         private void Btn_close2_Click(object sender, EventArgs e)
