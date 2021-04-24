@@ -35,9 +35,10 @@ namespace CIS153FinalProject
             // Lbl_Results
             // 
             this.Lbl_Results.AutoSize = true;
+            this.Lbl_Results.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Results.Location = new System.Drawing.Point(336, 40);
             this.Lbl_Results.Name = "Lbl_Results";
-            this.Lbl_Results.Size = new System.Drawing.Size(0, 13);
+            this.Lbl_Results.Size = new System.Drawing.Size(0, 46);
             this.Lbl_Results.TabIndex = 0;
             // 
             // EndResults

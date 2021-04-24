@@ -19,8 +19,8 @@ namespace CIS153FinalProject
         private bool PlayerTwoTurn = false;
         private bool PlayerOneWins = false;
         private bool PlayerTwoWins = false;
-        private static Color PlayerOneColor = Color.FromArgb(0, 0, 50);
-        private static Color PlayerTwoColor = Color.FromArgb(100, 0, 0);
+        private static Color PlayerOneColor = Color.FromArgb(255, 255, 0);
+        private static Color PlayerTwoColor = Color.FromArgb(255, 0, 0);
         private Cell dropCell = new Cell();
 
 
@@ -71,6 +71,12 @@ namespace CIS153FinalProject
         public TwoPlayer()
         {
             InitializeComponent();
+
+            //MouseState currentMouseState = Mouse.GetState();
+            //if (Btn_c0r0TwoP.Contains(currentMouseState.Position))
+            //{
+            //    isMouseIn = true;
+            //}
         }
         
         public TwoPlayer(WelcomeForm main)
@@ -92,6 +98,9 @@ namespace CIS153FinalProject
 
         private void TwoPlayer_Load(object sender, EventArgs e)
         {
+            Btn_P1Color.FlatAppearance.BorderColor = PlayerOneColor;
+            Btn_P2Color.FlatAppearance.BorderColor = PlayerTwoColor;
+
             twoPlayerBoard.SetGameBoardCell(One);
             twoPlayerBoard.SetGameBoardCell(Two);
             twoPlayerBoard.SetGameBoardCell(Three);
@@ -2541,8 +2550,50 @@ namespace CIS153FinalProject
                 EndGame();
             }
         }
-        
-        
+
+        private void Btn_P1Color_Click(object sender, EventArgs e)
+        {
+            if (One.GetFill() == 0 && Two.GetFill() == 0 && Three.GetFill() == 0 && Four.GetFill() == 0 && Five.GetFill() == 0 && Six.GetFill() == 0
+                 && Seven.GetFill() == 0 && Eight.GetFill() == 0 && Nine.GetFill() == 0 && Ten.GetFill() == 0 && Eleven.GetFill() == 0 && Twelve.GetFill() == 0
+                 && Thirteen.GetFill() == 0 && Fourteen.GetFill() == 0 && Fifteen.GetFill() == 0 && Sixteen.GetFill() == 0 && Seventeen.GetFill() == 0
+                 && Eighteen.GetFill() == 0 && Nineteen.GetFill() == 0 && Twenty.GetFill() == 0 && TwentyOne.GetFill() == 0 && TwentyTwo.GetFill() == 0
+                 && TwentyThree.GetFill() == 0 && TwentyFour.GetFill() == 0 && TwentyFive.GetFill() == 0 && TwentySix.GetFill() == 0 && TwentySeven.GetFill() == 0
+                 && TwentyEight.GetFill() == 0 && TwentyNine.GetFill() == 0 && Thirty.GetFill() == 0 && ThirtyOne.GetFill() == 0 && ThirtyTwo.GetFill() == 0
+                 && ThirtyThree.GetFill() == 0 && ThirtyFour.GetFill() == 0 && ThirtyFive.GetFill() == 0 && ThirtySix.GetFill() == 0 && ThirtySeven.GetFill() == 0
+                 && ThirtyEight.GetFill() == 0 && ThirtyNine.GetFill() == 0 && Fourty.GetFill() == 0 && FourtyOne.GetFill() == 0 && FourtyTwo.GetFill() == 0)
+            {
+                colorDialog1.ShowDialog();
+                PlayerOneColor = colorDialog1.Color;
+                Btn_P1Color.FlatAppearance.BorderColor = PlayerOneColor;
+            }
+
+            else
+            {
+                Lbl_ColorChangeError.Visible = true;
+            }
+        }
+
+        private void Btn_P2Color_Click(object sender, EventArgs e)
+        {
+            if (One.GetFill() == 0 && Two.GetFill() == 0 && Three.GetFill() == 0 && Four.GetFill() == 0 && Five.GetFill() == 0 && Six.GetFill() == 0
+                 && Seven.GetFill() == 0 && Eight.GetFill() == 0 && Nine.GetFill() == 0 && Ten.GetFill() == 0 && Eleven.GetFill() == 0 && Twelve.GetFill() == 0
+                 && Thirteen.GetFill() == 0 && Fourteen.GetFill() == 0 && Fifteen.GetFill() == 0 && Sixteen.GetFill() == 0 && Seventeen.GetFill() == 0
+                 && Eighteen.GetFill() == 0 && Nineteen.GetFill() == 0 && Twenty.GetFill() == 0 && TwentyOne.GetFill() == 0 && TwentyTwo.GetFill() == 0
+                 && TwentyThree.GetFill() == 0 && TwentyFour.GetFill() == 0 && TwentyFive.GetFill() == 0 && TwentySix.GetFill() == 0 && TwentySeven.GetFill() == 0
+                 && TwentyEight.GetFill() == 0 && TwentyNine.GetFill() == 0 && Thirty.GetFill() == 0 && ThirtyOne.GetFill() == 0 && ThirtyTwo.GetFill() == 0
+                 && ThirtyThree.GetFill() == 0 && ThirtyFour.GetFill() == 0 && ThirtyFive.GetFill() == 0 && ThirtySix.GetFill() == 0 && ThirtySeven.GetFill() == 0
+                 && ThirtyEight.GetFill() == 0 && ThirtyNine.GetFill() == 0 && Fourty.GetFill() == 0 && FourtyOne.GetFill() == 0 && FourtyTwo.GetFill() == 0)
+            {
+                colorDialog2.ShowDialog();
+                PlayerTwoColor = colorDialog2.Color;
+                Btn_P2Color.FlatAppearance.BorderColor = PlayerTwoColor;
+            }
+
+            else
+            {
+                Lbl_ColorChangeError.Visible = true;
+            }
+        }
     }    
     
 }
