@@ -1488,7 +1488,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1529,7 +1529,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1570,7 +1570,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1611,7 +1611,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1652,7 +1652,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1693,7 +1693,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1734,7 +1734,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1775,7 +1775,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1816,7 +1816,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1857,7 +1857,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1898,7 +1898,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1939,7 +1939,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -1980,7 +1980,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2021,7 +2021,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2062,7 +2062,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2103,7 +2103,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2144,7 +2144,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2185,7 +2185,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2226,7 +2226,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2267,7 +2267,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2308,7 +2308,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2349,7 +2349,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2390,7 +2390,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2431,7 +2431,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2472,7 +2472,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2513,7 +2513,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2554,7 +2554,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2595,7 +2595,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2636,7 +2636,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2677,7 +2677,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2718,7 +2718,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2759,7 +2759,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2800,7 +2800,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2841,7 +2841,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2882,7 +2882,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2923,7 +2923,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -2964,7 +2964,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -3005,7 +3005,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -3046,7 +3046,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -3087,7 +3087,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -3128,7 +3128,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 
@@ -3169,7 +3169,7 @@ namespace CIS153FinalProject
 
             if (cell.GetFill() == 0)
             {
-                cell.GetButton().ButtonColor = Color.Blue;
+                cell.GetButton().ButtonColor = Color.FromArgb(74, 149, 255);
             }
         }
 

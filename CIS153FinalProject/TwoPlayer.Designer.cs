@@ -40,6 +40,7 @@ namespace CIS153FinalProject
             this.Btn_P2Color = new System.Windows.Forms.Button();
             this.colorDialog2 = new System.Windows.Forms.ColorDialog();
             this.Lbl_ColorChangeError = new System.Windows.Forms.Label();
+            this.lbl_MatchError = new System.Windows.Forms.Label();
             this.Btn_c6r5TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c5r5TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c4r5TwoP = new ePOSOne.btnProduct.Button_WOC();
@@ -82,7 +83,6 @@ namespace CIS153FinalProject
             this.Btn_c2r0TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c1r0TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c0r0TwoP = new ePOSOne.btnProduct.Button_WOC();
-            this.lbl_MatchError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_playerTurnTwo
@@ -191,7 +191,7 @@ namespace CIS153FinalProject
             // 
             this.Lbl_ColorChangeError.AutoSize = true;
             this.Lbl_ColorChangeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ColorChangeError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Lbl_ColorChangeError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Lbl_ColorChangeError.Location = new System.Drawing.Point(12, 290);
             this.Lbl_ColorChangeError.Name = "Lbl_ColorChangeError";
             this.Lbl_ColorChangeError.Size = new System.Drawing.Size(143, 45);
@@ -200,17 +200,30 @@ namespace CIS153FinalProject
             this.Lbl_ColorChangeError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Lbl_ColorChangeError.Visible = false;
             // 
+            // lbl_MatchError
+            // 
+            this.lbl_MatchError.AutoSize = true;
+            this.lbl_MatchError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MatchError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_MatchError.Location = new System.Drawing.Point(17, 356);
+            this.lbl_MatchError.Name = "lbl_MatchError";
+            this.lbl_MatchError.Size = new System.Drawing.Size(130, 15);
+            this.lbl_MatchError.TabIndex = 93;
+            this.lbl_MatchError.Text = "Colors can\'t match!";
+            this.lbl_MatchError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_MatchError.Visible = false;
+            // 
             // Btn_c6r5TwoP
             // 
             this.Btn_c6r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c6r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c6r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r5TwoP.Location = new System.Drawing.Point(565, 422);
             this.Btn_c6r5TwoP.Name = "Btn_c6r5TwoP";
             this.Btn_c6r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r5TwoP.TabIndex = 87;
@@ -223,14 +236,14 @@ namespace CIS153FinalProject
             // Btn_c5r5TwoP
             // 
             this.Btn_c5r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c5r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c5r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r5TwoP.Location = new System.Drawing.Point(499, 422);
             this.Btn_c5r5TwoP.Name = "Btn_c5r5TwoP";
             this.Btn_c5r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r5TwoP.TabIndex = 86;
@@ -243,14 +256,14 @@ namespace CIS153FinalProject
             // Btn_c4r5TwoP
             // 
             this.Btn_c4r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c4r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c4r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r5TwoP.Location = new System.Drawing.Point(433, 422);
             this.Btn_c4r5TwoP.Name = "Btn_c4r5TwoP";
             this.Btn_c4r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r5TwoP.TabIndex = 85;
@@ -263,14 +276,14 @@ namespace CIS153FinalProject
             // Btn_c3r5TwoP
             // 
             this.Btn_c3r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c3r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c3r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r5TwoP.Location = new System.Drawing.Point(367, 422);
             this.Btn_c3r5TwoP.Name = "Btn_c3r5TwoP";
             this.Btn_c3r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r5TwoP.TabIndex = 84;
@@ -283,14 +296,14 @@ namespace CIS153FinalProject
             // Btn_c2r5TwoP
             // 
             this.Btn_c2r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c2r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c2r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r5TwoP.Location = new System.Drawing.Point(301, 422);
             this.Btn_c2r5TwoP.Name = "Btn_c2r5TwoP";
             this.Btn_c2r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r5TwoP.TabIndex = 83;
@@ -303,14 +316,14 @@ namespace CIS153FinalProject
             // Btn_c1r5TwoP
             // 
             this.Btn_c1r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c1r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c1r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r5TwoP.Location = new System.Drawing.Point(234, 422);
             this.Btn_c1r5TwoP.Name = "Btn_c1r5TwoP";
             this.Btn_c1r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r5TwoP.TabIndex = 82;
@@ -323,14 +336,14 @@ namespace CIS153FinalProject
             // Btn_c0r5TwoP
             // 
             this.Btn_c0r5TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r5TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r5TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r5TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c0r5TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c0r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r5TwoP.Location = new System.Drawing.Point(168, 422);
             this.Btn_c0r5TwoP.Name = "Btn_c0r5TwoP";
             this.Btn_c0r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r5TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r5TwoP.TabIndex = 81;
@@ -343,14 +356,14 @@ namespace CIS153FinalProject
             // Btn_c6r4TwoP
             // 
             this.Btn_c6r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c6r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c6r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r4TwoP.Location = new System.Drawing.Point(565, 356);
             this.Btn_c6r4TwoP.Name = "Btn_c6r4TwoP";
             this.Btn_c6r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r4TwoP.TabIndex = 80;
@@ -363,14 +376,14 @@ namespace CIS153FinalProject
             // Btn_c5r4TwoP
             // 
             this.Btn_c5r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c5r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c5r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r4TwoP.Location = new System.Drawing.Point(499, 356);
             this.Btn_c5r4TwoP.Name = "Btn_c5r4TwoP";
             this.Btn_c5r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r4TwoP.TabIndex = 79;
@@ -383,14 +396,14 @@ namespace CIS153FinalProject
             // Btn_c4r4TwoP
             // 
             this.Btn_c4r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c4r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c4r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r4TwoP.Location = new System.Drawing.Point(433, 356);
             this.Btn_c4r4TwoP.Name = "Btn_c4r4TwoP";
             this.Btn_c4r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r4TwoP.TabIndex = 78;
@@ -403,14 +416,14 @@ namespace CIS153FinalProject
             // Btn_c3r4TwoP
             // 
             this.Btn_c3r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c3r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c3r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r4TwoP.Location = new System.Drawing.Point(367, 356);
             this.Btn_c3r4TwoP.Name = "Btn_c3r4TwoP";
             this.Btn_c3r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r4TwoP.TabIndex = 77;
@@ -423,14 +436,14 @@ namespace CIS153FinalProject
             // Btn_c2r4TwoP
             // 
             this.Btn_c2r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c2r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c2r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r4TwoP.Location = new System.Drawing.Point(301, 356);
             this.Btn_c2r4TwoP.Name = "Btn_c2r4TwoP";
             this.Btn_c2r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r4TwoP.TabIndex = 76;
@@ -443,14 +456,14 @@ namespace CIS153FinalProject
             // Btn_c1r4TwoP
             // 
             this.Btn_c1r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c1r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c1r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r4TwoP.Location = new System.Drawing.Point(234, 356);
             this.Btn_c1r4TwoP.Name = "Btn_c1r4TwoP";
             this.Btn_c1r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r4TwoP.TabIndex = 75;
@@ -463,14 +476,14 @@ namespace CIS153FinalProject
             // Btn_c0r4TwoP
             // 
             this.Btn_c0r4TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r4TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r4TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r4TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c0r4TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c0r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r4TwoP.Location = new System.Drawing.Point(168, 356);
             this.Btn_c0r4TwoP.Name = "Btn_c0r4TwoP";
             this.Btn_c0r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r4TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r4TwoP.TabIndex = 74;
@@ -483,14 +496,14 @@ namespace CIS153FinalProject
             // Btn_c6r3TwoP
             // 
             this.Btn_c6r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c6r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c6r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r3TwoP.Location = new System.Drawing.Point(564, 290);
             this.Btn_c6r3TwoP.Name = "Btn_c6r3TwoP";
             this.Btn_c6r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r3TwoP.TabIndex = 73;
@@ -503,14 +516,14 @@ namespace CIS153FinalProject
             // Btn_c5r3TwoP
             // 
             this.Btn_c5r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c5r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c5r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r3TwoP.Location = new System.Drawing.Point(498, 290);
             this.Btn_c5r3TwoP.Name = "Btn_c5r3TwoP";
             this.Btn_c5r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r3TwoP.TabIndex = 72;
@@ -523,14 +536,14 @@ namespace CIS153FinalProject
             // Btn_c4r3TwoP
             // 
             this.Btn_c4r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c4r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c4r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r3TwoP.Location = new System.Drawing.Point(432, 290);
             this.Btn_c4r3TwoP.Name = "Btn_c4r3TwoP";
             this.Btn_c4r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r3TwoP.TabIndex = 71;
@@ -543,14 +556,14 @@ namespace CIS153FinalProject
             // Btn_c3r3TwoP
             // 
             this.Btn_c3r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c3r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c3r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r3TwoP.Location = new System.Drawing.Point(366, 290);
             this.Btn_c3r3TwoP.Name = "Btn_c3r3TwoP";
             this.Btn_c3r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r3TwoP.TabIndex = 70;
@@ -563,14 +576,14 @@ namespace CIS153FinalProject
             // Btn_c2r3TwoP
             // 
             this.Btn_c2r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c2r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c2r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r3TwoP.Location = new System.Drawing.Point(301, 290);
             this.Btn_c2r3TwoP.Name = "Btn_c2r3TwoP";
             this.Btn_c2r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r3TwoP.TabIndex = 69;
@@ -583,14 +596,14 @@ namespace CIS153FinalProject
             // Btn_c1r3TwoP
             // 
             this.Btn_c1r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c1r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c1r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r3TwoP.Location = new System.Drawing.Point(232, 290);
             this.Btn_c1r3TwoP.Name = "Btn_c1r3TwoP";
             this.Btn_c1r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r3TwoP.TabIndex = 68;
@@ -603,14 +616,14 @@ namespace CIS153FinalProject
             // Btn_c0r3TwoP
             // 
             this.Btn_c0r3TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r3TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r3TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r3TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c0r3TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c0r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r3TwoP.Location = new System.Drawing.Point(166, 290);
             this.Btn_c0r3TwoP.Name = "Btn_c0r3TwoP";
             this.Btn_c0r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r3TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r3TwoP.TabIndex = 67;
@@ -623,14 +636,14 @@ namespace CIS153FinalProject
             // Btn_c6r2TwoP
             // 
             this.Btn_c6r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c6r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c6r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r2TwoP.Location = new System.Drawing.Point(564, 224);
             this.Btn_c6r2TwoP.Name = "Btn_c6r2TwoP";
             this.Btn_c6r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r2TwoP.TabIndex = 66;
@@ -643,14 +656,14 @@ namespace CIS153FinalProject
             // Btn_c5r2TwoP
             // 
             this.Btn_c5r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c5r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c5r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r2TwoP.Location = new System.Drawing.Point(498, 224);
             this.Btn_c5r2TwoP.Name = "Btn_c5r2TwoP";
             this.Btn_c5r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r2TwoP.TabIndex = 65;
@@ -663,14 +676,14 @@ namespace CIS153FinalProject
             // Btn_c4r2TwoP
             // 
             this.Btn_c4r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c4r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c4r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r2TwoP.Location = new System.Drawing.Point(432, 224);
             this.Btn_c4r2TwoP.Name = "Btn_c4r2TwoP";
             this.Btn_c4r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r2TwoP.TabIndex = 64;
@@ -683,14 +696,14 @@ namespace CIS153FinalProject
             // Btn_c3r2TwoP
             // 
             this.Btn_c3r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c3r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c3r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r2TwoP.Location = new System.Drawing.Point(366, 224);
             this.Btn_c3r2TwoP.Name = "Btn_c3r2TwoP";
             this.Btn_c3r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r2TwoP.TabIndex = 63;
@@ -703,14 +716,14 @@ namespace CIS153FinalProject
             // Btn_c2r2TwoP
             // 
             this.Btn_c2r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c2r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c2r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r2TwoP.Location = new System.Drawing.Point(300, 224);
             this.Btn_c2r2TwoP.Name = "Btn_c2r2TwoP";
             this.Btn_c2r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r2TwoP.TabIndex = 62;
@@ -723,14 +736,14 @@ namespace CIS153FinalProject
             // Btn_c1r2TwoP
             // 
             this.Btn_c1r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c1r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c1r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r2TwoP.Location = new System.Drawing.Point(233, 224);
             this.Btn_c1r2TwoP.Name = "Btn_c1r2TwoP";
             this.Btn_c1r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r2TwoP.TabIndex = 61;
@@ -743,14 +756,14 @@ namespace CIS153FinalProject
             // Btn_c0r2TwoP
             // 
             this.Btn_c0r2TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r2TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r2TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r2TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c0r2TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c0r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r2TwoP.Location = new System.Drawing.Point(167, 224);
             this.Btn_c0r2TwoP.Name = "Btn_c0r2TwoP";
             this.Btn_c0r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r2TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r2TwoP.TabIndex = 60;
@@ -763,14 +776,14 @@ namespace CIS153FinalProject
             // Btn_c6r1TwoP
             // 
             this.Btn_c6r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c6r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c6r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r1TwoP.Location = new System.Drawing.Point(565, 158);
             this.Btn_c6r1TwoP.Name = "Btn_c6r1TwoP";
             this.Btn_c6r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r1TwoP.TabIndex = 59;
@@ -783,14 +796,14 @@ namespace CIS153FinalProject
             // Btn_c5r1TwoP
             // 
             this.Btn_c5r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c5r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c5r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r1TwoP.Location = new System.Drawing.Point(499, 158);
             this.Btn_c5r1TwoP.Name = "Btn_c5r1TwoP";
             this.Btn_c5r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r1TwoP.TabIndex = 58;
@@ -803,14 +816,14 @@ namespace CIS153FinalProject
             // Btn_c4r1TwoP
             // 
             this.Btn_c4r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c4r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c4r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r1TwoP.Location = new System.Drawing.Point(433, 158);
             this.Btn_c4r1TwoP.Name = "Btn_c4r1TwoP";
             this.Btn_c4r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r1TwoP.TabIndex = 57;
@@ -823,14 +836,14 @@ namespace CIS153FinalProject
             // Btn_c3r1TwoP
             // 
             this.Btn_c3r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c3r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c3r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r1TwoP.Location = new System.Drawing.Point(367, 158);
             this.Btn_c3r1TwoP.Name = "Btn_c3r1TwoP";
             this.Btn_c3r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r1TwoP.TabIndex = 56;
@@ -843,14 +856,14 @@ namespace CIS153FinalProject
             // Btn_c2r1TwoP
             // 
             this.Btn_c2r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c2r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c2r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r1TwoP.Location = new System.Drawing.Point(301, 158);
             this.Btn_c2r1TwoP.Name = "Btn_c2r1TwoP";
             this.Btn_c2r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r1TwoP.TabIndex = 55;
@@ -863,14 +876,14 @@ namespace CIS153FinalProject
             // Btn_c1r1TwoP
             // 
             this.Btn_c1r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c1r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c1r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r1TwoP.Location = new System.Drawing.Point(234, 158);
             this.Btn_c1r1TwoP.Name = "Btn_c1r1TwoP";
             this.Btn_c1r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r1TwoP.TabIndex = 54;
@@ -883,14 +896,14 @@ namespace CIS153FinalProject
             // Btn_c0r1TwoP
             // 
             this.Btn_c0r1TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r1TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r1TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r1TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c0r1TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c0r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r1TwoP.Location = new System.Drawing.Point(167, 158);
             this.Btn_c0r1TwoP.Name = "Btn_c0r1TwoP";
             this.Btn_c0r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r1TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r1TwoP.TabIndex = 53;
@@ -903,14 +916,14 @@ namespace CIS153FinalProject
             // Btn_c6r0TwoP
             // 
             this.Btn_c6r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c6r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c6r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r0TwoP.Location = new System.Drawing.Point(565, 92);
             this.Btn_c6r0TwoP.Name = "Btn_c6r0TwoP";
             this.Btn_c6r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c6r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c6r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c6r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r0TwoP.TabIndex = 52;
@@ -923,14 +936,14 @@ namespace CIS153FinalProject
             // Btn_c5r0TwoP
             // 
             this.Btn_c5r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c5r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c5r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r0TwoP.Location = new System.Drawing.Point(499, 92);
             this.Btn_c5r0TwoP.Name = "Btn_c5r0TwoP";
             this.Btn_c5r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c5r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c5r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c5r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r0TwoP.TabIndex = 51;
@@ -943,14 +956,14 @@ namespace CIS153FinalProject
             // Btn_c4r0TwoP
             // 
             this.Btn_c4r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c4r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c4r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r0TwoP.Location = new System.Drawing.Point(433, 92);
             this.Btn_c4r0TwoP.Name = "Btn_c4r0TwoP";
             this.Btn_c4r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c4r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c4r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c4r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r0TwoP.TabIndex = 50;
@@ -963,14 +976,14 @@ namespace CIS153FinalProject
             // Btn_c3r0TwoP
             // 
             this.Btn_c3r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c3r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c3r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r0TwoP.Location = new System.Drawing.Point(367, 92);
             this.Btn_c3r0TwoP.Name = "Btn_c3r0TwoP";
             this.Btn_c3r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c3r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c3r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c3r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r0TwoP.TabIndex = 49;
@@ -983,14 +996,14 @@ namespace CIS153FinalProject
             // Btn_c2r0TwoP
             // 
             this.Btn_c2r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c2r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c2r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r0TwoP.Location = new System.Drawing.Point(301, 92);
             this.Btn_c2r0TwoP.Name = "Btn_c2r0TwoP";
             this.Btn_c2r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c2r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c2r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c2r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r0TwoP.TabIndex = 48;
@@ -1003,14 +1016,14 @@ namespace CIS153FinalProject
             // Btn_c1r0TwoP
             // 
             this.Btn_c1r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c1r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c1r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r0TwoP.Location = new System.Drawing.Point(234, 92);
             this.Btn_c1r0TwoP.Name = "Btn_c1r0TwoP";
             this.Btn_c1r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c1r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c1r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c1r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r0TwoP.TabIndex = 47;
@@ -1023,14 +1036,14 @@ namespace CIS153FinalProject
             // Btn_c0r0TwoP
             // 
             this.Btn_c0r0TwoP.BorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r0TwoP.ButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r0TwoP.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r0TwoP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Btn_c0r0TwoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_c0r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r0TwoP.Location = new System.Drawing.Point(168, 92);
             this.Btn_c0r0TwoP.Name = "Btn_c0r0TwoP";
             this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.Btn_c0r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r0TwoP.TabIndex = 46;
@@ -1040,24 +1053,11 @@ namespace CIS153FinalProject
             this.Btn_c0r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r0TwoP_MouseEnter);
             this.Btn_c0r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r0TwoP_MouseLeave);
             // 
-            // lbl_MatchError
-            // 
-            this.lbl_MatchError.AutoSize = true;
-            this.lbl_MatchError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MatchError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbl_MatchError.Location = new System.Drawing.Point(17, 356);
-            this.lbl_MatchError.Name = "lbl_MatchError";
-            this.lbl_MatchError.Size = new System.Drawing.Size(130, 15);
-            this.lbl_MatchError.TabIndex = 93;
-            this.lbl_MatchError.Text = "Colors can\'t match!";
-            this.lbl_MatchError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_MatchError.Visible = false;
-            // 
             // TwoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(794, 612);
             this.ControlBox = false;
             this.Controls.Add(this.lbl_MatchError);
