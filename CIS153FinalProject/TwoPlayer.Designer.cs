@@ -1028,8 +1028,8 @@ namespace CIS153FinalProject
             this.Btn_c0r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r0TwoP.Location = new System.Drawing.Point(168, 92);
             this.Btn_c0r0TwoP.Name = "Btn_c0r0TwoP";
-            this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Transparent;
+            this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r0TwoP.TabIndex = 46;
