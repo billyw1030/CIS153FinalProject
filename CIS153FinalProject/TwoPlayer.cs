@@ -136,6 +136,8 @@ namespace CIS153FinalProject
 
         private void TwoPlayer_Load(object sender, EventArgs e)
         {
+            lbl_playerTurnOne.ForeColor = PlayerOneColor;
+            lbl_playerTurnTwo.ForeColor = PlayerTwoColor;
             Btn_P1Color.FlatAppearance.BorderColor = PlayerOneColor;
             Btn_P2Color.FlatAppearance.BorderColor = PlayerTwoColor;
 
@@ -4330,6 +4332,9 @@ namespace CIS153FinalProject
             {
                 Lbl_ColorChangeError.Visible = true;
             }
+
+            lbl_playerTurnOne.ForeColor = PlayerOneColor;
+            lbl_playerTurnTwo.ForeColor = PlayerTwoColor;
         }
 
         private void Btn_P2Color_Click(object sender, EventArgs e)
@@ -4352,6 +4357,9 @@ namespace CIS153FinalProject
             {
                 Lbl_ColorChangeError.Visible = true;
             }
+
+            lbl_playerTurnOne.ForeColor = PlayerOneColor;
+            lbl_playerTurnTwo.ForeColor = PlayerTwoColor;
         }
     }    
     
