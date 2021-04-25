@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ePOSOne.btnProduct;
 
 namespace CIS153FinalProject
 {
@@ -25,48 +26,48 @@ namespace CIS153FinalProject
 
 
         //                  r  c  f
-        Cell One = new Cell(0, 0, 0);
-        Cell Two = new Cell(0, 1, 0);
-        Cell Three = new Cell(0, 2, 0);
-        Cell Four = new Cell(0, 3, 0);
-        Cell Five = new Cell(0, 4, 0);
-        Cell Six = new Cell(0, 5, 0);
-        Cell Seven = new Cell(0, 6, 0);
-        Cell Eight = new Cell(1, 0, 0);
-        Cell Nine = new Cell(1, 1, 0);
-        Cell Ten = new Cell(1, 2, 0);
-        Cell Eleven = new Cell(1, 3, 0);
-        Cell Twelve = new Cell(1, 4, 0);
-        Cell Thirteen = new Cell(1, 4, 0);
-        Cell Fourteen = new Cell(1, 6, 0);
-        Cell Fifteen = new Cell(2, 0, 0);
-        Cell Sixteen = new Cell(2, 1, 0);
-        Cell Seventeen = new Cell(2, 2, 0);
-        Cell Eighteen = new Cell(2, 3, 0);
-        Cell Nineteen = new Cell(2, 4, 0);
-        Cell Twenty = new Cell(2, 5, 0);
-        Cell TwentyOne = new Cell(2, 6, 0);
-        Cell TwentyTwo = new Cell(3, 0, 0);
-        Cell TwentyThree = new Cell(3, 1, 0);
-        Cell TwentyFour = new Cell(3, 2, 0);
-        Cell TwentyFive = new Cell(3, 3, 0);
-        Cell TwentySix = new Cell(3, 4, 0);
-        Cell TwentySeven = new Cell(3, 5, 0);
-        Cell TwentyEight = new Cell(3, 6, 0);
-        Cell TwentyNine = new Cell(4, 0, 0);
-        Cell Thirty = new Cell(4, 1, 0);
-        Cell ThirtyOne = new Cell(4, 2, 0);
-        Cell ThirtyTwo = new Cell(4, 3, 0);
-        Cell ThirtyThree = new Cell(4, 4, 0);
-        Cell ThirtyFour = new Cell(4, 5, 0);
-        Cell ThirtyFive = new Cell(4, 6, 0);
-        Cell ThirtySix = new Cell(5, 0, 0);
-        Cell ThirtySeven = new Cell(5, 1, 0);
-        Cell ThirtyEight = new Cell(5, 2, 0);
-        Cell ThirtyNine = new Cell(5, 3, 0);
-        Cell Fourty = new Cell(5, 4, 0);
-        Cell FourtyOne = new Cell(5, 5, 0);
-        Cell FourtyTwo = new Cell(5, 6, 0);
+        Cell One;
+        Cell Two;
+        Cell Three;
+        Cell Four;
+        Cell Five;
+        Cell Six;
+        Cell Seven;
+        Cell Eight;
+        Cell Nine;
+        Cell Ten;
+        Cell Eleven;
+        Cell Twelve;
+        Cell Thirteen;
+        Cell Fourteen;
+        Cell Fifteen;
+        Cell Sixteen;
+        Cell Seventeen;
+        Cell Eighteen;
+        Cell Nineteen;
+        Cell Twenty;
+        Cell TwentyOne;
+        Cell TwentyTwo;
+        Cell TwentyThree;
+        Cell TwentyFour;
+        Cell TwentyFive;
+        Cell TwentySix;
+        Cell TwentySeven;
+        Cell TwentyEight;
+        Cell TwentyNine;
+        Cell Thirty;
+        Cell ThirtyOne;
+        Cell ThirtyTwo;
+        Cell ThirtyThree;
+        Cell ThirtyFour;
+        Cell ThirtyFive;
+        Cell ThirtySix;
+        Cell ThirtySeven;
+        Cell ThirtyEight;
+        Cell ThirtyNine;
+        Cell Fourty;
+        Cell FourtyOne;
+        Cell FourtyTwo;
 
         public TwoPlayer()
         {
@@ -77,6 +78,49 @@ namespace CIS153FinalProject
         {
             InitializeComponent();
             Menu = main;
+
+             One = new Cell(0, 0, Btn_c0r0TwoP);
+             Two = new Cell(0, 1, Btn_c1r0TwoP);
+             Three = new Cell(0, 2, Btn_c2r0TwoP);
+             Four = new Cell(0, 3, Btn_c3r0TwoP);
+             Five = new Cell(0, 4, Btn_c4r0TwoP);
+             Six = new Cell(0, 5, Btn_c5r0TwoP);
+             Seven = new Cell(0, 6, Btn_c6r0TwoP);
+             Eight = new Cell(1, 0, Btn_c0r1TwoP);
+             Nine = new Cell(1, 1, Btn_c1r1TwoP);
+             Ten = new Cell(1, 2, Btn_c2r1TwoP);
+             Eleven = new Cell(1, 3, Btn_c3r1TwoP);
+             Twelve = new Cell(1, 4, Btn_c4r1TwoP);
+             Thirteen = new Cell(1, 4, Btn_c5r1TwoP);
+             Fourteen = new Cell(1, 6, Btn_c6r1TwoP);
+             Fifteen = new Cell(2, 0, Btn_c0r2TwoP);
+             Sixteen = new Cell(2, 1, Btn_c1r2TwoP);
+             Seventeen = new Cell(2, 2, Btn_c2r2TwoP);
+             Eighteen = new Cell(2, 3, Btn_c3r2TwoP);
+             Nineteen = new Cell(2, 4, Btn_c4r2TwoP);
+             Twenty = new Cell(2, 5, Btn_c5r2TwoP);
+             TwentyOne = new Cell(2, 6, Btn_c6r2TwoP);
+             TwentyTwo = new Cell(3, 0, Btn_c0r3TwoP);
+             TwentyThree = new Cell(3, 1, Btn_c1r3TwoP);
+             TwentyFour = new Cell(3, 2, Btn_c2r3TwoP);
+             TwentyFive = new Cell(3, 3, Btn_c3r3TwoP);
+             TwentySix = new Cell(3, 4, Btn_c4r3TwoP);
+             TwentySeven = new Cell(3, 5, Btn_c5r3TwoP);
+             TwentyEight = new Cell(3, 6, Btn_c6r3TwoP);
+             TwentyNine = new Cell(4, 0, Btn_c0r4TwoP);
+             Thirty = new Cell(4, 1, Btn_c1r4TwoP);
+             ThirtyOne = new Cell(4, 2, Btn_c2r4TwoP);
+             ThirtyTwo = new Cell(4, 3, Btn_c3r4TwoP);
+             ThirtyThree = new Cell(4, 4, Btn_c4r4TwoP);
+             ThirtyFour = new Cell(4, 5, Btn_c5r4TwoP);
+             ThirtyFive = new Cell(4, 6, Btn_c6r4TwoP);
+             ThirtySix = new Cell(5, 0, Btn_c0r5TwoP);
+             ThirtySeven = new Cell(5, 1, Btn_c1r5TwoP);
+             ThirtyEight = new Cell(5, 2, Btn_c2r5TwoP);
+             ThirtyNine = new Cell(5, 3, Btn_c3r5TwoP);
+             Fourty = new Cell(5, 4, Btn_c4r5TwoP);
+             FourtyOne = new Cell(5, 5, Btn_c5r5TwoP);
+             FourtyTwo = new Cell(5, 6, Btn_c6r5TwoP);
         }
 
         public void FormPassedToMeThree(WelcomeForm mainMenu)
@@ -1405,52 +1449,1013 @@ namespace CIS153FinalProject
 
         }
 
-        //EXAMPLE:
+        private void Btn_c0r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(One);
 
-        //private void roundButton_MouseEnter(object sender, EventArgs e)
-        //{
-        //    RoundButton roundButton = sender as RoundButton;
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
 
-        //    Cell cell = FindOpenCell(roundButton);
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c0r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(One);
 
-        //    if (!cell.IsPlaced)
-        //    {
-        //        cell.Button.ChangeHoverColor(PlayerTurn == 1 ? "Red" : "Yellow");
-        //    }
-        //}
-        //private void roundButton_MouseLeave(object sender, EventArgs e)
-        //{
-        //    RoundButton roundButton = sender as RoundButton;
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
 
-        //    Cell cell = FindOpenCell(roundButton);
+        private void Btn_c1r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Two);
 
-        //    if (!cell.IsPlaced)
-        //    {
-        //        cell.Button.ChangeHoverColor("Default");
-        //    }
-        //}
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
 
-        //THIS IS OUR IMPLEMENTATION:
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c1r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Two);
 
-        //private void One_MouseEnter(object sender, EventArgs e)
-        //{
-        //    Cell cell = ChipFall(One);
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
 
-        //    if (cell.GetFill() == 0)
-        //    {
-        //        Btn_c0r0TwoP.ChangeHoverColor(PlayerTurn == 1 ? "Red" : "Yellow");
-        //    }
-        //}
-        //private void One_MouseLeave(object sender, EventArgs e)
-        //{
-        //    Cell cell = ChipFall(One);
+        private void Btn_c2r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Three);
 
-        //    if (cell.GetFill() == 0)
-        //    {
-        //        Btn_c0r0TwoP.ChangeHoverColor();
-        //    }
-        //}
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
 
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c2r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Three);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c3r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Four);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c3r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Four);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c4r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Five);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c4r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Five);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c5r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Six);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c5r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Six);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c6r0TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Seven);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c6r0TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Seven);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c0r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Eight);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c0r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Eight);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c1r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Nine);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c1r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Nine);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c2r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Ten);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c2r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Ten);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c3r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Eleven);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c3r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Eleven);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c4r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Twelve);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c4r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Twelve);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c5r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Thirteen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c5r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Thirteen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c6r1TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Fourteen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c6r1TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Fourteen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c0r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Fifteen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c0r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Fifteen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c1r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Sixteen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c1r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Sixteen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c2r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Seventeen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c2r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Seventeen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c3r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Eighteen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c3r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Eighteen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c4r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Nineteen);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c4r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Nineteen);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c5r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Twenty);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c5r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Twenty);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c6r2TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyOne);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c6r2TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyOne);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c0r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyTwo);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c0r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyTwo);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c1r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyThree);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c1r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyThree);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c2r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyFour);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c2r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyFour);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c3r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyFive);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c3r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyFive);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c4r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentySix);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c4r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentySix);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c5r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentySeven);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c5r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentySeven);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c6r3TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyEight);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c6r3TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyEight);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c0r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyNine);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c0r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(TwentyNine);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c1r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Thirty);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c1r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Thirty);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c2r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyOne);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c2r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyOne);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c3r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyTwo);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c3r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyTwo);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c4r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyThree);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c4r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyThree);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c5r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyFour);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c5r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyFour);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c6r4TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyFive);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c6r4TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyFive);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c0r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtySix);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c0r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtySix);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c1r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtySeven);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c1r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtySeven);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c2r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyEight);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c2r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyEight);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c3r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyNine);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c3r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(ThirtyNine);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c4r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Fourty);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c4r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(Fourty);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c5r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(FourtyOne);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c5r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(FourtyOne);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
+
+        private void Btn_c6r5TwoP_MouseEnter(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(FourtyTwo);
+
+            if (cell.GetFill() == 0 && PlayerOneTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerOneColor;
+            }
+
+            if (cell.GetFill() == 0 && PlayerTwoTurn)
+            {
+                cell.GetButton().ButtonColor = PlayerTwoColor;
+            }
+        }
+        private void Btn_c6r5TwoP_MouseLeave(object sender, EventArgs e)
+        {
+            Cell cell = ChipFall(FourtyTwo);
+
+            if (cell.GetFill() == 0)
+            {
+                cell.GetButton().ButtonColor = Color.Blue;
+            }
+        }
 
         private void Btn_close2_Click(object sender, EventArgs e)
         {

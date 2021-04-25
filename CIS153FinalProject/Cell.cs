@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using ePOSOne.btnProduct;
 
 namespace CIS153FinalProject
 {
@@ -10,22 +12,22 @@ namespace CIS153FinalProject
     {
         //every cell in the board can either be empty, player one, or player two.
         //we will decide what status each cell is by an int, 1 = player1, 2 = player2, and 0 = not taken.
-        //we will identify every cell with x and y coordinate for the board.
         private int c;
         private int r;
         private int fill = 0;
         Cell cellBelow;
+        private Button_WOC button;
         
         public Cell()
         {
 
         }
 
-        public Cell(int ro, int co, int f)
+        public Cell(int ro, int co, Button_WOC b)
         {
             c = co;
             r = ro;
-            fill = f;
+            button = b;
         }
         public void SetPlayerOne()
         {
@@ -51,6 +53,11 @@ namespace CIS153FinalProject
         {
             //Console.WriteLine("Cell set");
             cellBelow = c;
+        }
+
+        public Button_WOC GetButton()
+        {
+            return button;
         }
 
         public int GetFill()

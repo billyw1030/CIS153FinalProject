@@ -23,51 +23,50 @@ namespace CIS153FinalProject
         private static Color PlayerTwoColor = Color.FromArgb(100, 0, 0);
 
         //                  r  c  f
-        Cell One = new Cell(0, 0, 0);        
-        //singlePlayerBoard.SetGameBoardCell(Cell One);
-        Cell Two = new Cell(0, 1, 0);
-        Cell Three = new Cell(0, 2, 0);
-        Cell Four = new Cell(0, 3, 0);
-        Cell Five = new Cell(0, 4, 0);
-        Cell Six = new Cell(0, 5, 0);
-        Cell Seven = new Cell(0, 6, 0);
-        Cell Eight = new Cell(1, 0, 0);
-        Cell Nine = new Cell(1, 1, 0);
-        Cell Ten = new Cell(1, 2, 0);
-        Cell Eleven = new Cell(1, 3, 0);
-        Cell Twelve = new Cell(1, 4, 0);
-        Cell Thirteen = new Cell(1, 4, 0);
-        Cell Fourteen = new Cell(1, 6, 0);
-        Cell Fifteen = new Cell(2, 0, 0);
-        Cell Sixteen = new Cell(2, 1, 0);
-        Cell Seventeen = new Cell(2, 2, 0);
-        Cell Eighteen = new Cell(2, 3, 0);
-        Cell Nineteen = new Cell(2, 4, 0);
-        Cell Twenty = new Cell(2, 5, 0);
-        Cell TwentyOne = new Cell(2, 6, 0);
-        Cell TwentyTwo = new Cell(3, 0, 0);
-        Cell TwentyThree = new Cell(3, 1, 0);
-        Cell TwentyFour = new Cell(3, 2, 0);
-        Cell TwentyFive = new Cell(3, 3, 0);
-        Cell TwentySix = new Cell(3, 4, 0);
-        Cell TwentySeven = new Cell(3, 5, 0);
-        Cell TwentyEight = new Cell(3, 6, 0);
-        Cell TwentyNine = new Cell(4, 0, 0);
-        Cell Thirty = new Cell(4, 1, 0);
-        Cell ThirtyOne = new Cell(4, 2, 0);
-        Cell ThirtyTwo = new Cell(4, 3, 0);
-        Cell ThirtyThree = new Cell(4, 4, 0);
-        Cell ThirtyFour = new Cell(4, 5, 0);
-        Cell ThirtyFive = new Cell(4, 6, 0);
-        Cell ThirtySix = new Cell(5, 0, 0);
-        Cell ThirtySeven = new Cell(5, 1, 0);
-        Cell ThirtyEight = new Cell(5, 2, 0); 
-        Cell ThirtyNine = new Cell(5, 3, 0); 
-        Cell Fourty = new Cell(5, 4, 0);
-        Cell FourtyOne = new Cell(5, 5, 0);
-        Cell FourtyTwo = new Cell(5, 6, 0);
-        
-        
+        Cell One;
+        Cell Two;
+        Cell Three;
+        Cell Four;
+        Cell Five;
+        Cell Six;
+        Cell Seven;
+        Cell Eight;
+        Cell Nine;
+        Cell Ten;
+        Cell Eleven;
+        Cell Twelve;
+        Cell Thirteen;
+        Cell Fourteen;
+        Cell Fifteen;
+        Cell Sixteen;
+        Cell Seventeen;
+        Cell Eighteen;
+        Cell Nineteen;
+        Cell Twenty;
+        Cell TwentyOne;
+        Cell TwentyTwo;
+        Cell TwentyThree;
+        Cell TwentyFour;
+        Cell TwentyFive;
+        Cell TwentySix;
+        Cell TwentySeven;
+        Cell TwentyEight;
+        Cell TwentyNine;
+        Cell Thirty;
+        Cell ThirtyOne;
+        Cell ThirtyTwo;
+        Cell ThirtyThree;
+        Cell ThirtyFour;
+        Cell ThirtyFive;
+        Cell ThirtySix;
+        Cell ThirtySeven;
+        Cell ThirtyEight;
+        Cell ThirtyNine;
+        Cell Fourty;
+        Cell FourtyOne;
+        Cell FourtyTwo;
+
+
 
         public SinglePlayer()
         {
@@ -80,6 +79,49 @@ namespace CIS153FinalProject
         {
             InitializeComponent();
             Menu = main;
+
+            One = new Cell(0, 0, Btn_c0r0);
+            Two = new Cell(0, 1, Btn_c1r0);
+            Three = new Cell(0, 2, Btn_c2r0);
+            Four = new Cell(0, 3, Btn_c3r0);
+            Five = new Cell(0, 4, Btn_c4r0);
+            Six = new Cell(0, 5, Btn_c5r0);
+            Seven = new Cell(0, 6, Btn_c6r0);
+            Eight = new Cell(1, 0, Btn_c0r1);
+            Nine = new Cell(1, 1, Btn_c1r1);
+            Ten = new Cell(1, 2, Btn_c2r1);
+            Eleven = new Cell(1, 3, Btn_c3r1);
+            Twelve = new Cell(1, 4, Btn_c4r1);
+            Thirteen = new Cell(1, 4, Btn_c5r1);
+            Fourteen = new Cell(1, 6, Btn_c6r1);
+            Fifteen = new Cell(2, 0, Btn_c0r2);
+            Sixteen = new Cell(2, 1, Btn_c1r2);
+            Seventeen = new Cell(2, 2, Btn_c2r2);
+            Eighteen = new Cell(2, 3, Btn_c3r2);
+            Nineteen = new Cell(2, 4, Btn_c4r2);
+            Twenty = new Cell(2, 5, Btn_c5r2);
+            TwentyOne = new Cell(2, 6, Btn_c6r2);
+            TwentyTwo = new Cell(3, 0, Btn_c0r3);
+            TwentyThree = new Cell(3, 1, Btn_c1r3);
+            TwentyFour = new Cell(3, 2, Btn_c2r3);
+            TwentyFive = new Cell(3, 3, Btn_c3r3);
+            TwentySix = new Cell(3, 4, Btn_c4r3);
+            TwentySeven = new Cell(3, 5, Btn_c5r3);
+            TwentyEight = new Cell(3, 6, Btn_c6r3);
+            TwentyNine = new Cell(4, 0, Btn_c0r4);
+            Thirty = new Cell(4, 1, Btn_c1r4);
+            ThirtyOne = new Cell(4, 2, Btn_c2r4);
+            ThirtyTwo = new Cell(4, 3, Btn_c3r4);
+            ThirtyThree = new Cell(4, 4, Btn_c4r4);
+            ThirtyFour = new Cell(4, 5, Btn_c5r4);
+            ThirtyFive = new Cell(4, 6, Btn_c6r4);
+            ThirtySix = new Cell(5, 0, Btn_c0r5);
+            ThirtySeven = new Cell(5, 1, Btn_c1r5);
+            ThirtyEight = new Cell(5, 2, Btn_c2r5);
+            ThirtyNine = new Cell(5, 3, Btn_c3r5);
+            Fourty = new Cell(5, 4, Btn_c4r5);
+            FourtyOne = new Cell(5, 5, Btn_c5r5);
+            FourtyTwo = new Cell(5, 6, Btn_c6r5);
         }
 
         public void FormPassedToMeTwo(WelcomeForm mainMenu)
@@ -106,6 +148,58 @@ namespace CIS153FinalProject
         private void Btn_close_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+        //   1   2   3   4   5   6   7
+        //   8   9  10  11  12  13  14
+        //  15  16  17  18  19  20  21
+        //  22  23  24  25  26  27  28
+        //  29  30  31  32  33  34  35 
+        //  36  37  38  39  40  41  42
+
+        public void GameIsOver()
+        {
+            Btn_c0r0.Enabled = false;
+            Btn_c1r0.Enabled = false;
+            Btn_c2r0.Enabled = false;
+            Btn_c3r0.Enabled = false;
+            Btn_c4r0.Enabled = false;
+            Btn_c5r0.Enabled = false;
+            Btn_c6r0.Enabled = false;
+            Btn_c0r1.Enabled = false;
+            Btn_c1r1.Enabled = false;
+            Btn_c2r1.Enabled = false;
+            Btn_c3r1.Enabled = false;
+            Btn_c4r1.Enabled = false;
+            Btn_c5r1.Enabled = false;
+            Btn_c6r1.Enabled = false;
+            Btn_c0r2.Enabled = false;
+            Btn_c1r2.Enabled = false;
+            Btn_c2r2.Enabled = false;
+            Btn_c3r2.Enabled = false;
+            Btn_c4r2.Enabled = false;
+            Btn_c5r2.Enabled = false;
+            Btn_c6r2.Enabled = false;
+            Btn_c0r3.Enabled = false;
+            Btn_c1r3.Enabled = false;
+            Btn_c2r3.Enabled = false;
+            Btn_c3r3.Enabled = false;
+            Btn_c4r3.Enabled = false;
+            Btn_c5r3.Enabled = false;
+            Btn_c6r3.Enabled = false;
+            Btn_c0r4.Enabled = false;
+            Btn_c1r4.Enabled = false;
+            Btn_c2r4.Enabled = false;
+            Btn_c3r4.Enabled = false;
+            Btn_c4r4.Enabled = false;
+            Btn_c5r4.Enabled = false;
+            Btn_c6r4.Enabled = false;
+            Btn_c0r5.Enabled = false;
+            Btn_c1r5.Enabled = false;
+            Btn_c2r5.Enabled = false;
+            Btn_c3r5.Enabled = false;
+            Btn_c4r5.Enabled = false;
+            Btn_c5r5.Enabled = false;
+            Btn_c6r5.Enabled = false;
         }
 
         private void Btn_c0r0_Click(object sender, EventArgs e)

@@ -195,14 +195,16 @@ namespace CIS153FinalProject
             this.Btn_c6r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r5TwoP.Location = new System.Drawing.Point(565, 422);
             this.Btn_c6r5TwoP.Name = "Btn_c6r5TwoP";
-            this.Btn_c6r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c6r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c6r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c6r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c6r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r5TwoP.TabIndex = 87;
             this.Btn_c6r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c6r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c6r5TwoP.Click += new System.EventHandler(this.Btn_c6r5TwoP_Click);
+            this.Btn_c6r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c6r5TwoP_MouseEnter);
+            this.Btn_c6r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c6r5TwoP_MouseLeave);
             // 
             // Btn_c5r5TwoP
             // 
@@ -213,14 +215,16 @@ namespace CIS153FinalProject
             this.Btn_c5r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r5TwoP.Location = new System.Drawing.Point(499, 422);
             this.Btn_c5r5TwoP.Name = "Btn_c5r5TwoP";
-            this.Btn_c5r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c5r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c5r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c5r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c5r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r5TwoP.TabIndex = 86;
             this.Btn_c5r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c5r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c5r5TwoP.Click += new System.EventHandler(this.Btn_c5r5TwoP_Click);
+            this.Btn_c5r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c5r5TwoP_MouseEnter);
+            this.Btn_c5r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c5r5TwoP_MouseLeave);
             // 
             // Btn_c4r5TwoP
             // 
@@ -231,14 +235,16 @@ namespace CIS153FinalProject
             this.Btn_c4r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r5TwoP.Location = new System.Drawing.Point(433, 422);
             this.Btn_c4r5TwoP.Name = "Btn_c4r5TwoP";
-            this.Btn_c4r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c4r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c4r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c4r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c4r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r5TwoP.TabIndex = 85;
             this.Btn_c4r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c4r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c4r5TwoP.Click += new System.EventHandler(this.Btn_c4r5TwoP_Click);
+            this.Btn_c4r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c4r5TwoP_MouseEnter);
+            this.Btn_c4r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c4r5TwoP_MouseLeave);
             // 
             // Btn_c3r5TwoP
             // 
@@ -249,14 +255,16 @@ namespace CIS153FinalProject
             this.Btn_c3r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r5TwoP.Location = new System.Drawing.Point(367, 422);
             this.Btn_c3r5TwoP.Name = "Btn_c3r5TwoP";
-            this.Btn_c3r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c3r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c3r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c3r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c3r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r5TwoP.TabIndex = 84;
             this.Btn_c3r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c3r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c3r5TwoP.Click += new System.EventHandler(this.Btn_c3r5TwoP_Click);
+            this.Btn_c3r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c3r5TwoP_MouseEnter);
+            this.Btn_c3r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c3r5TwoP_MouseLeave);
             // 
             // Btn_c2r5TwoP
             // 
@@ -267,14 +275,16 @@ namespace CIS153FinalProject
             this.Btn_c2r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r5TwoP.Location = new System.Drawing.Point(301, 422);
             this.Btn_c2r5TwoP.Name = "Btn_c2r5TwoP";
-            this.Btn_c2r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c2r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c2r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c2r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c2r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r5TwoP.TabIndex = 83;
             this.Btn_c2r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c2r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c2r5TwoP.Click += new System.EventHandler(this.Btn_c2r5TwoP_Click);
+            this.Btn_c2r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c2r5TwoP_MouseEnter);
+            this.Btn_c2r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c2r5TwoP_MouseLeave);
             // 
             // Btn_c1r5TwoP
             // 
@@ -285,14 +295,16 @@ namespace CIS153FinalProject
             this.Btn_c1r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r5TwoP.Location = new System.Drawing.Point(234, 422);
             this.Btn_c1r5TwoP.Name = "Btn_c1r5TwoP";
-            this.Btn_c1r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c1r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c1r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c1r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c1r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r5TwoP.TabIndex = 82;
             this.Btn_c1r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c1r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c1r5TwoP.Click += new System.EventHandler(this.Btn_c1r5TwoP_Click);
+            this.Btn_c1r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c1r5TwoP_MouseEnter);
+            this.Btn_c1r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c1r5TwoP_MouseLeave);
             // 
             // Btn_c0r5TwoP
             // 
@@ -303,14 +315,16 @@ namespace CIS153FinalProject
             this.Btn_c0r5TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r5TwoP.Location = new System.Drawing.Point(168, 422);
             this.Btn_c0r5TwoP.Name = "Btn_c0r5TwoP";
-            this.Btn_c0r5TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c0r5TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c0r5TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r5TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r5TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r5TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r5TwoP.TabIndex = 81;
             this.Btn_c0r5TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c0r5TwoP.UseVisualStyleBackColor = true;
             this.Btn_c0r5TwoP.Click += new System.EventHandler(this.Btn_c0r5TwoP_Click);
+            this.Btn_c0r5TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r5TwoP_MouseEnter);
+            this.Btn_c0r5TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r5TwoP_MouseLeave);
             // 
             // Btn_c6r4TwoP
             // 
@@ -321,14 +335,16 @@ namespace CIS153FinalProject
             this.Btn_c6r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r4TwoP.Location = new System.Drawing.Point(565, 356);
             this.Btn_c6r4TwoP.Name = "Btn_c6r4TwoP";
-            this.Btn_c6r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c6r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c6r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c6r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c6r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r4TwoP.TabIndex = 80;
             this.Btn_c6r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c6r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c6r4TwoP.Click += new System.EventHandler(this.Btn_c6r4TwoP_Click);
+            this.Btn_c6r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c6r4TwoP_MouseEnter);
+            this.Btn_c6r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c6r4TwoP_MouseLeave);
             // 
             // Btn_c5r4TwoP
             // 
@@ -339,14 +355,16 @@ namespace CIS153FinalProject
             this.Btn_c5r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r4TwoP.Location = new System.Drawing.Point(499, 356);
             this.Btn_c5r4TwoP.Name = "Btn_c5r4TwoP";
-            this.Btn_c5r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c5r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c5r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c5r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c5r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r4TwoP.TabIndex = 79;
             this.Btn_c5r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c5r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c5r4TwoP.Click += new System.EventHandler(this.Btn_c5r4TwoP_Click);
+            this.Btn_c5r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c5r4TwoP_MouseEnter);
+            this.Btn_c5r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c5r4TwoP_MouseLeave);
             // 
             // Btn_c4r4TwoP
             // 
@@ -357,14 +375,16 @@ namespace CIS153FinalProject
             this.Btn_c4r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r4TwoP.Location = new System.Drawing.Point(433, 356);
             this.Btn_c4r4TwoP.Name = "Btn_c4r4TwoP";
-            this.Btn_c4r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c4r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c4r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c4r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c4r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r4TwoP.TabIndex = 78;
             this.Btn_c4r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c4r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c4r4TwoP.Click += new System.EventHandler(this.Btn_c4r4TwoP_Click);
+            this.Btn_c4r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c4r4TwoP_MouseEnter);
+            this.Btn_c4r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c4r4TwoP_MouseLeave);
             // 
             // Btn_c3r4TwoP
             // 
@@ -375,14 +395,16 @@ namespace CIS153FinalProject
             this.Btn_c3r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r4TwoP.Location = new System.Drawing.Point(367, 356);
             this.Btn_c3r4TwoP.Name = "Btn_c3r4TwoP";
-            this.Btn_c3r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c3r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c3r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c3r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c3r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r4TwoP.TabIndex = 77;
             this.Btn_c3r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c3r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c3r4TwoP.Click += new System.EventHandler(this.Btn_c3r4TwoP_Click);
+            this.Btn_c3r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c3r4TwoP_MouseEnter);
+            this.Btn_c3r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c3r4TwoP_MouseLeave);
             // 
             // Btn_c2r4TwoP
             // 
@@ -393,14 +415,16 @@ namespace CIS153FinalProject
             this.Btn_c2r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r4TwoP.Location = new System.Drawing.Point(301, 356);
             this.Btn_c2r4TwoP.Name = "Btn_c2r4TwoP";
-            this.Btn_c2r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c2r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c2r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c2r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c2r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r4TwoP.TabIndex = 76;
             this.Btn_c2r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c2r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c2r4TwoP.Click += new System.EventHandler(this.Btn_c2r4TwoP_Click);
+            this.Btn_c2r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c2r4TwoP_MouseEnter);
+            this.Btn_c2r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c2r4TwoP_MouseLeave);
             // 
             // Btn_c1r4TwoP
             // 
@@ -411,14 +435,16 @@ namespace CIS153FinalProject
             this.Btn_c1r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r4TwoP.Location = new System.Drawing.Point(234, 356);
             this.Btn_c1r4TwoP.Name = "Btn_c1r4TwoP";
-            this.Btn_c1r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c1r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c1r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c1r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c1r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r4TwoP.TabIndex = 75;
             this.Btn_c1r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c1r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c1r4TwoP.Click += new System.EventHandler(this.Btn_c1r4TwoP_Click);
+            this.Btn_c1r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c1r4TwoP_MouseEnter);
+            this.Btn_c1r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c1r4TwoP_MouseLeave);
             // 
             // Btn_c0r4TwoP
             // 
@@ -429,14 +455,16 @@ namespace CIS153FinalProject
             this.Btn_c0r4TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r4TwoP.Location = new System.Drawing.Point(168, 356);
             this.Btn_c0r4TwoP.Name = "Btn_c0r4TwoP";
-            this.Btn_c0r4TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c0r4TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c0r4TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r4TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r4TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r4TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r4TwoP.TabIndex = 74;
             this.Btn_c0r4TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c0r4TwoP.UseVisualStyleBackColor = true;
             this.Btn_c0r4TwoP.Click += new System.EventHandler(this.Btn_c0r4TwoP_Click);
+            this.Btn_c0r4TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r4TwoP_MouseEnter);
+            this.Btn_c0r4TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r4TwoP_MouseLeave);
             // 
             // Btn_c6r3TwoP
             // 
@@ -447,14 +475,16 @@ namespace CIS153FinalProject
             this.Btn_c6r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r3TwoP.Location = new System.Drawing.Point(564, 290);
             this.Btn_c6r3TwoP.Name = "Btn_c6r3TwoP";
-            this.Btn_c6r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c6r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c6r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c6r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c6r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r3TwoP.TabIndex = 73;
             this.Btn_c6r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c6r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c6r3TwoP.Click += new System.EventHandler(this.Btn_c6r3TwoP_Click);
+            this.Btn_c6r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c6r3TwoP_MouseEnter);
+            this.Btn_c6r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c6r3TwoP_MouseLeave);
             // 
             // Btn_c5r3TwoP
             // 
@@ -465,14 +495,16 @@ namespace CIS153FinalProject
             this.Btn_c5r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r3TwoP.Location = new System.Drawing.Point(498, 290);
             this.Btn_c5r3TwoP.Name = "Btn_c5r3TwoP";
-            this.Btn_c5r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c5r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c5r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c5r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c5r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r3TwoP.TabIndex = 72;
             this.Btn_c5r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c5r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c5r3TwoP.Click += new System.EventHandler(this.Btn_c5r3TwoP_Click);
+            this.Btn_c5r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c5r3TwoP_MouseEnter);
+            this.Btn_c5r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c5r3TwoP_MouseLeave);
             // 
             // Btn_c4r3TwoP
             // 
@@ -483,14 +515,16 @@ namespace CIS153FinalProject
             this.Btn_c4r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r3TwoP.Location = new System.Drawing.Point(432, 290);
             this.Btn_c4r3TwoP.Name = "Btn_c4r3TwoP";
-            this.Btn_c4r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c4r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c4r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c4r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c4r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r3TwoP.TabIndex = 71;
             this.Btn_c4r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c4r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c4r3TwoP.Click += new System.EventHandler(this.Btn_c4r3TwoP_Click);
+            this.Btn_c4r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c4r3TwoP_MouseEnter);
+            this.Btn_c4r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c4r3TwoP_MouseLeave);
             // 
             // Btn_c3r3TwoP
             // 
@@ -501,14 +535,16 @@ namespace CIS153FinalProject
             this.Btn_c3r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r3TwoP.Location = new System.Drawing.Point(366, 290);
             this.Btn_c3r3TwoP.Name = "Btn_c3r3TwoP";
-            this.Btn_c3r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c3r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c3r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c3r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c3r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r3TwoP.TabIndex = 70;
             this.Btn_c3r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c3r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c3r3TwoP.Click += new System.EventHandler(this.Btn_c3r3TwoP_Click);
+            this.Btn_c3r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c3r3TwoP_MouseEnter);
+            this.Btn_c3r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c3r3TwoP_MouseLeave);
             // 
             // Btn_c2r3TwoP
             // 
@@ -519,14 +555,16 @@ namespace CIS153FinalProject
             this.Btn_c2r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r3TwoP.Location = new System.Drawing.Point(301, 290);
             this.Btn_c2r3TwoP.Name = "Btn_c2r3TwoP";
-            this.Btn_c2r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c2r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c2r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c2r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c2r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r3TwoP.TabIndex = 69;
             this.Btn_c2r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c2r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c2r3TwoP.Click += new System.EventHandler(this.Btn_c2r3TwoP_Click);
+            this.Btn_c2r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c2r3TwoP_MouseEnter);
+            this.Btn_c2r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c2r3TwoP_MouseLeave);
             // 
             // Btn_c1r3TwoP
             // 
@@ -537,14 +575,16 @@ namespace CIS153FinalProject
             this.Btn_c1r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r3TwoP.Location = new System.Drawing.Point(232, 290);
             this.Btn_c1r3TwoP.Name = "Btn_c1r3TwoP";
-            this.Btn_c1r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c1r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c1r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c1r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c1r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r3TwoP.TabIndex = 68;
             this.Btn_c1r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c1r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c1r3TwoP.Click += new System.EventHandler(this.Btn_c1r3TwoP_Click);
+            this.Btn_c1r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c1r3TwoP_MouseEnter);
+            this.Btn_c1r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c1r3TwoP_MouseLeave);
             // 
             // Btn_c0r3TwoP
             // 
@@ -555,14 +595,16 @@ namespace CIS153FinalProject
             this.Btn_c0r3TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r3TwoP.Location = new System.Drawing.Point(166, 290);
             this.Btn_c0r3TwoP.Name = "Btn_c0r3TwoP";
-            this.Btn_c0r3TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c0r3TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c0r3TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r3TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r3TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r3TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r3TwoP.TabIndex = 67;
             this.Btn_c0r3TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c0r3TwoP.UseVisualStyleBackColor = true;
             this.Btn_c0r3TwoP.Click += new System.EventHandler(this.Btn_c0r3TwoP_Click);
+            this.Btn_c0r3TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r3TwoP_MouseEnter);
+            this.Btn_c0r3TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r3TwoP_MouseLeave);
             // 
             // Btn_c6r2TwoP
             // 
@@ -573,14 +615,16 @@ namespace CIS153FinalProject
             this.Btn_c6r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r2TwoP.Location = new System.Drawing.Point(564, 224);
             this.Btn_c6r2TwoP.Name = "Btn_c6r2TwoP";
-            this.Btn_c6r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c6r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c6r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c6r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c6r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r2TwoP.TabIndex = 66;
             this.Btn_c6r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c6r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c6r2TwoP.Click += new System.EventHandler(this.Btn_c6r2TwoP_Click);
+            this.Btn_c6r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c6r2TwoP_MouseEnter);
+            this.Btn_c6r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c6r2TwoP_MouseLeave);
             // 
             // Btn_c5r2TwoP
             // 
@@ -591,14 +635,16 @@ namespace CIS153FinalProject
             this.Btn_c5r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r2TwoP.Location = new System.Drawing.Point(498, 224);
             this.Btn_c5r2TwoP.Name = "Btn_c5r2TwoP";
-            this.Btn_c5r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c5r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c5r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c5r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c5r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r2TwoP.TabIndex = 65;
             this.Btn_c5r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c5r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c5r2TwoP.Click += new System.EventHandler(this.Btn_c5r2TwoP_Click);
+            this.Btn_c5r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c5r2TwoP_MouseEnter);
+            this.Btn_c5r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c5r2TwoP_MouseLeave);
             // 
             // Btn_c4r2TwoP
             // 
@@ -609,14 +655,16 @@ namespace CIS153FinalProject
             this.Btn_c4r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r2TwoP.Location = new System.Drawing.Point(432, 224);
             this.Btn_c4r2TwoP.Name = "Btn_c4r2TwoP";
-            this.Btn_c4r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c4r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c4r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c4r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c4r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r2TwoP.TabIndex = 64;
             this.Btn_c4r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c4r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c4r2TwoP.Click += new System.EventHandler(this.Btn_c4r2TwoP_Click);
+            this.Btn_c4r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c4r2TwoP_MouseEnter);
+            this.Btn_c4r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c4r2TwoP_MouseLeave);
             // 
             // Btn_c3r2TwoP
             // 
@@ -627,14 +675,16 @@ namespace CIS153FinalProject
             this.Btn_c3r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r2TwoP.Location = new System.Drawing.Point(366, 224);
             this.Btn_c3r2TwoP.Name = "Btn_c3r2TwoP";
-            this.Btn_c3r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c3r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c3r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c3r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c3r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r2TwoP.TabIndex = 63;
             this.Btn_c3r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c3r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c3r2TwoP.Click += new System.EventHandler(this.Btn_c3r2TwoP_Click);
+            this.Btn_c3r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c3r2TwoP_MouseEnter);
+            this.Btn_c3r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c3r2TwoP_MouseLeave);
             // 
             // Btn_c2r2TwoP
             // 
@@ -645,14 +695,16 @@ namespace CIS153FinalProject
             this.Btn_c2r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r2TwoP.Location = new System.Drawing.Point(300, 224);
             this.Btn_c2r2TwoP.Name = "Btn_c2r2TwoP";
-            this.Btn_c2r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c2r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c2r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c2r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c2r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r2TwoP.TabIndex = 62;
             this.Btn_c2r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c2r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c2r2TwoP.Click += new System.EventHandler(this.Btn_c2r2TwoP_Click);
+            this.Btn_c2r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c2r2TwoP_MouseEnter);
+            this.Btn_c2r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c2r2TwoP_MouseLeave);
             // 
             // Btn_c1r2TwoP
             // 
@@ -663,14 +715,16 @@ namespace CIS153FinalProject
             this.Btn_c1r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r2TwoP.Location = new System.Drawing.Point(233, 224);
             this.Btn_c1r2TwoP.Name = "Btn_c1r2TwoP";
-            this.Btn_c1r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c1r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c1r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c1r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c1r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r2TwoP.TabIndex = 61;
             this.Btn_c1r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c1r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c1r2TwoP.Click += new System.EventHandler(this.Btn_c1r2TwoP_Click);
+            this.Btn_c1r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c1r2TwoP_MouseEnter);
+            this.Btn_c1r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c1r2TwoP_MouseLeave);
             // 
             // Btn_c0r2TwoP
             // 
@@ -681,14 +735,16 @@ namespace CIS153FinalProject
             this.Btn_c0r2TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r2TwoP.Location = new System.Drawing.Point(167, 224);
             this.Btn_c0r2TwoP.Name = "Btn_c0r2TwoP";
-            this.Btn_c0r2TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c0r2TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c0r2TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r2TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r2TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r2TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r2TwoP.TabIndex = 60;
             this.Btn_c0r2TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c0r2TwoP.UseVisualStyleBackColor = true;
             this.Btn_c0r2TwoP.Click += new System.EventHandler(this.Btn_c0r2TwoP_Click);
+            this.Btn_c0r2TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r2TwoP_MouseEnter);
+            this.Btn_c0r2TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r2TwoP_MouseLeave);
             // 
             // Btn_c6r1TwoP
             // 
@@ -699,14 +755,16 @@ namespace CIS153FinalProject
             this.Btn_c6r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r1TwoP.Location = new System.Drawing.Point(565, 158);
             this.Btn_c6r1TwoP.Name = "Btn_c6r1TwoP";
-            this.Btn_c6r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c6r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c6r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c6r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c6r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r1TwoP.TabIndex = 59;
             this.Btn_c6r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c6r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c6r1TwoP.Click += new System.EventHandler(this.Btn_c6r1TwoP_Click);
+            this.Btn_c6r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c6r1TwoP_MouseEnter);
+            this.Btn_c6r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c6r1TwoP_MouseLeave);
             // 
             // Btn_c5r1TwoP
             // 
@@ -717,14 +775,16 @@ namespace CIS153FinalProject
             this.Btn_c5r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r1TwoP.Location = new System.Drawing.Point(499, 158);
             this.Btn_c5r1TwoP.Name = "Btn_c5r1TwoP";
-            this.Btn_c5r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c5r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c5r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c5r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c5r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r1TwoP.TabIndex = 58;
             this.Btn_c5r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c5r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c5r1TwoP.Click += new System.EventHandler(this.Btn_c5r1TwoP_Click);
+            this.Btn_c5r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c5r1TwoP_MouseEnter);
+            this.Btn_c5r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c5r1TwoP_MouseLeave);
             // 
             // Btn_c4r1TwoP
             // 
@@ -735,14 +795,16 @@ namespace CIS153FinalProject
             this.Btn_c4r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r1TwoP.Location = new System.Drawing.Point(433, 158);
             this.Btn_c4r1TwoP.Name = "Btn_c4r1TwoP";
-            this.Btn_c4r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c4r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c4r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c4r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c4r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r1TwoP.TabIndex = 57;
             this.Btn_c4r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c4r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c4r1TwoP.Click += new System.EventHandler(this.Btn_c4r1TwoP_Click);
+            this.Btn_c4r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c4r1TwoP_MouseEnter);
+            this.Btn_c4r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c4r1TwoP_MouseLeave);
             // 
             // Btn_c3r1TwoP
             // 
@@ -753,14 +815,16 @@ namespace CIS153FinalProject
             this.Btn_c3r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r1TwoP.Location = new System.Drawing.Point(367, 158);
             this.Btn_c3r1TwoP.Name = "Btn_c3r1TwoP";
-            this.Btn_c3r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c3r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c3r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c3r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c3r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r1TwoP.TabIndex = 56;
             this.Btn_c3r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c3r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c3r1TwoP.Click += new System.EventHandler(this.Btn_c3r1TwoP_Click);
+            this.Btn_c3r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c3r1TwoP_MouseEnter);
+            this.Btn_c3r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c3r1TwoP_MouseLeave);
             // 
             // Btn_c2r1TwoP
             // 
@@ -771,14 +835,16 @@ namespace CIS153FinalProject
             this.Btn_c2r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r1TwoP.Location = new System.Drawing.Point(301, 158);
             this.Btn_c2r1TwoP.Name = "Btn_c2r1TwoP";
-            this.Btn_c2r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c2r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c2r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c2r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c2r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r1TwoP.TabIndex = 55;
             this.Btn_c2r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c2r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c2r1TwoP.Click += new System.EventHandler(this.Btn_c2r1TwoP_Click);
+            this.Btn_c2r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c2r1TwoP_MouseEnter);
+            this.Btn_c2r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c2r1TwoP_MouseLeave);
             // 
             // Btn_c1r1TwoP
             // 
@@ -789,14 +855,16 @@ namespace CIS153FinalProject
             this.Btn_c1r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r1TwoP.Location = new System.Drawing.Point(234, 158);
             this.Btn_c1r1TwoP.Name = "Btn_c1r1TwoP";
-            this.Btn_c1r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c1r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c1r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c1r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c1r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r1TwoP.TabIndex = 54;
             this.Btn_c1r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c1r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c1r1TwoP.Click += new System.EventHandler(this.Btn_c1r1TwoP_Click);
+            this.Btn_c1r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c1r1TwoP_MouseEnter);
+            this.Btn_c1r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c1r1TwoP_MouseLeave);
             // 
             // Btn_c0r1TwoP
             // 
@@ -807,14 +875,16 @@ namespace CIS153FinalProject
             this.Btn_c0r1TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r1TwoP.Location = new System.Drawing.Point(167, 158);
             this.Btn_c0r1TwoP.Name = "Btn_c0r1TwoP";
-            this.Btn_c0r1TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c0r1TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c0r1TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r1TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r1TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r1TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r1TwoP.TabIndex = 53;
             this.Btn_c0r1TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c0r1TwoP.UseVisualStyleBackColor = true;
             this.Btn_c0r1TwoP.Click += new System.EventHandler(this.Btn_c0r1TwoP_Click);
+            this.Btn_c0r1TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r1TwoP_MouseEnter);
+            this.Btn_c0r1TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r1TwoP_MouseLeave);
             // 
             // Btn_c6r0TwoP
             // 
@@ -825,14 +895,16 @@ namespace CIS153FinalProject
             this.Btn_c6r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c6r0TwoP.Location = new System.Drawing.Point(565, 92);
             this.Btn_c6r0TwoP.Name = "Btn_c6r0TwoP";
-            this.Btn_c6r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c6r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c6r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c6r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c6r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c6r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c6r0TwoP.TabIndex = 52;
             this.Btn_c6r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c6r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c6r0TwoP.Click += new System.EventHandler(this.Btn_c6r0TwoP_Click);
+            this.Btn_c6r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c6r0TwoP_MouseEnter);
+            this.Btn_c6r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c6r0TwoP_MouseLeave);
             // 
             // Btn_c5r0TwoP
             // 
@@ -843,14 +915,16 @@ namespace CIS153FinalProject
             this.Btn_c5r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c5r0TwoP.Location = new System.Drawing.Point(499, 92);
             this.Btn_c5r0TwoP.Name = "Btn_c5r0TwoP";
-            this.Btn_c5r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c5r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c5r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c5r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c5r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c5r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c5r0TwoP.TabIndex = 51;
             this.Btn_c5r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c5r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c5r0TwoP.Click += new System.EventHandler(this.Btn_c5r0TwoP_Click);
+            this.Btn_c5r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c5r0TwoP_MouseEnter);
+            this.Btn_c5r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c5r0TwoP_MouseLeave);
             // 
             // Btn_c4r0TwoP
             // 
@@ -861,14 +935,16 @@ namespace CIS153FinalProject
             this.Btn_c4r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c4r0TwoP.Location = new System.Drawing.Point(433, 92);
             this.Btn_c4r0TwoP.Name = "Btn_c4r0TwoP";
-            this.Btn_c4r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c4r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c4r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c4r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c4r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c4r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c4r0TwoP.TabIndex = 50;
             this.Btn_c4r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c4r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c4r0TwoP.Click += new System.EventHandler(this.Btn_c4r0TwoP_Click);
+            this.Btn_c4r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c4r0TwoP_MouseEnter);
+            this.Btn_c4r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c4r0TwoP_MouseLeave);
             // 
             // Btn_c3r0TwoP
             // 
@@ -879,14 +955,16 @@ namespace CIS153FinalProject
             this.Btn_c3r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c3r0TwoP.Location = new System.Drawing.Point(367, 92);
             this.Btn_c3r0TwoP.Name = "Btn_c3r0TwoP";
-            this.Btn_c3r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c3r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c3r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c3r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c3r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c3r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c3r0TwoP.TabIndex = 49;
             this.Btn_c3r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c3r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c3r0TwoP.Click += new System.EventHandler(this.Btn_c3r0TwoP_Click);
+            this.Btn_c3r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c3r0TwoP_MouseEnter);
+            this.Btn_c3r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c3r0TwoP_MouseLeave);
             // 
             // Btn_c2r0TwoP
             // 
@@ -897,14 +975,16 @@ namespace CIS153FinalProject
             this.Btn_c2r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c2r0TwoP.Location = new System.Drawing.Point(301, 92);
             this.Btn_c2r0TwoP.Name = "Btn_c2r0TwoP";
-            this.Btn_c2r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c2r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c2r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c2r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c2r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c2r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c2r0TwoP.TabIndex = 48;
             this.Btn_c2r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c2r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c2r0TwoP.Click += new System.EventHandler(this.Btn_c2r0TwoP_Click);
+            this.Btn_c2r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c2r0TwoP_MouseEnter);
+            this.Btn_c2r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c2r0TwoP_MouseLeave);
             // 
             // Btn_c1r0TwoP
             // 
@@ -915,14 +995,16 @@ namespace CIS153FinalProject
             this.Btn_c1r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c1r0TwoP.Location = new System.Drawing.Point(234, 92);
             this.Btn_c1r0TwoP.Name = "Btn_c1r0TwoP";
-            this.Btn_c1r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c1r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c1r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c1r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c1r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c1r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c1r0TwoP.TabIndex = 47;
             this.Btn_c1r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c1r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c1r0TwoP.Click += new System.EventHandler(this.Btn_c1r0TwoP_Click);
+            this.Btn_c1r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c1r0TwoP_MouseEnter);
+            this.Btn_c1r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c1r0TwoP_MouseLeave);
             // 
             // Btn_c0r0TwoP
             // 
@@ -933,14 +1015,16 @@ namespace CIS153FinalProject
             this.Btn_c0r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r0TwoP.Location = new System.Drawing.Point(168, 92);
             this.Btn_c0r0TwoP.Name = "Btn_c0r0TwoP";
-            this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Cyan;
+            this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
             this.Btn_c0r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r0TwoP.TabIndex = 46;
             this.Btn_c0r0TwoP.TextColor = System.Drawing.Color.White;
             this.Btn_c0r0TwoP.UseVisualStyleBackColor = true;
             this.Btn_c0r0TwoP.Click += new System.EventHandler(this.Btn_c0r0TwoP_Click);
+            this.Btn_c0r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r0TwoP_MouseEnter);
+            this.Btn_c0r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r0TwoP_MouseLeave);
             // 
             // Lbl_ColorChangeError
             // 
