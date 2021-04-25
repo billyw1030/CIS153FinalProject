@@ -1456,11 +1456,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if(cell.GetR() == 0 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c0r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1480,11 +1497,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 0 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c1r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1504,11 +1538,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 0 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c2r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1528,11 +1579,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 0 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c3r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1552,11 +1620,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 0 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c4r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1576,11 +1661,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 0 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c5r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1600,11 +1702,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 0 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 0 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c6r0TwoP_MouseLeave(object sender, EventArgs e)
@@ -1624,11 +1743,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c0r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1648,11 +1784,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c1r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1672,11 +1825,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c2r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1696,11 +1866,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c3r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1720,11 +1907,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c4r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1744,11 +1948,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c5r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1768,11 +1989,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 1 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 1 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c6r1TwoP_MouseLeave(object sender, EventArgs e)
@@ -1792,11 +2030,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c0r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1816,11 +2071,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c1r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1840,11 +2112,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c2r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1864,11 +2153,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c3r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1888,11 +2194,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c4r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1912,11 +2235,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c5r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1936,11 +2276,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 2 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 2 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c6r2TwoP_MouseLeave(object sender, EventArgs e)
@@ -1960,11 +2317,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c0r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -1984,11 +2358,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c1r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -2008,11 +2399,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c2r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -2032,11 +2440,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c3r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -2056,11 +2481,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c4r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -2080,11 +2522,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c5r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -2104,11 +2563,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 3 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 3 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c6r3TwoP_MouseLeave(object sender, EventArgs e)
@@ -2128,11 +2604,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c0r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2152,11 +2645,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c1r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2176,11 +2686,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c2r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2200,11 +2727,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c3r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2224,11 +2768,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c4r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2248,11 +2809,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c5r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2272,11 +2850,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 4 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 4 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c6r4TwoP_MouseLeave(object sender, EventArgs e)
@@ -2296,11 +2891,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 0)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c0r5TwoP_MouseLeave(object sender, EventArgs e)
@@ -2320,11 +2932,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 1)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c1r5TwoP_MouseLeave(object sender, EventArgs e)
@@ -2344,11 +2973,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 2)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c2r5TwoP_MouseLeave(object sender, EventArgs e)
@@ -2368,11 +3014,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 3)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c3r5TwoP_MouseLeave(object sender, EventArgs e)
@@ -2392,11 +3055,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 4)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c4r5TwoP_MouseLeave(object sender, EventArgs e)
@@ -2416,11 +3096,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 5)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c5r5TwoP_MouseLeave(object sender, EventArgs e)
@@ -2440,11 +3137,28 @@ namespace CIS153FinalProject
             if (cell.GetFill() == 0 && PlayerOneTurn)
             {
                 cell.GetButton().ButtonColor = PlayerOneColor;
+                if (cell.GetR() == 5 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+                }
             }
 
             if (cell.GetFill() == 0 && PlayerTwoTurn)
             {
                 cell.GetButton().ButtonColor = PlayerTwoColor;
+                if (cell.GetR() == 5 && cell.GetC() == 6)
+                {
+                    cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
+                }
+            }
+
+            if (cell.GetFill() == 1)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerOneColor;
+            }
+            if (cell.GetFill() == 2)
+            {
+                cell.GetButton().OnHoverButtonColor = PlayerTwoColor;
             }
         }
         private void Btn_c6r5TwoP_MouseLeave(object sender, EventArgs e)
