@@ -20,8 +20,8 @@ namespace CIS153FinalProject
         private bool PlayerTwoTurn = false;
         private bool PlayerOneWins = false;
         private bool PlayerTwoWins = false;
-        private static Color PlayerOneColor = Color.FromArgb(255, 255, 0);
-        private static Color PlayerTwoColor = Color.FromArgb(255, 0, 0);
+        private static Color PlayerOneColor = Color.Yellow;
+        private static Color PlayerTwoColor = Color.Red;
         private Cell dropCell = new Cell();
 
 
@@ -4333,6 +4333,19 @@ namespace CIS153FinalProject
                 Lbl_ColorChangeError.Visible = true;
             }
 
+            while (PlayerOneColor == PlayerTwoColor)
+            {
+                lbl_MatchError.Visible = true;
+                colorDialog1.ShowDialog();
+                PlayerOneColor = colorDialog1.Color;
+                Btn_P1Color.FlatAppearance.BorderColor = PlayerOneColor;
+                if (PlayerOneColor != PlayerTwoColor)
+                {
+                    lbl_MatchError.Visible = false;
+                }
+            }
+            
+
             lbl_playerTurnOne.ForeColor = PlayerOneColor;
             lbl_playerTurnTwo.ForeColor = PlayerTwoColor;
         }
@@ -4356,6 +4369,18 @@ namespace CIS153FinalProject
             else
             {
                 Lbl_ColorChangeError.Visible = true;
+            }
+
+            while (PlayerTwoColor == PlayerOneColor)
+            {
+                lbl_MatchError.Visible = true;
+                colorDialog2.ShowDialog();
+                PlayerTwoColor = colorDialog2.Color;
+                Btn_P2Color.FlatAppearance.BorderColor = PlayerTwoColor;
+                if (PlayerTwoColor != PlayerOneColor)
+                {
+                    lbl_MatchError.Visible = false;
+                }
             }
 
             lbl_playerTurnOne.ForeColor = PlayerOneColor;

@@ -82,6 +82,7 @@ namespace CIS153FinalProject
             this.Btn_c2r0TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c1r0TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c0r0TwoP = new ePOSOne.btnProduct.Button_WOC();
+            this.lbl_MatchError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_playerTurnTwo
@@ -1039,6 +1040,19 @@ namespace CIS153FinalProject
             this.Btn_c0r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r0TwoP_MouseEnter);
             this.Btn_c0r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r0TwoP_MouseLeave);
             // 
+            // lbl_MatchError
+            // 
+            this.lbl_MatchError.AutoSize = true;
+            this.lbl_MatchError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MatchError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbl_MatchError.Location = new System.Drawing.Point(17, 356);
+            this.lbl_MatchError.Name = "lbl_MatchError";
+            this.lbl_MatchError.Size = new System.Drawing.Size(130, 15);
+            this.lbl_MatchError.TabIndex = 93;
+            this.lbl_MatchError.Text = "Colors can\'t match!";
+            this.lbl_MatchError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_MatchError.Visible = false;
+            // 
             // TwoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1046,6 +1060,7 @@ namespace CIS153FinalProject
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(794, 612);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_MatchError);
             this.Controls.Add(this.Lbl_ColorChangeError);
             this.Controls.Add(this.Btn_P2Color);
             this.Controls.Add(this.Btn_P1Color);
@@ -1161,5 +1176,6 @@ namespace CIS153FinalProject
         private System.Windows.Forms.Button Btn_P2Color;
         private System.Windows.Forms.ColorDialog colorDialog2;
         private System.Windows.Forms.Label Lbl_ColorChangeError;
+        private System.Windows.Forms.Label lbl_MatchError;
     }
 }
