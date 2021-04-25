@@ -39,6 +39,7 @@ namespace CIS153FinalProject
             this.Btn_P1Color = new System.Windows.Forms.Button();
             this.Btn_P2Color = new System.Windows.Forms.Button();
             this.colorDialog2 = new System.Windows.Forms.ColorDialog();
+            this.Lbl_ColorChangeError = new System.Windows.Forms.Label();
             this.Btn_c6r5TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c5r5TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c4r5TwoP = new ePOSOne.btnProduct.Button_WOC();
@@ -81,7 +82,6 @@ namespace CIS153FinalProject
             this.Btn_c2r0TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c1r0TwoP = new ePOSOne.btnProduct.Button_WOC();
             this.Btn_c0r0TwoP = new ePOSOne.btnProduct.Button_WOC();
-            this.Lbl_ColorChangeError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_playerTurnTwo
@@ -185,6 +185,19 @@ namespace CIS153FinalProject
             this.Btn_P2Color.Text = "Player 2 Color";
             this.Btn_P2Color.UseVisualStyleBackColor = false;
             this.Btn_P2Color.Click += new System.EventHandler(this.Btn_P2Color_Click);
+            // 
+            // Lbl_ColorChangeError
+            // 
+            this.Lbl_ColorChangeError.AutoSize = true;
+            this.Lbl_ColorChangeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ColorChangeError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Lbl_ColorChangeError.Location = new System.Drawing.Point(12, 290);
+            this.Lbl_ColorChangeError.Name = "Lbl_ColorChangeError";
+            this.Lbl_ColorChangeError.Size = new System.Drawing.Size(143, 45);
+            this.Lbl_ColorChangeError.TabIndex = 92;
+            this.Lbl_ColorChangeError.Text = "You can only change \r\nplayer color before \r\ngame starts!";
+            this.Lbl_ColorChangeError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_ColorChangeError.Visible = false;
             // 
             // Btn_c6r5TwoP
             // 
@@ -1015,8 +1028,8 @@ namespace CIS153FinalProject
             this.Btn_c0r0TwoP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Btn_c0r0TwoP.Location = new System.Drawing.Point(168, 92);
             this.Btn_c0r0TwoP.Name = "Btn_c0r0TwoP";
-            this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Blue;
+            this.Btn_c0r0TwoP.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Btn_c0r0TwoP.OnHoverButtonColor = System.Drawing.Color.Transparent;
             this.Btn_c0r0TwoP.OnHoverTextColor = System.Drawing.Color.Gray;
             this.Btn_c0r0TwoP.Size = new System.Drawing.Size(60, 60);
             this.Btn_c0r0TwoP.TabIndex = 46;
@@ -1025,19 +1038,6 @@ namespace CIS153FinalProject
             this.Btn_c0r0TwoP.Click += new System.EventHandler(this.Btn_c0r0TwoP_Click);
             this.Btn_c0r0TwoP.MouseEnter += new System.EventHandler(this.Btn_c0r0TwoP_MouseEnter);
             this.Btn_c0r0TwoP.MouseLeave += new System.EventHandler(this.Btn_c0r0TwoP_MouseLeave);
-            // 
-            // Lbl_ColorChangeError
-            // 
-            this.Lbl_ColorChangeError.AutoSize = true;
-            this.Lbl_ColorChangeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ColorChangeError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Lbl_ColorChangeError.Location = new System.Drawing.Point(12, 290);
-            this.Lbl_ColorChangeError.Name = "Lbl_ColorChangeError";
-            this.Lbl_ColorChangeError.Size = new System.Drawing.Size(143, 45);
-            this.Lbl_ColorChangeError.TabIndex = 92;
-            this.Lbl_ColorChangeError.Text = "You can only change \r\nplayer color before \r\ngame starts!";
-            this.Lbl_ColorChangeError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Lbl_ColorChangeError.Visible = false;
             // 
             // TwoPlayer
             // 
