@@ -979,15 +979,22 @@ namespace CIS153FinalProject
 
             if (PlayerOneWins)
             {
-                EndResults form = new EndResults("Player 1 Wins!");
+                //EndResults reference = new EndResults();
+                //reference.RefToTwoPlayer = this;
+                EndResults form = new EndResults("Player 1 Wins!" , 2, 1);
+                //This must be the single player reference in the other form
+                form.RefToTwoPlayer = this;
                 form.Show();
+                this.Hide();
                 GameIsOver();
             }
 
             if (PlayerTwoWins)
             {
-                EndResults form = new EndResults("Player 2 Wins!");
+                EndResults form = new EndResults("Player 2 Wins!", 2, 2);
+                form.RefToTwoPlayer = this;
                 form.Show();
+                this.Hide();
                 GameIsOver();
             }
 
@@ -1000,8 +1007,10 @@ namespace CIS153FinalProject
                  && ThirtyThree.GetFill() != 0 && ThirtyFour.GetFill() != 0 && ThirtyFive.GetFill() != 0 && ThirtySix.GetFill() != 0 && ThirtySeven.GetFill() != 0
                  && ThirtyEight.GetFill() != 0 && ThirtyNine.GetFill() != 0 && Fourty.GetFill() != 0 && FourtyOne.GetFill() != 0 && FourtyTwo.GetFill() != 0)
             {
-                EndResults form = new EndResults("Draw!");
+                EndResults form = new EndResults("Draw!", 2, 0);
+                form.RefToTwoPlayer = this;
                 form.Show();
+                this.Hide();
                 GameIsOver();
             }
 
@@ -4386,6 +4395,17 @@ namespace CIS153FinalProject
             lbl_playerTurnOne.ForeColor = PlayerOneColor;
             lbl_playerTurnTwo.ForeColor = PlayerTwoColor;
         }
+
+        public Color getPlayerOneColor()
+        {
+            return PlayerOneColor;
+        }
+
+        public Color getPlayerTwoColor()
+        {
+            return PlayerTwoColor;
+        }
     }    
     
+
 }
