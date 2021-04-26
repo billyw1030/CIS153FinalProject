@@ -112,10 +112,10 @@ namespace CIS153FinalProject
         {
             if(gamemode == 1)
             {
-                //SinglePlayer formToLoad = new TwoPlayer(this.RefToSinglePlayer.getMenu());
+                SinglePlayer formToLoad = new SinglePlayer(this.RefToSinglePlayer.getMenu());
 
-                //formToLoad.Show();
-                //this.Hide();
+                formToLoad.Show();
+                this.Hide();
             }
             else if(gamemode == 2)
             {

@@ -25,8 +25,6 @@ namespace CIS153FinalProject
         private static Color PlayerTwoColor = Color.Red;
         private Cell dropCell = new Cell();
 
-
-        //                  r  c  f
         Cell One;
         Cell Two;
         Cell Three;
@@ -80,7 +78,7 @@ namespace CIS153FinalProject
             InitializeComponent();
             Menu = main;
             otherMenu = main;
-
+            //             r  c      button
              One = new Cell(0, 0, Btn_c0r0TwoP);
              Two = new Cell(0, 1, Btn_c1r0TwoP);
              Three = new Cell(0, 2, Btn_c2r0TwoP);
