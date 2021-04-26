@@ -34,7 +34,7 @@ namespace CIS153FinalProject
             this.btn_MainMenuEnd = new System.Windows.Forms.Button();
             this.btn_reviewTwoPlayer = new System.Windows.Forms.Button();
             this.btn_reviewSinglePlayer = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbx_SinglePlayerEnd = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Lbl_Results
@@ -104,15 +104,16 @@ namespace CIS153FinalProject
             this.btn_reviewSinglePlayer.Visible = false;
             this.btn_reviewSinglePlayer.Click += new System.EventHandler(this.btn_reviewSinglePlayer_Click);
             // 
-            // listBox1
+            // lbx_SinglePlayerEnd
             // 
-            this.listBox1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 46;
-            this.listBox1.Location = new System.Drawing.Point(102, 91);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(606, 280);
-            this.listBox1.TabIndex = 11;
+            this.lbx_SinglePlayerEnd.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbx_SinglePlayerEnd.FormattingEnabled = true;
+            this.lbx_SinglePlayerEnd.ItemHeight = 46;
+            this.lbx_SinglePlayerEnd.Location = new System.Drawing.Point(102, 91);
+            this.lbx_SinglePlayerEnd.Name = "lbx_SinglePlayerEnd";
+            this.lbx_SinglePlayerEnd.Size = new System.Drawing.Size(606, 280);
+            this.lbx_SinglePlayerEnd.TabIndex = 11;
+            this.lbx_SinglePlayerEnd.Visible = false;
             // 
             // EndResults
             // 
@@ -121,7 +122,7 @@ namespace CIS153FinalProject
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(786, 462);
             this.ControlBox = false;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbx_SinglePlayerEnd);
             this.Controls.Add(this.btn_reviewSinglePlayer);
             this.Controls.Add(this.btn_reviewTwoPlayer);
             this.Controls.Add(this.btn_CloseEnd);
@@ -143,6 +144,6 @@ namespace CIS153FinalProject
         private System.Windows.Forms.Button btn_MainMenuEnd;
         private System.Windows.Forms.Button btn_reviewTwoPlayer;
         private System.Windows.Forms.Button btn_reviewSinglePlayer;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbx_SinglePlayerEnd;
     }
 }

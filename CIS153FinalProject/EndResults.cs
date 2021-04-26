@@ -33,6 +33,7 @@ namespace CIS153FinalProject
             if(gamemode == 1)
             {
                 btn_reviewSinglePlayer.Visible = true;
+                lbx_SinglePlayerEnd.Visible = true;
                 //if (winner == 1)
                 //{
                 //    Lbl_Results.ForeColor = this.RefToSinglePlayer.getPlayerOneColor();
@@ -50,6 +51,7 @@ namespace CIS153FinalProject
             else
             {
                 btn_reviewSinglePlayer.Visible = false;
+                lbx_SinglePlayerEnd.Visible = false;
             }
 
             if(gamemode == 2)
