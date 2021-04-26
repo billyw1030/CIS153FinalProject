@@ -2825,18 +2825,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (One.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(One);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c1r0_Click(object sender, EventArgs e)
@@ -2850,18 +2838,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Two.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Two);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -2879,18 +2855,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Three.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Three);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c3r0_Click(object sender, EventArgs e)
@@ -2904,18 +2868,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Four.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Four);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -2933,18 +2885,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Five.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Five);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c5r0_Click(object sender, EventArgs e)
@@ -2958,18 +2898,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Six.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Six);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -2987,18 +2915,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Seven.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Seven);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c0r1_Click(object sender, EventArgs e)
@@ -3012,18 +2928,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Eight.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Eight);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3041,18 +2945,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Nine.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Nine);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c2r1_Click(object sender, EventArgs e)
@@ -3066,18 +2958,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Ten.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Ten);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3095,18 +2975,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Eleven.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Eleven);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c4r1_Click(object sender, EventArgs e)
@@ -3120,18 +2988,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Twelve.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Twelve);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3149,18 +3005,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Thirteen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Thirteen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c6r1_Click(object sender, EventArgs e)
@@ -3174,18 +3018,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Fourteen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Fourteen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3203,18 +3035,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Fifteen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Fifteen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c1r2_Click(object sender, EventArgs e)
@@ -3228,18 +3048,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Sixteen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Sixteen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3257,18 +3065,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Seventeen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Seventeen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c3r2_Click(object sender, EventArgs e)
@@ -3282,18 +3078,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Eighteen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Eighteen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3311,18 +3095,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (Nineteen.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Nineteen);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c5r2_Click(object sender, EventArgs e)
@@ -3336,18 +3108,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Twenty.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Twenty);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3365,18 +3125,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (TwentyOne.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyOne);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c0r3_Click(object sender, EventArgs e)
@@ -3390,18 +3138,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (TwentyTwo.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyTwo);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3419,18 +3155,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (TwentyThree.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyThree);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c2r3_Click(object sender, EventArgs e)
@@ -3444,18 +3168,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (TwentyFour.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyFour);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3473,18 +3185,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (TwentyFive.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyFive);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c4r3_Click(object sender, EventArgs e)
@@ -3498,18 +3198,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (TwentySix.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentySix);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3527,18 +3215,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (TwentySeven.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentySeven);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c6r3_Click(object sender, EventArgs e)
@@ -3552,18 +3228,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (TwentyEight.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyEight);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3581,18 +3245,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (TwentyNine.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(TwentyNine);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c1r4_Click(object sender, EventArgs e)
@@ -3606,18 +3258,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Thirty.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Thirty);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3635,18 +3275,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (ThirtyOne.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyOne);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c3r4_Click(object sender, EventArgs e)
@@ -3660,18 +3288,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (ThirtyTwo.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyTwo);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3689,18 +3305,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (ThirtyThree.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyThree);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c5r4_Click(object sender, EventArgs e)
@@ -3714,18 +3318,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (ThirtyFour.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyFour);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3743,18 +3335,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (ThirtyFive.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyFive);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c0r5_Click(object sender, EventArgs e)
@@ -3768,18 +3348,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (ThirtySix.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtySix);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3797,18 +3365,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (ThirtySeven.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtySeven);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c2r5_Click(object sender, EventArgs e)
@@ -3822,18 +3378,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (ThirtyEight.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyEight);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3851,18 +3395,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (ThirtyNine.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(ThirtyNine);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c4r5_Click(object sender, EventArgs e)
@@ -3876,18 +3408,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (Fourty.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(Fourty);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -3905,18 +3425,6 @@ namespace CIS153FinalProject
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
             }
-
-            else if (FourtyOne.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(FourtyOne);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-            }
         }
 
         private void Btn_c6r5_Click(object sender, EventArgs e)
@@ -3930,18 +3438,6 @@ namespace CIS153FinalProject
                 AiTurn = true;
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
-                EndGame();
-            }
-
-            else if (FourtyTwo.GetFill() == 0 && AiTurn)
-            {
-                dropCell = ChipFall(FourtyTwo);
-                DeclareButton(dropCell, 2);
-                dropCell.SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
             }
         }
@@ -4095,21 +3591,176 @@ namespace CIS153FinalProject
             return ActualMoves;
         }
 
-        private Cell AWinMove(Cell move)
+        private bool AWinMove(Cell move, int playerTurn)
         {
-            bool CanWin = false;
-            if (CanWin)
+            int i = 0;
+            int totalFilled = 0;
+            Cell check = new Cell();
+            
+            if(singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC()) != null)
             {
-                return move;
+                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC());
             }
-        }
-
-        private Cell WinningMove(Board board, Cell[] moves)
-        {
-            foreach (Cell move in moves)
+            else
             {
-
+                check = null;
             }
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//horizontal check right
+                check = singlePlayerBoard.GetCell(move.GetR() + i, move.GetC());
+                i++;
+            }
+
+            if (singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC()) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC());
+            }
+            else
+            {
+                check = null;
+            }
+            totalFilled = i;
+            i = 0;
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//horizontal check left
+                check = singlePlayerBoard.GetCell(move.GetR() - i, move.GetC());
+                i++;
+            }
+
+            totalFilled += i;
+            i = 0;
+
+            if(totalFilled >= 3)
+            {
+                return true;
+            }//END OF HORIZONTAL CHECK
+            totalFilled = 0;
+
+            if (singlePlayerBoard.GetCell(move.GetR(), move.GetC() + 1) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() + 1);
+            }
+            else
+            {
+                check = null;
+            }
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//vertical check up
+                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() + i);
+                i++;
+            }
+
+            if (singlePlayerBoard.GetCell(move.GetR(), move.GetC() - 1) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() - 1);
+            }
+            else
+            {
+                check = null;
+            }
+            totalFilled = i;
+            i = 0;
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//vertical check down
+                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() - i);
+                i++;
+            }
+
+            totalFilled += i;
+            i = 0;
+
+            if (totalFilled >= 3)
+            {
+                return true;
+            }//END OF VERTICAL CHECK
+            totalFilled = 0;
+
+            if (singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1);
+            }
+            else
+            {
+                check = null;
+            }
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//diagonal \ check upper left
+                check = singlePlayerBoard.GetCell(move.GetR() - i, move.GetC() + i);
+                i++;
+            }
+
+            if (singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1);
+            }
+            else
+            {
+                check = null;
+            }
+            totalFilled = i;
+            i = 0;
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//diagonal \ check lower right
+                check = singlePlayerBoard.GetCell(move.GetR() + i, move.GetC() - i);
+                i++;
+            }
+
+            totalFilled += i;
+            i = 0;
+
+            if (totalFilled >= 3)
+            {
+                return true;
+            }//END OF DIAGONAL \ CHECK
+            totalFilled = 0;
+
+            if (singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1);
+            }
+            else
+            {
+                check = null;
+            }
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//diagonal / check lower left
+                check = singlePlayerBoard.GetCell(move.GetR() - i, move.GetC() - i);
+                i++;
+            }
+
+            if (singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1) != null)
+            {
+                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
+            }
+            else
+            {
+                check = null;
+            }
+            totalFilled = i;
+            i = 0;
+
+            while (check != null && i < 4 && check.GetFill() == playerTurn)
+            {//diagonal / check upper right
+                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
+                i++;
+            }
+
+            totalFilled += i;
+            i = 0;
+
+            if (totalFilled >= 3)
+            {
+                return true;
+            }//END OF DIAGONAL / CHECK
+
+            return false;
         }
 
         private void AiMove()
@@ -4117,14 +3768,74 @@ namespace CIS153FinalProject
             if (AiTurn)
             {
                 //if AI can take a win take a win
-
+                foreach(Cell cell in PossibleMoves())
+                {
+                    if (AWinMove(cell, 2))
+                    {
+                        DeclareButton(cell, 2);
+                        cell.SetPlayerTwo();
+                        AiTurn = false;
+                        PlayerOneTurn = true;
+                        lbl_playerTurnOneSP.Visible = true;
+                        lbl_PlayerTwoTurnSP.Visible = false;
+                        EndGame();
+                    }
+                }
 
                 //if AI can block you from winning block you
-
+                foreach (Cell cell in PossibleMoves())
+                {
+                    if (AWinMove(cell, 1))
+                    {
+                        DeclareButton(cell, 2);
+                        cell.SetPlayerTwo();
+                        AiTurn = false;
+                        PlayerOneTurn = true;
+                        lbl_playerTurnOneSP.Visible = true;
+                        lbl_PlayerTwoTurnSP.Visible = false;
+                        EndGame();
+                    }
+                }
 
                 //otherwise follow some basic strategy
+                foreach (Cell cell in PossibleMoves())
+                {
+                    if (singlePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2 || singlePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2)
+                    {//if ai can place chip to left or right of any of its chips then it will
+                        DeclareButton(cell, 2);
+                        cell.SetPlayerTwo();
+                        AiTurn = false;
+                        PlayerOneTurn = true;
+                        lbl_playerTurnOneSP.Visible = true;
+                        lbl_PlayerTwoTurnSP.Visible = false;
+                        EndGame();
+                    }
+                }
 
+                foreach (Cell cell in PossibleMoves())
+                {
+                    if (singlePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                    {//if ai can place chip on top of its own chips then it will
+                        DeclareButton(cell, 2);
+                        cell.SetPlayerTwo();
+                        AiTurn = false;
+                        PlayerOneTurn = true;
+                        lbl_playerTurnOneSP.Visible = true;
+                        lbl_PlayerTwoTurnSP.Visible = false;
+                        EndGame();
+                    }
+                }
+                Cell[] NumMoves = PossibleMoves();
+                int a = NumMoves.Length;
+                int randomNumber = new Random().Next(1, a);
 
+                DeclareButton(NumMoves[a], 2);
+                NumMoves[a].SetPlayerTwo();
+                AiTurn = false;
+                PlayerOneTurn = true;
+                lbl_playerTurnOneSP.Visible = true;
+                lbl_PlayerTwoTurnSP.Visible = false;
+                EndGame();
             }
         }
     }
