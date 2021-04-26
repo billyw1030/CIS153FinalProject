@@ -14,6 +14,7 @@ namespace CIS153FinalProject
     public partial class TwoPlayer : Form
     {
         private new WelcomeForm Menu;
+        private new WelcomeForm otherMenu;
         private Board twoPlayerBoard = new Board();
 
         private bool PlayerOneTurn = true;
@@ -78,6 +79,7 @@ namespace CIS153FinalProject
         {
             InitializeComponent();
             Menu = main;
+            otherMenu = main;
 
              One = new Cell(0, 0, Btn_c0r0TwoP);
              Two = new Cell(0, 1, Btn_c1r0TwoP);
@@ -4404,6 +4406,11 @@ namespace CIS153FinalProject
         public Color getPlayerTwoColor()
         {
             return PlayerTwoColor;
+        }
+
+        public WelcomeForm getMenu()
+        {
+            return otherMenu;
         }
     }    
     

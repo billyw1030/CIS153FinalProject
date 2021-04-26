@@ -99,12 +99,31 @@ namespace CIS153FinalProject
         {
             //Menu.Show();
             //this.RefToTwoPlayer.Menu.Show();
+            this.RefToTwoPlayer.getMenu().Show();
             this.Close();
         }
 
         private void btn_CloseEnd_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void btn_PlayAgain_Click(object sender, EventArgs e)
+        {
+            if(gamemode == 1)
+            {
+                //SinglePlayer formToLoad = new TwoPlayer(this.RefToSinglePlayer.getMenu());
+
+                //formToLoad.Show();
+                //this.Hide();
+            }
+            else if(gamemode == 2)
+            {
+                TwoPlayer formToLoad = new TwoPlayer(this.RefToTwoPlayer.getMenu());
+
+                formToLoad.Show();
+                this.Hide();
+            }
         }
     }
 }

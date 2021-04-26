@@ -35,6 +35,7 @@ namespace CIS153FinalProject
             this.btn_reviewTwoPlayer = new System.Windows.Forms.Button();
             this.btn_reviewSinglePlayer = new System.Windows.Forms.Button();
             this.lbx_SinglePlayerEnd = new System.Windows.Forms.ListBox();
+            this.btn_PlayAgain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_Results
@@ -46,13 +47,14 @@ namespace CIS153FinalProject
             this.Lbl_Results.Size = new System.Drawing.Size(260, 46);
             this.Lbl_Results.TabIndex = 0;
             this.Lbl_Results.Text = "test: test test";
+            this.Lbl_Results.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_CloseEnd
             // 
             this.btn_CloseEnd.BackColor = System.Drawing.Color.Firebrick;
             this.btn_CloseEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CloseEnd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_CloseEnd.Location = new System.Drawing.Point(532, 397);
+            this.btn_CloseEnd.Location = new System.Drawing.Point(599, 397);
             this.btn_CloseEnd.Margin = new System.Windows.Forms.Padding(2);
             this.btn_CloseEnd.Name = "btn_CloseEnd";
             this.btn_CloseEnd.Size = new System.Drawing.Size(176, 53);
@@ -66,7 +68,7 @@ namespace CIS153FinalProject
             this.btn_MainMenuEnd.BackColor = System.Drawing.Color.Green;
             this.btn_MainMenuEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MainMenuEnd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_MainMenuEnd.Location = new System.Drawing.Point(319, 397);
+            this.btn_MainMenuEnd.Location = new System.Drawing.Point(206, 397);
             this.btn_MainMenuEnd.Name = "btn_MainMenuEnd";
             this.btn_MainMenuEnd.Size = new System.Drawing.Size(176, 53);
             this.btn_MainMenuEnd.TabIndex = 7;
@@ -79,7 +81,7 @@ namespace CIS153FinalProject
             this.btn_reviewTwoPlayer.BackColor = System.Drawing.Color.Teal;
             this.btn_reviewTwoPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reviewTwoPlayer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_reviewTwoPlayer.Location = new System.Drawing.Point(102, 397);
+            this.btn_reviewTwoPlayer.Location = new System.Drawing.Point(11, 397);
             this.btn_reviewTwoPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.btn_reviewTwoPlayer.Name = "btn_reviewTwoPlayer";
             this.btn_reviewTwoPlayer.Size = new System.Drawing.Size(176, 53);
@@ -94,7 +96,7 @@ namespace CIS153FinalProject
             this.btn_reviewSinglePlayer.BackColor = System.Drawing.Color.Teal;
             this.btn_reviewSinglePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reviewSinglePlayer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_reviewSinglePlayer.Location = new System.Drawing.Point(102, 397);
+            this.btn_reviewSinglePlayer.Location = new System.Drawing.Point(11, 397);
             this.btn_reviewSinglePlayer.Margin = new System.Windows.Forms.Padding(2);
             this.btn_reviewSinglePlayer.Name = "btn_reviewSinglePlayer";
             this.btn_reviewSinglePlayer.Size = new System.Drawing.Size(176, 53);
@@ -115,6 +117,19 @@ namespace CIS153FinalProject
             this.lbx_SinglePlayerEnd.TabIndex = 11;
             this.lbx_SinglePlayerEnd.Visible = false;
             // 
+            // btn_PlayAgain
+            // 
+            this.btn_PlayAgain.BackColor = System.Drawing.Color.Indigo;
+            this.btn_PlayAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PlayAgain.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_PlayAgain.Location = new System.Drawing.Point(404, 397);
+            this.btn_PlayAgain.Name = "btn_PlayAgain";
+            this.btn_PlayAgain.Size = new System.Drawing.Size(176, 53);
+            this.btn_PlayAgain.TabIndex = 12;
+            this.btn_PlayAgain.Text = "Play Again";
+            this.btn_PlayAgain.UseVisualStyleBackColor = false;
+            this.btn_PlayAgain.Click += new System.EventHandler(this.btn_PlayAgain_Click);
+            // 
             // EndResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +137,7 @@ namespace CIS153FinalProject
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(786, 462);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_PlayAgain);
             this.Controls.Add(this.lbx_SinglePlayerEnd);
             this.Controls.Add(this.btn_reviewSinglePlayer);
             this.Controls.Add(this.btn_reviewTwoPlayer);
@@ -145,5 +161,6 @@ namespace CIS153FinalProject
         private System.Windows.Forms.Button btn_reviewTwoPlayer;
         private System.Windows.Forms.Button btn_reviewSinglePlayer;
         private System.Windows.Forms.ListBox lbx_SinglePlayerEnd;
+        private System.Windows.Forms.Button btn_PlayAgain;
     }
 }
