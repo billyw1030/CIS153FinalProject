@@ -3627,7 +3627,7 @@ namespace CIS153FinalProject
 
         private bool IsInBounds(int r, int c)
         {
-            if (r > SinglePlayerBoard.GetNumRows() || r < 0 || c < SinglePlayerBoard.GetNumCols() || c < 0)
+            if ((r < SinglePlayerBoard.GetNumRows() && r > 0) || (c < SinglePlayerBoard.GetNumCols() && c > 0))
             {
                 return true;
             }
