@@ -3627,7 +3627,7 @@ namespace CIS153FinalProject
 
         private bool IsInBounds(int r, int c)
         {
-            if ((r < SinglePlayerBoard.GetNumRows() && r > 0) || (c < SinglePlayerBoard.GetNumCols() && c > 0))
+            if (r < SinglePlayerBoard.GetNumRows() && r > 0 && c < SinglePlayerBoard.GetNumCols() && c > 0)
             {
                 return true;
             }
@@ -3843,7 +3843,7 @@ namespace CIS153FinalProject
                 //otherwise follow some basic strategy
                 foreach (Cell cell in PossibleMoves())
                 {
-                    if (SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2 || SinglePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2)
+                    if ((IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2) || (IsInBounds(cell.GetR() + 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2))
                     {//if ai can place chip to left or right of any of its chips then it will
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
@@ -3857,7 +3857,7 @@ namespace CIS153FinalProject
 
                 foreach (Cell cell in PossibleMoves())
                 {
-                    if (SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                    if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
                     {//if ai can place chip on top of its own chips then it will
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
@@ -3879,8 +3879,8 @@ namespace CIS153FinalProject
                 int a = NumMoves.Length;
                 int randomNumber = new Random().Next(1, a);
 
-                DeclareButton(NumMoves[a], 2);
-                NumMoves[a].SetPlayerTwo();
+                DeclareButton(NumMoves[randomNumber], 2);
+                NumMoves[randomNumber].SetPlayerTwo();
                 AiTurn = false;
                 PlayerOneTurn = true;
                 lbl_playerTurnOneSP.Visible = true;
