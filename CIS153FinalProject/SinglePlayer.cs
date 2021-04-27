@@ -3808,13 +3808,14 @@ namespace CIS153FinalProject
 
         private void AiMove()
         {
-            if (AiTurn)
+            while (AiTurn)
             {
                 //if AI can take a win take a win
                 foreach(Cell cell in PossibleMoves())
                 {
                     if (AWinMove(cell, 2))
                     {
+                        Console.WriteLine("Take WIN");
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
                         AiTurn = false;
@@ -3822,6 +3823,7 @@ namespace CIS153FinalProject
                         lbl_playerTurnOneSP.Visible = true;
                         lbl_PlayerTwoTurnSP.Visible = false;
                         EndGame();
+                        return;
                     }
                 }
 
@@ -3830,6 +3832,7 @@ namespace CIS153FinalProject
                 {
                     if (AWinMove(cell, 1))
                     {
+                        Console.WriteLine("Block WIN");
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
                         AiTurn = false;
@@ -3837,6 +3840,7 @@ namespace CIS153FinalProject
                         lbl_playerTurnOneSP.Visible = true;
                         lbl_PlayerTwoTurnSP.Visible = false;
                         EndGame();
+                        return;
                     }
                 }
 
@@ -3845,13 +3849,15 @@ namespace CIS153FinalProject
                 {
                     if ((IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2) || (IsInBounds(cell.GetR() + 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2))
                     {//if ai can place chip to left or right of any of its chips then it will
+                        Console.WriteLine("L/R of chips");
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
-                        AiTurn = false;
-                        PlayerOneTurn = true;
                         lbl_playerTurnOneSP.Visible = true;
                         lbl_PlayerTwoTurnSP.Visible = false;
                         EndGame();
+                        PlayerOneTurn = true;
+                        AiTurn = false;
+                        return;
                     }
                 }
 
@@ -3859,13 +3865,15 @@ namespace CIS153FinalProject
                 {
                     if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
                     {//if ai can place chip on top of its own chips then it will
+                        Console.WriteLine("On top of chip");
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
-                        AiTurn = false;
-                        PlayerOneTurn = true;
                         lbl_playerTurnOneSP.Visible = true;
                         lbl_PlayerTwoTurnSP.Visible = false;
                         EndGame();
+                        PlayerOneTurn = true;
+                        AiTurn = false;
+                        return;
                     }
                 }
                 // AI chooses a random place to put the chip if:
@@ -3881,11 +3889,12 @@ namespace CIS153FinalProject
 
                 DeclareButton(NumMoves[randomNumber], 2);
                 NumMoves[randomNumber].SetPlayerTwo();
-                AiTurn = false;
-                PlayerOneTurn = true;
                 lbl_playerTurnOneSP.Visible = true;
                 lbl_PlayerTwoTurnSP.Visible = false;
                 EndGame();
+                Console.WriteLine("Random");
+                PlayerOneTurn = true;
+                AiTurn = false; ;
             }
         }
     }
