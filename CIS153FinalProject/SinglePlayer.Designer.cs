@@ -1066,6 +1066,7 @@
             this.lbl_PlayerTwoTurnSP.TabIndex = 103;
             this.lbl_PlayerTwoTurnSP.Text = "Player 2";
             this.lbl_PlayerTwoTurnSP.Visible = false;
+            this.lbl_PlayerTwoTurnSP.Click += new System.EventHandler(this.lbl_PlayerTwoTurnSP_Click);
             // 
             // SinglePlayer
             // 

@@ -133,8 +133,7 @@ namespace CIS153FinalProject
         private void Txt_stats_TextChanged(object sender, EventArgs e)
         {
             string text = "";
-            _ = new StreamReader("../../Resources/statsfile.txt");
-            //StreamWriter sw = new StreamWriter("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt");
+            StreamWriter sw = new StreamWriter("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt");
             Playerstats user1 = new Playerstats();
             user1.SetPlayerwins(playerwins);
             user1.SetAiwins(aiwins);
@@ -142,58 +141,29 @@ namespace CIS153FinalProject
             user1.SetTotalplayed(totalplayed);
             user1.SetPlayerpercent(playerpercent);
             user1.SetAipercent(aipercent);
-            if (user1.GetPlayerwins().Length > 0)
+            if (user1.GetPlayerwins().Length > 0 && user1.GetAiwins().Length > 0 && user1.GetTie().Length > 0 && user1.GetTotalplayed().Length > 0 && user1.GetPlayerpercent().Length > 0 && user1.GetAipercent().Length > 0)
             {
-                if (user1.GetAiwins().Length > 0)
+                
+                listofplayerstats.Add(user1);
+
+                for (int i = 0; i < listofplayerstats.Count(); i++)
                 {
-                    if (user1.GetTie().Length > 0)
-                    {
+                    txt_stats.Text = "";
+                    text = text + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "Ai wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
+                        + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "Ai percentage: " + listofplayerstats[i].GetAipercent();
 
-                        if (user1.GetTotalplayed().Length > 0)
-                        {
+                    txt_stats.Text = text;
 
-                            if (user1.GetPlayerpercent().Length > 0)
-                            {
-                                if (user1.GetAipercent().Length > 0)
-                                {
-                                    listofplayerstats.Add(user1);
-
-                                    for (int i = 0; i < listofplayerstats.Count(); i++)
-                                    {
-                                        txt_stats.Text = "";
-                                        text = text + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "Ai wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
-                                         + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "Ai percentage: " + listofplayerstats[i].GetAipercent();
-
-                                        txt_stats.Text = text;
-
-
-                                    }
-
-
-                                }
-
-
-
-
-
-
-
-                            }
-
-                        }
-
-                    }
 
                 }
 
+
             }
 
-
-            //sw.WriteLine(text);
-            //sw.Close();
-
-
-
         }
+
     }
+
 }
+
+

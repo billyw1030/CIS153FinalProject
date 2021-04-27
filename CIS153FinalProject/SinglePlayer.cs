@@ -3621,7 +3621,10 @@ namespace CIS153FinalProject
                 storedCells++;
             }
             Cell[] ActualMoves = new Cell[storedCells];
-            moves.CopyTo(ActualMoves, 0);//break| It is saying Actual moves destination is not long enough and: . Check destIndex and length, and the array's lower bounds.'
+            for(int i = 0; i < storedCells; i++)
+            {
+                ActualMoves[i] = moves[i];
+            }//break| It is saying Actualmoves destination is not long enough and: . Check destIndex and length, and the array's lower bounds.'
             return ActualMoves;
         }
 
@@ -3637,15 +3640,111 @@ namespace CIS153FinalProject
             }
         }
 
+        private bool HorizCheckRight(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR(), m.GetC() + i))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool HorizCheckLeft(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR(), m.GetC() - i))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool VertiCheckUp(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR() - i, m.GetC()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool VertiCheckDown(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR() + i, m.GetC()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool DiagUpLeft(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR() - i, m.GetC() - i))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool DiagLowRight(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR() + i, m.GetC() + i))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool DiagLowLeft(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR() + i, m.GetC() - i))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool DiagUpRight(Cell m, int i)
+        {
+            if (IsInBounds(m.GetR() - i, m.GetC() + i))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         private bool AWinMove(Cell move, int playerTurn)
         {
-            int i = 0;
+            int i = 1;
             int totalFilled;
             Cell check;
             
-            if(IsInBounds(move.GetR() + 1, move.GetC()))
+            if(HorizCheckRight(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC());
+                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + i);
             }
             else
             {
@@ -3654,29 +3753,44 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//horizontal check right
-                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC());
                 i++;
+                if (HorizCheckRight(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + i);
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            if (IsInBounds(move.GetR() - 1, move.GetC()))
+            totalFilled = i - 1;
+            i = 1;
+
+            if (HorizCheckLeft(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC());
+                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - i);
             }
             else
             {
                 check = null;
             }
-            totalFilled = i;
-            i = 0;
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//horizontal check left
-                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC());
                 i++;
+                if (HorizCheckLeft(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - i);
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            totalFilled += i;
-            i = 0;
+            totalFilled += i - 1;
+            i = 1;
 
             if(totalFilled >= 3)
             {
@@ -3684,9 +3798,9 @@ namespace CIS153FinalProject
             }//END OF HORIZONTAL CHECK
             totalFilled = 0;
 
-            if (IsInBounds(move.GetR(), move.GetC() + 1))
+            if (VertiCheckUp(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC());
             }
             else
             {
@@ -3695,38 +3809,54 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//vertical check up
-                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + i);
                 i++;
+                if (VertiCheckUp(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC());
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            if (IsInBounds(move.GetR(), move.GetC() - 1))
+            totalFilled = i - 1;
+            i = 1;
+
+            if (VertiCheckDown(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC());
             }
             else
             {
                 check = null;
             }
-            totalFilled = i;
-            i = 0;
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//vertical check down
-                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - i);
                 i++;
+
+                if (VertiCheckDown(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC());
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            totalFilled += i;
-            i = 0;
+            totalFilled += i - 1;
+            i = 1;
 
             if (totalFilled >= 3)
             {
                 return true;
             }//END OF VERTICAL CHECK
 
-            if (IsInBounds(move.GetR() - 1, move.GetC() + 1))
+            if (DiagUpLeft(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() - i);
             }
             else
             {
@@ -3735,38 +3865,53 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal \ check upper left
-                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() + i);
                 i++;
+                if (DiagUpLeft(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() - i);
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            if (IsInBounds(move.GetR() + 1, move.GetC() - 1))
+            totalFilled = i - 1;
+            i = 1;
+
+            if (DiagLowRight(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC() + i);
             }
             else
             {
                 check = null;
             }
-            totalFilled = i;
-            i = 0;
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal \ check lower right
-                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC() - i);
                 i++;
+                if (DiagLowRight(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC() + i);
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            totalFilled += i;
-            i = 0;
+            totalFilled += i - 1;
+            i = 1;
 
             if (totalFilled >= 3)
             {
                 return true;
             }//END OF DIAGONAL \ CHECK
 
-            if (IsInBounds(move.GetR() - 1, move.GetC() - 1))
+            if (DiagLowLeft(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC() - i);
             }
             else
             {
@@ -3775,28 +3920,43 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal / check lower left
-                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() - i);
                 i++;
+                if (DiagLowLeft(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC() - i);
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            if (IsInBounds(move.GetR() + 1, move.GetC() + 1))
+            totalFilled = i - 1;
+            i = 1;
+
+            if (DiagUpRight(move, i))
             {
-                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() + i);
             }
             else
             {
                 check = null;
             }
-            totalFilled = i;
-            i = 0;
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal / check upper right
-                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
                 i++;
+                if (DiagUpRight(move, i))
+                {
+                    check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() + i);
+                }
+                else
+                {
+                    check = null;
+                }
             }
 
-            totalFilled += i;
+            totalFilled += i - 1;
 
             if (totalFilled >= 3)
             {
@@ -3816,6 +3976,7 @@ namespace CIS153FinalProject
             //   -cant place a chip on top of its already placed chips
             //   This is all in order 
             {
+                //System.Threading.Thread.Sleep(1000);
                 //if AI can take a win take a win
                 foreach (Cell cell in PossibleMoves())
                 {
@@ -3851,116 +4012,138 @@ namespace CIS153FinalProject
                 }
 
                 //otherwise follow some basic strategy (Switch)
-                int random = 1;
-                random = new Random().Next(1, 6);
+                
+                int random = new Random().Next(1, 6);
 
-                switch (random)
-                {
-                    case 1:
-                        foreach (Cell cell in PossibleMoves())
-                        {
-                            if (IsInBounds(cell.GetR(), cell.GetC() + 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() + 1).GetFill() == 2)
-                            {//if ai can place chip to right of any of its chips then it will
-                                Console.WriteLine("Case 1: Right of chips");
-                                DeclareButton(cell, 2);
-                                cell.SetPlayerTwo();
-                                lbl_playerTurnOneSP.Visible = true;
-                                lbl_PlayerTwoTurnSP.Visible = false;
-                                EndGame();
-                                PlayerOneTurn = true;
-                                AiTurn = false;
-                                return;
-                            }
-                            else
-                            {
-                                if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
-                                {//if ai can place chip to left of any of its chips then it will
-                                    Console.WriteLine("Case 3: Left of chips");
-                                    DeclareButton(cell, 2);
-                                    cell.SetPlayerTwo();
-                                    lbl_playerTurnOneSP.Visible = true;
-                                    lbl_PlayerTwoTurnSP.Visible = false;
-                                    EndGame();
-                                    PlayerOneTurn = true;
-                                    AiTurn = false;
-                                    return;
-                                }
-                            }
-                        }
-                        break;
+                //switch (random)
+                //{
+                    //case 1:
+                    //    foreach (Cell cell in PossibleMoves())
+                    //    {
+                    //        if (IsInBounds(cell.GetR() - 1, cell.GetC()))
+                    //        {
+                    //            Console.WriteLine(SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1));
+                    //            if (IsInBounds(cell.GetR(), cell.GetC() + 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() + 1).GetFill() == 2)//same break
+                    //            {//if ai can place chip to right of any of its chips then it will
+                    //                Console.WriteLine("Case 1: Left of chips");
+                    //                DeclareButton(cell, 2);
+                    //                cell.SetPlayerTwo();
+                    //                lbl_playerTurnOneSP.Visible = true;
+                    //                lbl_PlayerTwoTurnSP.Visible = false;
+                    //                EndGame();
+                    //                PlayerOneTurn = true;
+                    //                AiTurn = false;
+                    //                return;
+                    //            }
+                    //        }
+                    //        else
+                    //        {
+                    //            if (IsInBounds(cell.GetR() - 1, cell.GetC()))
+                    //            {
+                    //                Console.WriteLine(SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1));
+                    //                if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                    //                {//if ai can place chip to left of any of its chips then it will
+                    //                    Console.WriteLine("Case 1: Right of chips");
+                    //                    DeclareButton(cell, 2);
+                    //                    cell.SetPlayerTwo();
+                    //                    lbl_playerTurnOneSP.Visible = true;
+                    //                    lbl_PlayerTwoTurnSP.Visible = false;
+                    //                    EndGame();
+                    //                    PlayerOneTurn = true;
+                    //                    AiTurn = false;
+                    //                    return;
+                    //                }
+                    //            }
+                    //        }
+                    //    }
+                    //    break;
 
-                    case 2:
-                        foreach (Cell cell in PossibleMoves())
-                        {
-                            if (IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2)
-                            {//if ai can place chip on top of its own chips then it will
-                                Console.WriteLine("On top of chip");
-                                Console.WriteLine("2");
-                                DeclareButton(cell, 2);
-                                cell.SetPlayerTwo();
-                                lbl_playerTurnOneSP.Visible = true;
-                                lbl_PlayerTwoTurnSP.Visible = false;
-                                EndGame();
-                                PlayerOneTurn = true;
-                                AiTurn = false;
-                                return;
-                            }
-                        }
-                        break;
+                    //case 2:
+                    //    foreach (Cell cell in PossibleMoves())
+                    //    {
+                    //        if (IsInBounds(cell.GetR() - 1, cell.GetC()))
+                    //        {
+                    //            Console.WriteLine(SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1));
+                    //            if (IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2)// board.getcell returned null: 'Object reference not set to an instance of an object.'
+                    //            {//if ai can place chip on top of its own chips then it will
+                    //                Console.WriteLine("Case 2: top of chip");
+                    //                DeclareButton(cell, 2);
+                    //                cell.SetPlayerTwo();
+                    //                lbl_playerTurnOneSP.Visible = true;
+                    //                lbl_PlayerTwoTurnSP.Visible = false;
+                    //                EndGame();
+                    //                PlayerOneTurn = true;
+                    //                AiTurn = false;
+                    //                return;
+                    //            }
+                    //        }
+                    //    }
+                    //    break;
 
-                    case 3:
-                        foreach (Cell cell in PossibleMoves())
-                        {
-                            if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
-                            {//if ai can place chip to left or right of any of its chips then it will
-                                Console.WriteLine("Case 3: Left of chips");
-                                DeclareButton(cell, 2);
-                                cell.SetPlayerTwo();
-                                lbl_playerTurnOneSP.Visible = true;
-                                lbl_PlayerTwoTurnSP.Visible = false;
-                                EndGame();
-                                PlayerOneTurn = true;
-                                AiTurn = false;
-                                return;
-                            }
-                            else
-                            {
-                                if (IsInBounds(cell.GetR(), cell.GetC() + 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() + 1).GetFill() == 2)
-                                {//if ai can place chip to left or right of any of its chips then it will
-                                    Console.WriteLine("Case 3: Right of chips");
-                                    DeclareButton(cell, 2);
-                                    cell.SetPlayerTwo();
-                                    lbl_playerTurnOneSP.Visible = true;
-                                    lbl_PlayerTwoTurnSP.Visible = false;
-                                    EndGame();
-                                    PlayerOneTurn = true;
-                                    AiTurn = false;
-                                    return;
-                                }
-                            }
-                        }
-                        break;
+                    //case 3:
+                    //    foreach (Cell cell in PossibleMoves())
+                    //    {
+                    //        if (IsInBounds(cell.GetR() - 1, cell.GetC()))
+                    //        {
+                    //            Console.WriteLine(SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1));
+                    //            if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                    //            {//if ai can place chip to left of any of its chips then it will
+                    //                Console.WriteLine("Case 3: Right of chips");
+                    //                DeclareButton(cell, 2);
+                    //                cell.SetPlayerTwo();
+                    //                lbl_playerTurnOneSP.Visible = true;
+                    //                lbl_PlayerTwoTurnSP.Visible = false;
+                    //                EndGame();
+                    //                PlayerOneTurn = true;
+                    //                AiTurn = false;
+                    //                return;
+                    //            }
+                    //        }
+                    //        else
+                    //        {
+                    //            if (IsInBounds(cell.GetR() - 1, cell.GetC()))
+                    //            {
+                    //                Console.WriteLine(SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1));
+                    //                if (IsInBounds(cell.GetR(), cell.GetC() + 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() + 1).GetFill() == 2)
+                    //                {//if ai can place chip to right of any of its chips then it will
+                    //                    Console.WriteLine("Case 3: Left of chips");
+                    //                    DeclareButton(cell, 2);
+                    //                    cell.SetPlayerTwo();
+                    //                    lbl_playerTurnOneSP.Visible = true;
+                    //                    lbl_PlayerTwoTurnSP.Visible = false;
+                    //                    EndGame();
+                    //                    PlayerOneTurn = true;
+                    //                    AiTurn = false;
+                    //                    return;
+                    //                }
+                    //            }
+                    //        }
+                    //    }
+                    //    break;
 
-                    case 4:
-                        foreach (Cell cell in PossibleMoves())
-                        {
-                            if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
-                            {//if ai can place chip on top of its own chips then it will
-                                Console.WriteLine("On top of chip");
-                                Console.WriteLine("4");
-                                DeclareButton(cell, 2);
-                                cell.SetPlayerTwo();
-                                lbl_playerTurnOneSP.Visible = true;
-                                lbl_PlayerTwoTurnSP.Visible = false;
-                                EndGame();
-                                PlayerOneTurn = true;
-                                AiTurn = false;
-                                return;
-                            }
-                        }
-                        break;
+                    //case 4:
+                    //    foreach (Cell cell in PossibleMoves())
+                    //    {
+                    //        if (IsInBounds(cell.GetR() - 1, cell.GetC()))
+                    //        {
+                    //            Console.WriteLine(SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1));
+                    //            if (IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2)//same break
+                    //            {//if ai can place chip on top of its own chips then it will
+                    //                Console.WriteLine("Case 4: top of chip");
+                    //                DeclareButton(cell, 2);
+                    //                cell.SetPlayerTwo();
+                    //                lbl_playerTurnOneSP.Visible = true;
+                    //                lbl_PlayerTwoTurnSP.Visible = false;
+                    //                EndGame();
+                    //                PlayerOneTurn = true;
+                    //                AiTurn = false;
+                    //                return;
+                    //            }
+                    //        }
+                    //    }
+                    //    break;
 
-                    case 5:
+                    //case 5:
                         Cell[] NumMoves = PossibleMoves();
                         int a = NumMoves.Length;
                         int randomNumber = new Random().Next(1, a);
@@ -3970,12 +4153,17 @@ namespace CIS153FinalProject
                         lbl_playerTurnOneSP.Visible = true;
                         lbl_PlayerTwoTurnSP.Visible = false;
                         EndGame();
-                        Console.WriteLine("Random");
+                        Console.WriteLine("Case 5: Random");
                         PlayerOneTurn = true;
                         AiTurn = false; ;
-                        break;
-                }
+                        //break;
+                
             }
+        }
+
+        private void lbl_PlayerTwoTurnSP_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }    
