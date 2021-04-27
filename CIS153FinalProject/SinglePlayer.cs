@@ -15,7 +15,6 @@ namespace CIS153FinalProject
     public partial class SinglePlayer : Form
     {
         private new WelcomeForm Menu;
-        private Board singlePlayerBoard;
 
         private new WelcomeForm otherMenu;
         private Board SinglePlayerBoard = new Board();
@@ -2824,6 +2823,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2839,6 +2839,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2854,6 +2855,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2869,6 +2871,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2884,6 +2887,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2899,6 +2903,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2914,6 +2919,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2929,6 +2935,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2944,6 +2951,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2959,6 +2967,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2974,6 +2983,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -2989,6 +2999,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3004,6 +3015,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3019,6 +3031,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3034,6 +3047,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3049,6 +3063,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3064,6 +3079,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3079,6 +3095,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3094,6 +3111,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3109,6 +3127,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3124,6 +3143,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3139,6 +3159,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3154,6 +3175,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3169,6 +3191,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3184,6 +3207,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3199,6 +3223,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3214,6 +3239,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3229,6 +3255,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3244,6 +3271,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3259,6 +3287,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3274,6 +3303,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3289,6 +3319,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3304,6 +3335,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3319,6 +3351,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3334,6 +3367,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3349,6 +3383,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3364,6 +3399,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3379,6 +3415,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3394,6 +3431,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3409,6 +3447,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3424,6 +3463,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3439,6 +3479,7 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
+                AiMove();
             }
         }
 
@@ -3597,9 +3638,9 @@ namespace CIS153FinalProject
             int totalFilled = 0;
             Cell check = new Cell();
             
-            if(singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC()) != null)
+            if(SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC()) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC());
+                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC());
             }
             else
             {
@@ -3608,13 +3649,13 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//horizontal check right
-                check = singlePlayerBoard.GetCell(move.GetR() + i, move.GetC());
+                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC());
                 i++;
             }
 
-            if (singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC()) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC()) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC());
+                check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC());
             }
             else
             {
@@ -3625,7 +3666,7 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//horizontal check left
-                check = singlePlayerBoard.GetCell(move.GetR() - i, move.GetC());
+                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC());
                 i++;
             }
 
@@ -3638,9 +3679,9 @@ namespace CIS153FinalProject
             }//END OF HORIZONTAL CHECK
             totalFilled = 0;
 
-            if (singlePlayerBoard.GetCell(move.GetR(), move.GetC() + 1) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + 1) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + 1);
             }
             else
             {
@@ -3649,13 +3690,13 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//vertical check up
-                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() + i);
+                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + i);
                 i++;
             }
 
-            if (singlePlayerBoard.GetCell(move.GetR(), move.GetC() - 1) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - 1) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() - 1);
+                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - 1);
             }
             else
             {
@@ -3666,7 +3707,7 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//vertical check down
-                check = singlePlayerBoard.GetCell(move.GetR(), move.GetC() - i);
+                check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - i);
                 i++;
             }
 
@@ -3679,9 +3720,9 @@ namespace CIS153FinalProject
             }//END OF VERTICAL CHECK
             totalFilled = 0;
 
-            if (singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1);
             }
             else
             {
@@ -3690,13 +3731,13 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal \ check upper left
-                check = singlePlayerBoard.GetCell(move.GetR() - i, move.GetC() + i);
+                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() + i);
                 i++;
             }
 
-            if (singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1);
             }
             else
             {
@@ -3707,7 +3748,7 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal \ check lower right
-                check = singlePlayerBoard.GetCell(move.GetR() + i, move.GetC() - i);
+                check = SinglePlayerBoard.GetCell(move.GetR() + i, move.GetC() - i);
                 i++;
             }
 
@@ -3720,9 +3761,9 @@ namespace CIS153FinalProject
             }//END OF DIAGONAL \ CHECK
             totalFilled = 0;
 
-            if (singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1);
             }
             else
             {
@@ -3731,13 +3772,13 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal / check lower left
-                check = singlePlayerBoard.GetCell(move.GetR() - i, move.GetC() - i);
+                check = SinglePlayerBoard.GetCell(move.GetR() - i, move.GetC() - i);
                 i++;
             }
 
-            if (singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1) != null)
+            if (SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1) != null)
             {
-                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
             }
             else
             {
@@ -3748,7 +3789,7 @@ namespace CIS153FinalProject
 
             while (check != null && i < 4 && check.GetFill() == playerTurn)
             {//diagonal / check upper right
-                check = singlePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
+                check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
                 i++;
             }
 
@@ -3800,7 +3841,7 @@ namespace CIS153FinalProject
                 //otherwise follow some basic strategy
                 foreach (Cell cell in PossibleMoves())
                 {
-                    if (singlePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2 || singlePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2)
+                    if (SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2 || SinglePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2)
                     {//if ai can place chip to left or right of any of its chips then it will
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
@@ -3814,7 +3855,7 @@ namespace CIS153FinalProject
 
                 foreach (Cell cell in PossibleMoves())
                 {
-                    if (singlePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                    if (SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
                     {//if ai can place chip on top of its own chips then it will
                         DeclareButton(cell, 2);
                         cell.SetPlayerTwo();
@@ -3825,6 +3866,13 @@ namespace CIS153FinalProject
                         EndGame();
                     }
                 }
+                // AI chooses a random place to put the chip if:
+                //   -cant take a win
+                //   -cant block a win
+                //   -cant place a chip left or right of one of its already placed chips
+                //   -cant place a chip on top of its already placed chips
+                //   This is all in order 
+
                 Cell[] NumMoves = PossibleMoves();
                 int a = NumMoves.Length;
                 int randomNumber = new Random().Next(1, a);
