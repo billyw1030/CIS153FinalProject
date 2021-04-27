@@ -3809,6 +3809,7 @@ namespace CIS153FinalProject
             if (AiTurn)
             {
                 Console.WriteLine("its the Ai's turn: ");
+                Console.WriteLine(PossibleMoves().Length);
                 //if AI can take a win take a win
                 foreach(Cell cell in PossibleMoves())
                 {
