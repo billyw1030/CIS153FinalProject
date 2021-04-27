@@ -3845,6 +3845,8 @@ namespace CIS153FinalProject
                 }
 
                 //otherwise follow some basic strategy
+                //I think the comments for these bottom 2 are flipped, when it places a chip to the side
+                //it says "on top of chip", but placing them on top displays "L/R of chips" to console.
                 foreach (Cell cell in PossibleMoves())
                 {
                     if ((IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2) || (IsInBounds(cell.GetR() + 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2))
