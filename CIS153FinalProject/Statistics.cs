@@ -104,6 +104,7 @@ namespace CIS153FinalProject
                 
                 text = text + line + "\n";
                 line = inputfile.ReadLine();
+                inputfile.Close();
 
             }
             playerwins = count1.ToString();
