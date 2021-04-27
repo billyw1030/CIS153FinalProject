@@ -3621,7 +3621,7 @@ namespace CIS153FinalProject
                 storedCells++;
             }
             Cell[] ActualMoves = new Cell[storedCells];
-            moves.CopyTo(ActualMoves, 0);
+            moves.CopyTo(ActualMoves, 0);//break| It is saying Actual moves destination is not long enough and: . Check destIndex and length, and the array's lower bounds.'
             return ActualMoves;
         }
 
@@ -3809,9 +3809,15 @@ namespace CIS153FinalProject
         private void AiMove()
         {
             while (AiTurn)
+            // AI chooses a random place to put the chip if:
+            //   -cant take a win
+            //   -cant block a win
+            //   -cant place a chip left or right of one of its already placed chips
+            //   -cant place a chip on top of its already placed chips
+            //   This is all in order 
             {
                 //if AI can take a win take a win
-                foreach(Cell cell in PossibleMoves())
+                foreach (Cell cell in PossibleMoves())
                 {
                     if (AWinMove(cell, 2))
                     {
@@ -3844,59 +3850,131 @@ namespace CIS153FinalProject
                     }
                 }
 
-                //otherwise follow some basic strategy
-                //I think the comments for these bottom 2 are flipped, when it places a chip to the side
-                //it says "on top of chip", but placing them on top displays "L/R of chips" to console.
-                foreach (Cell cell in PossibleMoves())
+                //otherwise follow some basic strategy (Switch)
+                int random = 1;
+                random = new Random().Next(1, 6);
+
+                switch (random)
                 {
-                    if ((IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2) || (IsInBounds(cell.GetR() + 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() + 1, cell.GetC()).GetFill() == 2))
-                    {//if ai can place chip to left or right of any of its chips then it will
-                        Console.WriteLine("L/R of chips");
-                        DeclareButton(cell, 2);
-                        cell.SetPlayerTwo();
+                    case 1:
+                        foreach (Cell cell in PossibleMoves())
+                        {
+                            if (IsInBounds(cell.GetR(), cell.GetC() + 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() + 1).GetFill() == 2)
+                            {//if ai can place chip to right of any of its chips then it will
+                                Console.WriteLine("Case 1: Right of chips");
+                                DeclareButton(cell, 2);
+                                cell.SetPlayerTwo();
+                                lbl_playerTurnOneSP.Visible = true;
+                                lbl_PlayerTwoTurnSP.Visible = false;
+                                EndGame();
+                                PlayerOneTurn = true;
+                                AiTurn = false;
+                                return;
+                            }
+                            else
+                            {
+                                if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                                {//if ai can place chip to left of any of its chips then it will
+                                    Console.WriteLine("Case 3: Left of chips");
+                                    DeclareButton(cell, 2);
+                                    cell.SetPlayerTwo();
+                                    lbl_playerTurnOneSP.Visible = true;
+                                    lbl_PlayerTwoTurnSP.Visible = false;
+                                    EndGame();
+                                    PlayerOneTurn = true;
+                                    AiTurn = false;
+                                    return;
+                                }
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        foreach (Cell cell in PossibleMoves())
+                        {
+                            if (IsInBounds(cell.GetR() - 1, cell.GetC()) && SinglePlayerBoard.GetCell(cell.GetR() - 1, cell.GetC()).GetFill() == 2)
+                            {//if ai can place chip on top of its own chips then it will
+                                Console.WriteLine("On top of chip");
+                                Console.WriteLine("2");
+                                DeclareButton(cell, 2);
+                                cell.SetPlayerTwo();
+                                lbl_playerTurnOneSP.Visible = true;
+                                lbl_PlayerTwoTurnSP.Visible = false;
+                                EndGame();
+                                PlayerOneTurn = true;
+                                AiTurn = false;
+                                return;
+                            }
+                        }
+                        break;
+
+                    case 3:
+                        foreach (Cell cell in PossibleMoves())
+                        {
+                            if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                            {//if ai can place chip to left or right of any of its chips then it will
+                                Console.WriteLine("Case 3: Left of chips");
+                                DeclareButton(cell, 2);
+                                cell.SetPlayerTwo();
+                                lbl_playerTurnOneSP.Visible = true;
+                                lbl_PlayerTwoTurnSP.Visible = false;
+                                EndGame();
+                                PlayerOneTurn = true;
+                                AiTurn = false;
+                                return;
+                            }
+                            else
+                            {
+                                if (IsInBounds(cell.GetR(), cell.GetC() + 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() + 1).GetFill() == 2)
+                                {//if ai can place chip to left or right of any of its chips then it will
+                                    Console.WriteLine("Case 3: Right of chips");
+                                    DeclareButton(cell, 2);
+                                    cell.SetPlayerTwo();
+                                    lbl_playerTurnOneSP.Visible = true;
+                                    lbl_PlayerTwoTurnSP.Visible = false;
+                                    EndGame();
+                                    PlayerOneTurn = true;
+                                    AiTurn = false;
+                                    return;
+                                }
+                            }
+                        }
+                        break;
+
+                    case 4:
+                        foreach (Cell cell in PossibleMoves())
+                        {
+                            if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
+                            {//if ai can place chip on top of its own chips then it will
+                                Console.WriteLine("On top of chip");
+                                Console.WriteLine("4");
+                                DeclareButton(cell, 2);
+                                cell.SetPlayerTwo();
+                                lbl_playerTurnOneSP.Visible = true;
+                                lbl_PlayerTwoTurnSP.Visible = false;
+                                EndGame();
+                                PlayerOneTurn = true;
+                                AiTurn = false;
+                                return;
+                            }
+                        }
+                        break;
+
+                    case 5:
+                        Cell[] NumMoves = PossibleMoves();
+                        int a = NumMoves.Length;
+                        int randomNumber = new Random().Next(1, a);
+
+                        DeclareButton(NumMoves[randomNumber], 2);
+                        NumMoves[randomNumber].SetPlayerTwo();
                         lbl_playerTurnOneSP.Visible = true;
                         lbl_PlayerTwoTurnSP.Visible = false;
                         EndGame();
+                        Console.WriteLine("Random");
                         PlayerOneTurn = true;
-                        AiTurn = false;
-                        return;
-                    }
+                        AiTurn = false; ;
+                        break;
                 }
-
-                foreach (Cell cell in PossibleMoves())
-                {
-                    if (IsInBounds(cell.GetR(), cell.GetC() - 1) && SinglePlayerBoard.GetCell(cell.GetR(), cell.GetC() - 1).GetFill() == 2)
-                    {//if ai can place chip on top of its own chips then it will
-                        Console.WriteLine("On top of chip");
-                        DeclareButton(cell, 2);
-                        cell.SetPlayerTwo();
-                        lbl_playerTurnOneSP.Visible = true;
-                        lbl_PlayerTwoTurnSP.Visible = false;
-                        EndGame();
-                        PlayerOneTurn = true;
-                        AiTurn = false;
-                        return;
-                    }
-                }
-                // AI chooses a random place to put the chip if:
-                //   -cant take a win
-                //   -cant block a win
-                //   -cant place a chip left or right of one of its already placed chips
-                //   -cant place a chip on top of its already placed chips
-                //   This is all in order 
-
-                Cell[] NumMoves = PossibleMoves();
-                int a = NumMoves.Length;
-                int randomNumber = new Random().Next(1, a);
-
-                DeclareButton(NumMoves[randomNumber], 2);
-                NumMoves[randomNumber].SetPlayerTwo();
-                lbl_playerTurnOneSP.Visible = true;
-                lbl_PlayerTwoTurnSP.Visible = false;
-                EndGame();
-                Console.WriteLine("Random");
-                PlayerOneTurn = true;
-                AiTurn = false; ;
             }
         }
     }
