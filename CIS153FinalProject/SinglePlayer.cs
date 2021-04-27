@@ -3622,10 +3622,6 @@ namespace CIS153FinalProject
             }
             Cell[] ActualMoves = new Cell[storedCells];
             moves.CopyTo(ActualMoves, 0);
-            foreach (Cell c in ActualMoves)
-            {
-                Console.WriteLine(c.GetR() + " row " + c.GetC() + " col        ");
-            }
             return ActualMoves;
         }
 
