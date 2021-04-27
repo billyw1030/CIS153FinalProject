@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CIS153FinalProject
 {
@@ -76,7 +77,7 @@ namespace CIS153FinalProject
                 btn_reviewTwoPlayer.Visible = false;
             }
         }
-
+        //StreamWriter savewins = new StreamWriter("../../Resources/statsfile.txt", true);
         private void EndResults_Load(object sender, EventArgs e)
         {
 
@@ -125,5 +126,6 @@ namespace CIS153FinalProject
                 this.Hide();
             }
         }
+        
     }
 }

@@ -65,23 +65,67 @@ namespace CIS153FinalProject
         {
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
             //StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
+            int count1 = 0;
+            int count2 = 0;
+            int count3 = 0;
+            int count4 = 0;
+            float playerpercent1 = 0.0F;
+            float aipercent1 = 0.0F;
             string text = " ";
             string line;
             line = inputfile.ReadLine();
             while (line !=null)
             {
+                
+                if (line.Equals("1"))
+                {
+                    count1++;
+
+                }
+
+                if (line.Equals("2"))
+                {
+                    count2++;
+
+
+                }
+                if (line.Equals("3"))
+                {
+                    count3++;
+
+
+                }
+                if (line.Equals("4"))
+                {
+                    count4++;
+
+
+                }
+                
                 text = text + line + "\n";
                 line = inputfile.ReadLine();
+                inputfile.Close();
 
             }
-            playerwins = text;
-            aiwins = text;
-            tie = text;
-            totalplayed = text;
-            playerpercent = text;
-            aipercent = text;
+            playerwins = count1.ToString();
+            aiwins = count2.ToString();
+            tie = count3.ToString();
+            totalplayed = count4.ToString();
+            playerpercent1 = ((float)count1 / (float)count4) * 100;
+            aipercent1 = ((float)count2 / (float)count4) * 100;
+            playerpercent = playerpercent1.ToString("0.0") + "%";
+            aipercent = aipercent1.ToString("0.0") + "%";
             txt_stats.Text = text;
             inputfile.Close();
+
+            //playerwins = text;
+            //aiwins = text;
+            //tie = text;
+            //totalplayed = text;
+            //playerpercent = text;
+            //aipercent = text;
+            //txt_stats.Text = text;
+            //inputfile.Close();
 
 
         }
