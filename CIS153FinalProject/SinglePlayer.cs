@@ -3625,13 +3625,25 @@ namespace CIS153FinalProject
             return ActualMoves;
         }
 
+        private bool IsInBounds(int r, int c)
+        {
+            if (r > SinglePlayerBoard.GetNumRows() || r < 0 || c < SinglePlayerBoard.GetNumCols() || c < 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         private bool AWinMove(Cell move, int playerTurn)
         {
             int i = 0;
-            int totalFilled = 0;
-            Cell check = new Cell();
+            int totalFilled;
+            Cell check;
             
-            if(SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC()) != null)
+            if(IsInBounds(move.GetR() + 1, move.GetC()))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC());
             }
@@ -3646,7 +3658,7 @@ namespace CIS153FinalProject
                 i++;
             }
 
-            if (SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC()) != null)
+            if (IsInBounds(move.GetR() - 1, move.GetC()))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC());
             }
@@ -3672,7 +3684,7 @@ namespace CIS153FinalProject
             }//END OF HORIZONTAL CHECK
             totalFilled = 0;
 
-            if (SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + 1) != null)
+            if (IsInBounds(move.GetR(), move.GetC() + 1))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() + 1);
             }
@@ -3687,7 +3699,7 @@ namespace CIS153FinalProject
                 i++;
             }
 
-            if (SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - 1) != null)
+            if (IsInBounds(move.GetR(), move.GetC() - 1))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR(), move.GetC() - 1);
             }
@@ -3711,9 +3723,8 @@ namespace CIS153FinalProject
             {
                 return true;
             }//END OF VERTICAL CHECK
-            totalFilled = 0;
 
-            if (SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1) != null)
+            if (IsInBounds(move.GetR() - 1, move.GetC() + 1))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() + 1);
             }
@@ -3728,7 +3739,7 @@ namespace CIS153FinalProject
                 i++;
             }
 
-            if (SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1) != null)
+            if (IsInBounds(move.GetR() + 1, move.GetC() - 1))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() - 1);
             }
@@ -3752,9 +3763,8 @@ namespace CIS153FinalProject
             {
                 return true;
             }//END OF DIAGONAL \ CHECK
-            totalFilled = 0;
 
-            if (SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1) != null)
+            if (IsInBounds(move.GetR() - 1, move.GetC() - 1))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR() - 1, move.GetC() - 1);
             }
@@ -3769,7 +3779,7 @@ namespace CIS153FinalProject
                 i++;
             }
 
-            if (SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1) != null)
+            if (IsInBounds(move.GetR() + 1, move.GetC() + 1))
             {
                 check = SinglePlayerBoard.GetCell(move.GetR() + 1, move.GetC() + 1);
             }
@@ -3787,7 +3797,6 @@ namespace CIS153FinalProject
             }
 
             totalFilled += i;
-            i = 0;
 
             if (totalFilled >= 3)
             {
