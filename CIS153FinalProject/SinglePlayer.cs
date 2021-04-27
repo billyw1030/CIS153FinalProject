@@ -3580,55 +3580,52 @@ namespace CIS153FinalProject
             
             if (One.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(One);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             if (Two.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(Two);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             if (Three.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(Three);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             if (Four.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(Four);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             if (Five.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(Five);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             if (Six.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(Six);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             if (Seven.GetFill() == 0)
             {
-                cell = new Cell();
                 cell = ChipFall(Seven);
-                cell = moves[storedCells];
+                moves[storedCells] = cell;
                 storedCells++;
             }
             Cell[] ActualMoves = new Cell[storedCells];
             moves.CopyTo(ActualMoves, 0);
+            foreach (Cell c in ActualMoves)
+            {
+                Console.WriteLine(c.GetR() + " row " + c.GetC() + " col        ");
+            }
             return ActualMoves;
         }
 
