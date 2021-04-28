@@ -1,4 +1,9 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace CIS153FinalProject
 {
     partial class Statistics
@@ -74,6 +79,7 @@ namespace CIS153FinalProject
             // 
             // txt_stats
             // 
+            Console.WriteLine("txt_stats running");
             this.txt_stats.Font = new System.Drawing.Font("Times New Roman", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_stats.Location = new System.Drawing.Point(196, 131);
             this.txt_stats.Name = "txt_stats";

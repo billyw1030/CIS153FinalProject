@@ -20,6 +20,7 @@ namespace CIS153FinalProject
         private string totalplayed;
         private string playerpercent;
         private string aipercent;
+        //bool swClosed = false;
 
         List<Playerstats> listofplayerstats = new List<Playerstats>();
 
@@ -64,6 +65,7 @@ namespace CIS153FinalProject
         private void Statistics_Load(object sender, EventArgs e)
         {
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
+            //swClosed = false;
             //StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
             int count1 = 0;
             int count2 = 0;
@@ -105,6 +107,7 @@ namespace CIS153FinalProject
                 text = text + line + "\n";
                 line = inputfile.ReadLine();
                 inputfile.Close();
+                //swClosed = true;
 
             }
             playerwins = count1.ToString();
@@ -117,6 +120,7 @@ namespace CIS153FinalProject
             aipercent = aipercent1.ToString("0.0") + "%";
             txt_stats.Text = text;
             inputfile.Close();
+            //swClosed = true;
 
             //playerwins = text;
             //aiwins = text;
@@ -159,6 +163,7 @@ namespace CIS153FinalProject
 
 
             }
+            sw.Close();
 
         }
 
