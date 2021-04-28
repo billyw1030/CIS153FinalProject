@@ -64,6 +64,78 @@ namespace CIS153FinalProject
 
         private void Statistics_Load(object sender, EventArgs e)
         {
+            //StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
+            //srClosed = false;
+            ////StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
+            //int count1 = 0;
+            //int count2 = 0;
+            //int count3 = 0;
+            //int count4 = 0;
+            //float playerpercent1 = 0.0F;
+            //float aipercent1 = 0.0F;
+            //string text = " ";
+            //string line;
+            //line = inputfile.ReadLine();
+            //while (line !=null)
+            //{
+                
+            //    if (line.Equals("1"))
+            //    {
+            //        count1++;
+
+            //    }
+
+            //    if (line.Equals("2"))
+            //    {
+            //        count2++;
+
+
+            //    }
+            //    if (line.Equals("3"))
+            //    {
+            //        count3++;
+
+
+            //    }
+            //    if (line.Equals("4"))
+            //    {
+            //        count4++;
+
+
+            //    }
+                
+            //    text = text + line + "\n";
+            //    line = inputfile.ReadLine();
+            //    inputfile.Close();
+            //    srClosed = true;
+
+            //}
+            //playerwins = count1.ToString();
+            //aiwins = count2.ToString();
+            //tie = count3.ToString();
+            //totalplayed = count4.ToString();
+            //playerpercent1 = ((float)count1 / (float)count4) * 100;
+            //aipercent1 = ((float)count2 / (float)count4) * 100;
+            //playerpercent = playerpercent1.ToString("0.0") + "%";
+            //aipercent = aipercent1.ToString("0.0") + "%";
+            //txt_stats.Text = text;
+            //inputfile.Close();
+            //srClosed = true;
+
+            //playerwins = text;
+            //aiwins = text;
+            //tie = text;
+            //totalplayed = text;
+            //playerpercent = text;
+            //aipercent = text;
+            //txt_stats.Text = text;
+            //inputfile.Close();
+
+
+        }
+
+        private void Txt_stats_TextChanged(object sender, EventArgs e)
+        {
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
             srClosed = false;
             //StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
@@ -76,9 +148,9 @@ namespace CIS153FinalProject
             string text = " ";
             string line;
             line = inputfile.ReadLine();
-            while (line !=null)
+            while (line != null)
             {
-                
+
                 if (line.Equals("1"))
                 {
                     count1++;
@@ -103,7 +175,7 @@ namespace CIS153FinalProject
 
 
                 }
-                
+
                 text = text + line + "\n";
                 line = inputfile.ReadLine();
                 inputfile.Close();
@@ -122,24 +194,10 @@ namespace CIS153FinalProject
             inputfile.Close();
             srClosed = true;
 
-            //playerwins = text;
-            //aiwins = text;
-            //tie = text;
-            //totalplayed = text;
-            //playerpercent = text;
-            //aipercent = text;
-            //txt_stats.Text = text;
-            //inputfile.Close();
-
-
-        }
-
-        private void Txt_stats_TextChanged(object sender, EventArgs e)
-        {
             if (srClosed == true)
             {
                 Console.WriteLine("Entered TextChanged");
-                string text = "";
+                string txt = "";
                 StreamWriter sw = new StreamWriter("../../Resources/statsfile.txt");
                 Playerstats user1 = new Playerstats();
                 user1.SetPlayerwins(playerwins);
@@ -156,10 +214,10 @@ namespace CIS153FinalProject
                     for (int i = 0; i < listofplayerstats.Count(); i++)
                     {
                         txt_stats.Text = "";
-                        text = text + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "Ai wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
+                        txt = txt + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "Ai wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
                             + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "Ai percentage: " + listofplayerstats[i].GetAipercent();
 
-                        txt_stats.Text = text;
+                        txt_stats.Text = txt;
 
 
                     }
