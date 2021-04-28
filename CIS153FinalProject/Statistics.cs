@@ -195,7 +195,7 @@ namespace CIS153FinalProject
             srClosed = true;
 
             if (srClosed == true)
-            {
+            {//text is changed
                 Console.WriteLine("Entered TextChanged");
                 string txt = "";
                 StreamWriter sw = new StreamWriter("../../Resources/statsfile.txt");
