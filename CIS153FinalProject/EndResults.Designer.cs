@@ -116,6 +116,7 @@ namespace CIS153FinalProject
             this.lbx_SinglePlayerEnd.Size = new System.Drawing.Size(606, 280);
             this.lbx_SinglePlayerEnd.TabIndex = 11;
             this.lbx_SinglePlayerEnd.Visible = false;
+            this.lbx_SinglePlayerEnd.SelectedIndexChanged += new System.EventHandler(this.lbx_SinglePlayerEnd_SelectedIndexChanged);
             // 
             // btn_PlayAgain
             // 

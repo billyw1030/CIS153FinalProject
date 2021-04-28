@@ -126,6 +126,10 @@ namespace CIS153FinalProject
                 this.Hide();
             }
         }
-        
+
+        private void lbx_SinglePlayerEnd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

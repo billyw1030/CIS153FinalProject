@@ -133,7 +133,7 @@ namespace CIS153FinalProject
         private void Txt_stats_TextChanged(object sender, EventArgs e)
         {
             string text = "";
-            StreamWriter sw = new StreamWriter("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt");
+            StreamWriter sw = new StreamWriter("../../Resources/statsfile.txt");
             Playerstats user1 = new Playerstats();
             user1.SetPlayerwins(playerwins);
             user1.SetAiwins(aiwins);
