@@ -100,7 +100,14 @@ namespace CIS153FinalProject
         {
             //Menu.Show();
             //this.RefToTwoPlayer.Menu.Show();
-            this.RefToTwoPlayer.getMenu().Show();
+            if (gamemode == 1)
+            {
+                this.RefToTwoPlayer.getMenu().Show();
+            }
+            else if(gamemode == 2)
+            {
+                this.RefToSinglePlayer.getMenu().Show();
+            }
             this.Close();
         }
 

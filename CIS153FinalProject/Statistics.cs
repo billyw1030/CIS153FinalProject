@@ -14,13 +14,13 @@ namespace CIS153FinalProject
     public partial class Statistics : Form
     {
         private new WelcomeForm Menu;
-        private string playerwins;
-        private string aiwins;
+        private string playerWins;
+        private string aiWins;
         private string tie;
-        private string totalplayed;
-        private string playerpercent;
-        private string aipercent;
-        bool srClosed = false;
+        private string totalPlayed;
+        private string playerPercent;
+        private string aiPercent;
+        //bool srClosed = false;
 
         List<Playerstats> listofplayerstats = new List<Playerstats>();
 
@@ -65,14 +65,12 @@ namespace CIS153FinalProject
         private void Statistics_Load(object sender, EventArgs e)
         {
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
-            srClosed = false;
-            //StreamReader inputfile = new StreamReader("C:\\Users\\FleaF\\Documents\\GitHub\\CIS153FinalProject\\CIS153FinalProject\\statsfile.txt.txt");
             int count1 = 0;
             int count2 = 0;
             int count3 = 0;
             int count4 = 0;
-            float playerpercent1 = 0.0F;
-            float aipercent1 = 0.0F;
+            float playerPercent1 = 0.0F;
+            float aiPercent1 = 0.0F;
             string text = " ";
             string line;
             line = inputfile.ReadLine();
@@ -107,53 +105,53 @@ namespace CIS153FinalProject
                 text = text + line + "\n";
                 line = inputfile.ReadLine();
                 inputfile.Close();
-                srClosed = true;
+                //srClosed = true;
 
             }
-            playerwins = count1.ToString();
-            aiwins = count2.ToString();
+            playerWins = count1.ToString();
+            aiWins = count2.ToString();
             tie = count3.ToString();
-            totalplayed = count4.ToString();
-            playerpercent1 = ((float)count1 / (float)count4) * 100;
-            aipercent1 = ((float)count2 / (float)count4) * 100;
-            playerpercent = playerpercent1.ToString("0.0") + "%";
-            aipercent = aipercent1.ToString("0.0") + "%";
-            txt_stats.Text = text;
+            totalPlayed = count4.ToString();
+            playerPercent1 = ((float)count1 / (float)count4) * 100;
+            aiPercent1 = ((float)count2 / (float)count4) * 100;
+            playerPercent = playerPercent1.ToString("0.0") + "%";
+            aiPercent = aiPercent1.ToString("0.0") + "%";
+            //txt_stats.Text = text;
             inputfile.Close();
-            srClosed = true;
+            //srClosed = true;
 
-            if (srClosed == true)
-            {//text is changed
-                Console.WriteLine("Entered TextChanged");
-                string txt = "";
-                StreamWriter sw = new StreamWriter("../../Resources/statsfile.txt");
-                Playerstats user1 = new Playerstats();
-                user1.SetPlayerwins(playerwins);
-                user1.SetAiwins(aiwins);
-                user1.SetTie(tie);
-                user1.SetTotalplayed(totalplayed);
-                user1.SetPlayerpercent(playerpercent);
-                user1.SetAipercent(aipercent);
-                if (user1.GetPlayerwins().Length > 0 && user1.GetAiwins().Length > 0 && user1.GetTie().Length > 0 && user1.GetTotalplayed().Length > 0 && user1.GetPlayerpercent().Length > 0 && user1.GetAipercent().Length > 0)
+          
+            //text is changed
+            Console.WriteLine("Entered TextChanged");
+            string txt = "";
+            StreamWriter sw = new StreamWriter("../../Resources/statsfile.txt");
+            Playerstats user1 = new Playerstats();
+            user1.SetPlayerwins(playerWins);
+            user1.SetAiwins(aiWins);
+            user1.SetTie(tie);
+            user1.SetTotalplayed(totalPlayed);
+            user1.SetPlayerpercent(playerPercent);
+            user1.SetAipercent(aiPercent);
+            if (user1.GetPlayerwins().Length > 0 && user1.GetAiwins().Length > 0 && user1.GetTie().Length > 0 && user1.GetTotalplayed().Length > 0 && user1.GetPlayerpercent().Length > 0 && user1.GetAipercent().Length > 0)
+            {
+                
+                listofplayerstats.Add(user1);
+                
+                for (int i = 0; i < listofplayerstats.Count(); i++)
                 {
-
-                    listofplayerstats.Add(user1);
-
-                    for (int i = 0; i < listofplayerstats.Count(); i++)
-                    {
-                        txt_stats.Text = "";
-                        txt = txt + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "AI wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
-                            + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "AI percentage: " + listofplayerstats[i].GetAipercent();
-
-                        txt_stats.Text = txt;
-
-
-                    }
+                    lbl_PlayerWins.Text = "Player Wins: " + listofplayerstats[i].GetPlayerwins();
+                    //txt_stats.Text = "";
+                    //txt = txt + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "AI wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
+                    //    + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "AI percentage: " + listofplayerstats[i].GetAipercent();
+                    //txt_stats.Text = txt;
 
 
                 }
-                sw.Close();
+
+
             }
+                sw.Close();
+        }
 
             //playerwins = text;
             //aiwins = text;
@@ -163,19 +161,14 @@ namespace CIS153FinalProject
             //aipercent = text;
             //txt_stats.Text = text;
             //inputfile.Close();
+    }
 
-
-        }
-
-        private void Txt_stats_TextChanged(object sender, EventArgs e)
-        {
+        //private void Txt_stats_TextChanged(object sender, EventArgs e)
+        //{
            
 
 
-        }
-
-    }
-
+        //}
 }
 
 
