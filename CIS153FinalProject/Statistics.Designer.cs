@@ -43,6 +43,7 @@ namespace CIS153FinalProject
             this.lbl_PlayerWins = new System.Windows.Forms.Label();
             this.lbl_AIPercent = new System.Windows.Forms.Label();
             this.lbl_PlayerPercent = new System.Windows.Forms.Label();
+            this.btn_Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_mainmenu
@@ -50,7 +51,7 @@ namespace CIS153FinalProject
             this.btn_mainmenu.BackColor = System.Drawing.Color.Green;
             this.btn_mainmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.btn_mainmenu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_mainmenu.Location = new System.Drawing.Point(252, 539);
+            this.btn_mainmenu.Location = new System.Drawing.Point(121, 539);
             this.btn_mainmenu.Name = "btn_mainmenu";
             this.btn_mainmenu.Size = new System.Drawing.Size(176, 53);
             this.btn_mainmenu.TabIndex = 0;
@@ -74,7 +75,7 @@ namespace CIS153FinalProject
             this.Button_close.BackColor = System.Drawing.Color.Firebrick;
             this.Button_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.Button_close.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Button_close.Location = new System.Drawing.Point(461, 539);
+            this.Button_close.Location = new System.Drawing.Point(592, 539);
             this.Button_close.Name = "Button_close";
             this.Button_close.Size = new System.Drawing.Size(176, 53);
             this.Button_close.TabIndex = 3;
@@ -148,6 +149,19 @@ namespace CIS153FinalProject
             this.lbl_PlayerPercent.TabIndex = 9;
             this.lbl_PlayerPercent.Text = "Player Win %";
             // 
+            // btn_Reset
+            // 
+            this.btn_Reset.BackColor = System.Drawing.Color.Purple;
+            this.btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.btn_Reset.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_Reset.Location = new System.Drawing.Point(351, 539);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(176, 53);
+            this.btn_Reset.TabIndex = 10;
+            this.btn_Reset.Text = "Reset Stats";
+            this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
             // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +169,7 @@ namespace CIS153FinalProject
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(883, 669);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.lbl_PlayerPercent);
             this.Controls.Add(this.lbl_AIPercent);
             this.Controls.Add(this.lbl_PlayerWins);
@@ -184,5 +199,6 @@ namespace CIS153FinalProject
         private System.Windows.Forms.Label lbl_PlayerWins;
         private System.Windows.Forms.Label lbl_AIPercent;
         private System.Windows.Forms.Label lbl_PlayerPercent;
+        private System.Windows.Forms.Button btn_Reset;
     }
 }
