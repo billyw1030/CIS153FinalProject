@@ -2,5 +2,5 @@ Player Wins: 1
 AI Wins: 1
 Tied Games: 1
 Total Played: 1
-Player Win %: 1
-AI Win %: 1
+Player Win Percent: 1
+AI Win Percent: 1

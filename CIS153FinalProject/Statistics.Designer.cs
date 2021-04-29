@@ -167,6 +167,7 @@ namespace CIS153FinalProject
             this.Name = "Statistics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Statistics";
+            this.Load += new System.EventHandler(this.Statistics_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
