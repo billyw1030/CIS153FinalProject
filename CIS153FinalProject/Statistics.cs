@@ -28,17 +28,84 @@ namespace CIS153FinalProject
         {
             InitializeComponent();
 
+            Console.WriteLine("Load");
+            StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
+
+            float playerPercent1 = 0.0F;
+            float aiPercent1 = 0.0F;
+            //string text = " ";
+            string line;
+            //line = inputfile.ReadLine();
+
+            Console.WriteLine("just before loop");
+            while ((line = inputfile.ReadLine()) != null)
+            {
+                Console.WriteLine("in loop");
+                if (line.Contains("Player Wins:"))
+                {
+                    Console.WriteLine("player wins written");
+                    //playerWins = line;
+                    Console.WriteLine(line);
+                    lbl_PlayerWins.Text = line;
+                }
+                else if (line.Contains("AI Wins:"))
+                {
+                    Console.WriteLine("ai wins written");
+                    //aiWins = line;
+                    lbl_AIWin.Text = line;
+                }
+                else if (line.Contains("Tied Games:"))
+                {
+                    Console.WriteLine("tie written");
+                    //tie = line;
+                    lbl_Tie.Text = line;
+                }
+                else if (line.Contains("Total Played:"))
+                {
+                    Console.WriteLine("total played written");
+                    //totalPlayed = line;
+                    lbl_TotalPlayed.Text = line;
+                }
+                else if (line.Contains("Player Win %:"))
+                {
+                    Console.WriteLine("player % written");
+                    //playerPercent = line;
+                    lbl_PlayerPercent.Text = line + " %";
+                }
+                else if (line.Contains("AI Win %:"))
+                {
+                    Console.WriteLine("ai % written");
+                    //aiPercent = line;
+                    lbl_AIPercent.Text = line + " %";
+                }
+            }
 
 
-            //playerWins = count1.ToString();
-            //aiWins = count2.ToString();
-            //tie = count3.ToString();
-            //totalPlayed = count4.ToString();
-            //playerPercent1 = ((float)count1 / (float)count4) * 100;
-            //aiPercent1 = ((float)count2 / (float)count4) * 100;
-            //playerPercent = playerPercent1.ToString("0.0") + "%";
-            //aiPercent = aiPercent1.ToString("0.0") + "%";
+            inputfile.Close();
+            //srClosed = true;
+
+            //Set labels
+            //labelSetter(playerWins, aiWins, tie, totalPlayed, playerPercent, aiPercent);
         }
+        private void labelSetter(string pWin, string aWin, string tie, string total, string pPercent, string aPercent)
+        {
+            lbl_PlayerWins.Text = pWin;
+            lbl_AIWin.Text = aWin;
+            lbl_Tie.Text = tie;
+            lbl_TotalPlayed.Text = total;
+            lbl_PlayerPercent.Text = pPercent + " %";
+            lbl_AIPercent.Text = aPercent + " %";
+        }
+
+        //playerWins = count1.ToString();
+        //aiWins = count2.ToString();
+        //tie = count3.ToString();
+        //totalPlayed = count4.ToString();
+        //playerPercent1 = ((float)count1 / (float)count4) * 100;
+        //aiPercent1 = ((float)count2 / (float)count4) * 100;
+        //playerPercent = playerPercent1.ToString("0.0") + "%";
+        //aiPercent = aiPercent1.ToString("0.0") + "%";
+
 
         public Statistics(WelcomeForm main)
         {
@@ -65,63 +132,8 @@ namespace CIS153FinalProject
 
         private void Statistics_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("Load");
-            StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
 
-            float playerPercent1 = 0.0F;
-            float aiPercent1 = 0.0F;
-            //string text = " ";
-            string line;
-            //line = inputfile.ReadLine();
-
-            Console.WriteLine("just before loop");
-            while ((line = inputfile.ReadLine()) != null)
-            {
-                Console.WriteLine("in loop");
-                if (line.Contains("Player Wins:"))
-                {
-                    Console.WriteLine("player wins written");
-                    playerWins = line;
-                }
-                else if (line.Contains("AI Wins:"))
-                {
-                    aiWins = line;
-                }
-                else if (line.Contains("Tied Games:"))
-                {
-                    tie = line;
-                }
-                else if (line.Contains("Total Played:"))
-                {
-                    totalPlayed = line;
-                }
-                else if (line.Contains("Player Win %:"))
-                {
-                    playerPercent = line;
-                }
-                else if (line.Contains("AI Win %:"))
-                {
-                    aiPercent = line;
-                }
-            }
-
-
-            inputfile.Close();
-            //srClosed = true;
-
-            //Set labels
-            labelSetter(playerWins, aiWins, tie, totalPlayed, playerPercent, aiPercent);
         }
-        private void labelSetter(string pWin, string aWin, string tie, string total, string pPercent, string aPercent)
-        {
-            lbl_PlayerWins.Text = pWin;
-            lbl_AIWin.Text = aWin;
-            lbl_Tie.Text = tie;
-            lbl_TotalPlayed.Text = total;
-            lbl_PlayerPercent.Text = pPercent;
-            lbl_AIPercent.Text = aPercent;
-        }
-
     }
 }
 

@@ -1,6 +1,6 @@
-Player Wins:
-AI Wins:
-Tied Games:
-Total Played:
-Player Win %:
-AI Win %:
+Player Wins: 1
+AI Wins: 1
+Tied Games: 1
+Total Played: 1
+Player Win %: 1
+AI Win %: 1
