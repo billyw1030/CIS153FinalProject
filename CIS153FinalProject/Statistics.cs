@@ -44,14 +44,7 @@ namespace CIS153FinalProject
             lbl_AIPercent.Text = aPercent + " %";
         }
 
-        //playerWins = count1.ToString();
-        //aiWins = count2.ToString();
-        //tie = count3.ToString();
-        //totalPlayed = count4.ToString();
-        //playerPercent1 = ((float)count1 / (float)count4) * 100;
-        //aiPercent1 = ((float)count2 / (float)count4) * 100;
-        //playerPercent = playerPercent1.ToString("0.0") + "%";
-        //aiPercent = aiPercent1.ToString("0.0") + "%";
+        
 
 
         public Statistics(WelcomeForm main)
@@ -87,8 +80,6 @@ namespace CIS153FinalProject
             Console.WriteLine("Load");
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
 
-            float playerPercent1 = 0.0F;
-            float aiPercent1 = 0.0F;
             //string text = " ";
             string line;
             //line = inputfile.ReadLine();
@@ -123,13 +114,13 @@ namespace CIS153FinalProject
                     //totalPlayed = line;
                     lbl_TotalPlayed.Text = line;
                 }
-                else if (line.Contains("Player Win Percent:"))
+                else if (line.Contains("Player Percent:"))
                 {
                     Console.WriteLine("player % written");
                     //playerPercent = line;
                     lbl_PlayerPercent.Text = line + " %";
                 }
-                else if (line.Contains("AI Win Percent:"))
+                else if (line.Contains("AI Percent:"))
                 {
                     Console.WriteLine("ai % written");
                     //aiPercent = line;

@@ -274,7 +274,7 @@ namespace CIS153FinalProject
         {
 
             //Horizontal Posibilities for Player One
-
+            
             if (One.GetFill() == 1 && Two.GetFill() == 1 && Three.GetFill() == 1 && Four.GetFill() == 1)
             {
                 PlayerOneWins = true;

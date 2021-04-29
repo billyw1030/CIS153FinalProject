@@ -34,8 +34,13 @@ namespace CIS153FinalProject
             this.btn_MainMenuEnd = new System.Windows.Forms.Button();
             this.btn_reviewTwoPlayer = new System.Windows.Forms.Button();
             this.btn_reviewSinglePlayer = new System.Windows.Forms.Button();
-            this.lbx_SinglePlayerEnd = new System.Windows.Forms.ListBox();
             this.btn_PlayAgain = new System.Windows.Forms.Button();
+            this.lbl_PlayerPercent = new System.Windows.Forms.Label();
+            this.lbl_AIPercent = new System.Windows.Forms.Label();
+            this.lbl_PlayerWins = new System.Windows.Forms.Label();
+            this.lbl_AIWin = new System.Windows.Forms.Label();
+            this.lbl_Tie = new System.Windows.Forms.Label();
+            this.lbl_TotalPlayed = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_Results
@@ -106,18 +111,6 @@ namespace CIS153FinalProject
             this.btn_reviewSinglePlayer.Visible = false;
             this.btn_reviewSinglePlayer.Click += new System.EventHandler(this.btn_reviewSinglePlayer_Click);
             // 
-            // lbx_SinglePlayerEnd
-            // 
-            this.lbx_SinglePlayerEnd.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbx_SinglePlayerEnd.FormattingEnabled = true;
-            this.lbx_SinglePlayerEnd.ItemHeight = 46;
-            this.lbx_SinglePlayerEnd.Location = new System.Drawing.Point(102, 91);
-            this.lbx_SinglePlayerEnd.Name = "lbx_SinglePlayerEnd";
-            this.lbx_SinglePlayerEnd.Size = new System.Drawing.Size(606, 280);
-            this.lbx_SinglePlayerEnd.TabIndex = 11;
-            this.lbx_SinglePlayerEnd.Visible = false;
-            this.lbx_SinglePlayerEnd.SelectedIndexChanged += new System.EventHandler(this.lbx_SinglePlayerEnd_SelectedIndexChanged);
-            // 
             // btn_PlayAgain
             // 
             this.btn_PlayAgain.BackColor = System.Drawing.Color.Indigo;
@@ -131,6 +124,72 @@ namespace CIS153FinalProject
             this.btn_PlayAgain.UseVisualStyleBackColor = false;
             this.btn_PlayAgain.Click += new System.EventHandler(this.btn_PlayAgain_Click);
             // 
+            // lbl_PlayerPercent
+            // 
+            this.lbl_PlayerPercent.AutoSize = true;
+            this.lbl_PlayerPercent.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_PlayerPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbl_PlayerPercent.Location = new System.Drawing.Point(356, 223);
+            this.lbl_PlayerPercent.Name = "lbl_PlayerPercent";
+            this.lbl_PlayerPercent.Size = new System.Drawing.Size(271, 46);
+            this.lbl_PlayerPercent.TabIndex = 18;
+            this.lbl_PlayerPercent.Text = "Player Win %";
+            // 
+            // lbl_AIPercent
+            // 
+            this.lbl_AIPercent.AutoSize = true;
+            this.lbl_AIPercent.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_AIPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbl_AIPercent.Location = new System.Drawing.Point(356, 299);
+            this.lbl_AIPercent.Name = "lbl_AIPercent";
+            this.lbl_AIPercent.Size = new System.Drawing.Size(191, 46);
+            this.lbl_AIPercent.TabIndex = 17;
+            this.lbl_AIPercent.Text = "AI Win %";
+            // 
+            // lbl_PlayerWins
+            // 
+            this.lbl_PlayerWins.AutoSize = true;
+            this.lbl_PlayerWins.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_PlayerWins.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbl_PlayerWins.Location = new System.Drawing.Point(12, 147);
+            this.lbl_PlayerWins.Name = "lbl_PlayerWins";
+            this.lbl_PlayerWins.Size = new System.Drawing.Size(244, 46);
+            this.lbl_PlayerWins.TabIndex = 16;
+            this.lbl_PlayerWins.Text = "Player Wins";
+            // 
+            // lbl_AIWin
+            // 
+            this.lbl_AIWin.AutoSize = true;
+            this.lbl_AIWin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_AIWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbl_AIWin.Location = new System.Drawing.Point(23, 223);
+            this.lbl_AIWin.Name = "lbl_AIWin";
+            this.lbl_AIWin.Size = new System.Drawing.Size(164, 46);
+            this.lbl_AIWin.TabIndex = 15;
+            this.lbl_AIWin.Text = "AI Wins";
+            // 
+            // lbl_Tie
+            // 
+            this.lbl_Tie.AutoSize = true;
+            this.lbl_Tie.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_Tie.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbl_Tie.Location = new System.Drawing.Point(23, 299);
+            this.lbl_Tie.Name = "lbl_Tie";
+            this.lbl_Tie.Size = new System.Drawing.Size(246, 46);
+            this.lbl_Tie.TabIndex = 14;
+            this.lbl_Tie.Text = "Tied Games";
+            // 
+            // lbl_TotalPlayed
+            // 
+            this.lbl_TotalPlayed.AutoSize = true;
+            this.lbl_TotalPlayed.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_TotalPlayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.lbl_TotalPlayed.Location = new System.Drawing.Point(356, 147);
+            this.lbl_TotalPlayed.Name = "lbl_TotalPlayed";
+            this.lbl_TotalPlayed.Size = new System.Drawing.Size(254, 46);
+            this.lbl_TotalPlayed.TabIndex = 13;
+            this.lbl_TotalPlayed.Text = "Total Played";
+            // 
             // EndResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,8 +197,13 @@ namespace CIS153FinalProject
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(786, 462);
             this.ControlBox = false;
+            this.Controls.Add(this.lbl_PlayerPercent);
+            this.Controls.Add(this.lbl_AIPercent);
+            this.Controls.Add(this.lbl_PlayerWins);
+            this.Controls.Add(this.lbl_AIWin);
+            this.Controls.Add(this.lbl_Tie);
+            this.Controls.Add(this.lbl_TotalPlayed);
             this.Controls.Add(this.btn_PlayAgain);
-            this.Controls.Add(this.lbx_SinglePlayerEnd);
             this.Controls.Add(this.btn_reviewSinglePlayer);
             this.Controls.Add(this.btn_reviewTwoPlayer);
             this.Controls.Add(this.btn_CloseEnd);
@@ -161,7 +225,12 @@ namespace CIS153FinalProject
         private System.Windows.Forms.Button btn_MainMenuEnd;
         private System.Windows.Forms.Button btn_reviewTwoPlayer;
         private System.Windows.Forms.Button btn_reviewSinglePlayer;
-        private System.Windows.Forms.ListBox lbx_SinglePlayerEnd;
         private System.Windows.Forms.Button btn_PlayAgain;
+        private System.Windows.Forms.Label lbl_PlayerPercent;
+        private System.Windows.Forms.Label lbl_AIPercent;
+        private System.Windows.Forms.Label lbl_PlayerWins;
+        private System.Windows.Forms.Label lbl_AIWin;
+        private System.Windows.Forms.Label lbl_Tie;
+        private System.Windows.Forms.Label lbl_TotalPlayed;
     }
 }

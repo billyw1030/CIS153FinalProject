@@ -23,6 +23,22 @@ namespace CIS153FinalProject
         public TwoPlayer RefToTwoPlayer { get; set; }
         //This is new to me and I'm experimenting with this {get; set;} thing -- Billy
         private int gamemode;
+        float playerPercent1 = 0.0F;
+        float aiPercent1 = 0.0F;
+        string playerWins;
+        string aiWins;
+        string tie;
+        string totalPlayed;
+        string playerPercent;
+        string aiPercent;
+        int position;
+
+        int playerWinNum;
+        int aiWinNum;
+        int tieNum;
+        int totalNum;
+
+        int whoWon;
 
         public EndResults(string results, int playedBoard, int winner)
         {
@@ -30,11 +46,21 @@ namespace CIS153FinalProject
             Lbl_Results.Text = results;
             gamemode = playedBoard;
             //mainMenu = menu;
+            whoWon = winner;
 
             if(gamemode == 1)
             {
                 btn_reviewSinglePlayer.Visible = true;
-                lbx_SinglePlayerEnd.Visible = true;
+                btn_reviewSinglePlayer.Visible = true;
+                lbl_PlayerWins.Visible = true;
+                lbl_AIWin.Visible = true;
+                lbl_Tie.Visible = true;
+                lbl_TotalPlayed.Visible = true;
+                lbl_PlayerPercent.Visible = true;
+                lbl_AIPercent.Visible = true;
+
+                
+
                 //if (winner == 1)
                 //{
                 //    Lbl_Results.ForeColor = this.RefToSinglePlayer.getPlayerOneColor();
@@ -52,7 +78,13 @@ namespace CIS153FinalProject
             else
             {
                 btn_reviewSinglePlayer.Visible = false;
-                lbx_SinglePlayerEnd.Visible = false;
+                lbl_PlayerWins.Visible = false;
+                lbl_AIWin.Visible = false;
+                lbl_Tie.Visible = false;
+                lbl_TotalPlayed.Visible = false;
+                lbl_PlayerPercent.Visible = false;
+                lbl_AIPercent.Visible = false;
+                //lbx_SinglePlayerEnd.Visible = false;
             }
 
             if(gamemode == 2)
@@ -77,10 +109,132 @@ namespace CIS153FinalProject
                 btn_reviewTwoPlayer.Visible = false;
             }
         }
-        //StreamWriter savewins = new StreamWriter("../../Resources/statsfile.txt", true);
+        
+
         private void EndResults_Load(object sender, EventArgs e)
         {
+            if (gamemode == 1)
+            {
+                //=====================START READING TEXT FILE TO GRAB VALUES==============================
+                StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
 
+                //string text = " ";
+                string line;
+                //line = inputfile.ReadLine();
+
+                //Console.WriteLine("just before loop");
+                while ((line = inputfile.ReadLine()) != null)
+                {
+                    //Console.WriteLine("in loop");
+                    if (line.Contains("Player Wins:"))
+                    {
+                        playerWins = line;
+                        position = playerWins.IndexOf(": ");
+                        playerWins = line.Substring(position + 2);
+                    }
+                    else if (line.Contains("AI Wins:"))
+                    {
+                        aiWins = line;
+                        position = aiWins.IndexOf(": ");
+                        aiWins = line.Substring(position + 2);
+                    }
+                    else if (line.Contains("Tied Games:"))
+                    {
+                        tie = line;
+                        position = tie.IndexOf(": ");
+                        tie = line.Substring(position + 2);
+                    }
+                    else if (line.Contains("Total Played:"))
+                    {
+                        totalPlayed = line;
+                        position = totalPlayed.IndexOf(": ");
+                        totalPlayed = line.Substring(position + 2);
+
+                    }
+                    else if (line.Contains("Player Percent:"))
+                    {
+                        playerPercent = line;
+                        position = playerPercent.IndexOf(": ");
+                        playerPercent = line.Substring(position + 2);
+                    }
+                    else if (line.Contains("AI Percent:"))
+                    {
+                        aiPercent = line;
+                        position = aiPercent.IndexOf(": ");
+                        aiPercent = line.Substring(position + 2);
+                    }
+                }
+                //Console.WriteLine(playerWins);
+
+                inputfile.Close();
+                //====================STOP READING TEXT FILE==================================
+
+                //====================PERFORM MATH============================================
+                playerWinNum = Convert.ToInt32(playerWins);
+                aiWinNum = Convert.ToInt32(aiWins);
+                tieNum = Convert.ToInt32(tie);
+                totalNum = Convert.ToInt32(totalPlayed) + 1;
+
+                if (whoWon == 1)
+                {
+                    playerWinNum++;
+                }
+                else if(whoWon == 2)
+                {
+
+                    aiWinNum++;
+                }
+                else if(whoWon == 0)
+                {
+                    tieNum++;
+                }
+                playerPercent1 = ((float)playerWinNum / (float)totalNum) * 100;
+                aiPercent1 = ((float)aiWinNum / (float)totalNum) * 100;
+                playerPercent = playerPercent1.ToString();
+                aiPercent = aiPercent1.ToString();
+
+
+                //===============================START WRITING TO TEXT FILE===================================================
+                StreamWriter inputFile = new StreamWriter("../../Resources/statsfile.txt");
+
+                //string currentLine;
+
+                string[] lines = {"Player Wins: " + playerWinNum.ToString(), "AI Wins: " + aiWinNum.ToString(), "Tied Games: " + tieNum.ToString(),
+                                  "Total Played: " + totalNum.ToString(), "Player Percent: " + playerPercent, "AI Percent: " + aiPercent};
+
+                for (int i = 0; i < 6; i++)
+                {
+                    inputFile.WriteLineAsync(lines[i]);
+                    if(i == 0)
+                    {
+                        lbl_PlayerWins.Text = lines[i];
+                    }
+                    else if(i == 1)
+                    {
+                        lbl_AIWin.Text = lines[i];
+                    }
+                    else if(i== 2)
+                    {
+                        lbl_Tie.Text = lines[i];
+                    }
+                    else if(i == 3)
+                    {
+                        lbl_TotalPlayed.Text = lines[i];
+                    }
+                    else if(i == 4)
+                    {
+                        lbl_PlayerPercent.Text = lines[i] + " %";
+                    }
+                    else if(i == 5)
+                    {
+                        lbl_AIPercent.Text = lines[i] + " %";
+                    }
+                }
+
+                inputFile.Close();
+                //=================================DONE WRITING TO TEXT FILE====================================================
+
+            }
         }
 
         private void btn_reviewSinglePlayer_Click(object sender, EventArgs e)
@@ -102,11 +256,11 @@ namespace CIS153FinalProject
             //this.RefToTwoPlayer.Menu.Show();
             if (gamemode == 1)
             {
-                this.RefToTwoPlayer.getMenu().Show();
+                this.RefToSinglePlayer.getMenu().Show();
             }
             else if(gamemode == 2)
             {
-                this.RefToSinglePlayer.getMenu().Show();
+                this.RefToTwoPlayer.getMenu().Show();
             }
             this.Close();
         }
