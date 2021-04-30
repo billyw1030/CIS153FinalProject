@@ -23,6 +23,7 @@ namespace CIS153FinalProject
         private bool AiTurn = false;
         private bool PlayerOneWins = false;
         private bool PlayerTwoWins = false;
+        private bool Draw = false;
         private static Color PlayerOneColor = Color.Yellow;
         private static Color PlayerTwoColor = Color.Red;
         private Cell dropCell = new Cell();
@@ -989,15 +990,17 @@ namespace CIS153FinalProject
                 form.Show();
                 this.Hide();
                 GameIsOver();
+                Console.WriteLine("Player 1 end results");
             }
 
             if (PlayerTwoWins)
             {
-                EndResults form = new EndResults("Player 2 Wins!", 1, 2);
+                EndResults form = new EndResults("AI Wins!", 1, 2);
                 form.RefToSinglePlayer = this;
                 form.Show();
                 this.Hide();
                 GameIsOver();
+                Console.WriteLine("Player 2 end results");
             }
 
             if (One.GetFill() != 0 && Two.GetFill() != 0 && Three.GetFill() != 0 && Four.GetFill() != 0 && Five.GetFill() != 0 && Six.GetFill() != 0
@@ -1009,6 +1012,7 @@ namespace CIS153FinalProject
                  && ThirtyThree.GetFill() != 0 && ThirtyFour.GetFill() != 0 && ThirtyFive.GetFill() != 0 && ThirtySix.GetFill() != 0 && ThirtySeven.GetFill() != 0
                  && ThirtyEight.GetFill() != 0 && ThirtyNine.GetFill() != 0 && Fourty.GetFill() != 0 && FourtyOne.GetFill() != 0 && FourtyTwo.GetFill() != 0)
             {
+                Draw = true;
                 EndResults form = new EndResults("Draw!", 1, 0);
                 form.RefToSinglePlayer = this;
                 form.Show();
@@ -2823,7 +2827,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if(!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2839,7 +2846,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2855,7 +2865,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2871,7 +2884,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2887,7 +2903,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2903,7 +2922,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2919,7 +2941,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2935,7 +2960,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2951,7 +2979,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2967,7 +2998,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2983,7 +3017,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -2999,7 +3036,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3015,7 +3055,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3031,7 +3074,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3047,7 +3093,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3063,7 +3112,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3079,7 +3131,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3095,7 +3150,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3111,7 +3169,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3127,7 +3188,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3143,7 +3207,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3159,7 +3226,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3175,7 +3245,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3191,7 +3264,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3207,7 +3283,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3223,7 +3302,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3239,7 +3321,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3255,7 +3340,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3271,7 +3359,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3287,7 +3378,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3303,7 +3397,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3319,7 +3416,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3335,7 +3435,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3351,7 +3454,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3367,7 +3473,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3383,7 +3492,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3399,7 +3511,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3415,7 +3530,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3431,7 +3549,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3447,7 +3568,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3463,7 +3587,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3479,7 +3606,10 @@ namespace CIS153FinalProject
                 lbl_PlayerTwoTurnSP.Visible = true;
                 lbl_playerTurnOneSP.Visible = false;
                 EndGame();
-                AiMove();
+                if (!PlayerOneWins && !PlayerTwoWins && !Draw)
+                {
+                    AiMove();
+                }
             }
         }
 
@@ -3624,7 +3754,7 @@ namespace CIS153FinalProject
             for(int i = 0; i < storedCells; i++)
             {
                 ActualMoves[i] = moves[i];
-            }//break| It is saying Actualmoves destination is not long enough and: . Check destIndex and length, and the array's lower bounds.'
+            }
             return ActualMoves;
         }
 
@@ -3970,10 +4100,11 @@ namespace CIS153FinalProject
         {
             while (AiTurn)
             // AI chooses a random place to put the chip if:
-            //   -cant take a win
-            //   -cant block a win
-            //   -cant place a chip left or right of one of its already placed chips
-            //   -cant place a chip on top of its already placed chips
+            //    -cant take a win
+            //    -cant block a win
+            //  x -cant place a chip left or right of one of its already placed chips
+            //  x -cant place a chip on top of its already placed chips
+            //    -Random
             //   This is all in order 
             {
                 //System.Threading.Thread.Sleep(1000);

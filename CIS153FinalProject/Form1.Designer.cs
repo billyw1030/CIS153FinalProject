@@ -38,12 +38,15 @@ namespace CIS153FinalProject
             // 
             // btn_Exit
             // 
-            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.Location = new System.Drawing.Point(183, 316);
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btn_Exit.AutoSize = true;
+            this.btn_Exit.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_Exit.Location = new System.Drawing.Point(151, 316);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(179, 63);
-            this.btn_Exit.TabIndex = 0;
+            this.btn_Exit.Size = new System.Drawing.Size(242, 63);
+            this.btn_Exit.TabIndex = 4;
             this.btn_Exit.Text = "Exit Game";
             this.btn_Exit.UseVisualStyleBackColor = false;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
@@ -51,10 +54,11 @@ namespace CIS153FinalProject
             // btn_SinglePlayer
             // 
             this.btn_SinglePlayer.BackColor = System.Drawing.Color.Green;
-            this.btn_SinglePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SinglePlayer.Location = new System.Drawing.Point(138, 109);
+            this.btn_SinglePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SinglePlayer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_SinglePlayer.Location = new System.Drawing.Point(125, 109);
             this.btn_SinglePlayer.Name = "btn_SinglePlayer";
-            this.btn_SinglePlayer.Size = new System.Drawing.Size(266, 63);
+            this.btn_SinglePlayer.Size = new System.Drawing.Size(292, 63);
             this.btn_SinglePlayer.TabIndex = 1;
             this.btn_SinglePlayer.Text = "Single Player";
             this.btn_SinglePlayer.UseVisualStyleBackColor = false;
@@ -63,10 +67,11 @@ namespace CIS153FinalProject
             // btn_TwoPlayer
             // 
             this.btn_TwoPlayer.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_TwoPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TwoPlayer.Location = new System.Drawing.Point(152, 178);
+            this.btn_TwoPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TwoPlayer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_TwoPlayer.Location = new System.Drawing.Point(138, 178);
             this.btn_TwoPlayer.Name = "btn_TwoPlayer";
-            this.btn_TwoPlayer.Size = new System.Drawing.Size(240, 63);
+            this.btn_TwoPlayer.Size = new System.Drawing.Size(266, 63);
             this.btn_TwoPlayer.TabIndex = 2;
             this.btn_TwoPlayer.Text = "Two Player";
             this.btn_TwoPlayer.UseVisualStyleBackColor = false;
@@ -75,7 +80,8 @@ namespace CIS153FinalProject
             // btn_Stats
             // 
             this.btn_Stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_Stats.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Stats.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Stats.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Stats.Location = new System.Drawing.Point(162, 247);
             this.btn_Stats.Name = "btn_Stats";
             this.btn_Stats.Size = new System.Drawing.Size(221, 63);

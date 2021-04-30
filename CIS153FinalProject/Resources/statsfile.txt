@@ -1,6 +1,6 @@
-Player Wins: 0
-AI Wins: 0
+Player Wins: 1
+AI Wins: 1
 Tied Games: 0
-Total Played: 0
+Total Played: 2
 Player Percent: 0
 AI Percent: 0

@@ -129,7 +129,7 @@ namespace CIS153FinalProject
             this.lbl_PlayerPercent.AutoSize = true;
             this.lbl_PlayerPercent.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_PlayerPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_PlayerPercent.Location = new System.Drawing.Point(309, 223);
+            this.lbl_PlayerPercent.Location = new System.Drawing.Point(339, 223);
             this.lbl_PlayerPercent.Name = "lbl_PlayerPercent";
             this.lbl_PlayerPercent.Size = new System.Drawing.Size(271, 46);
             this.lbl_PlayerPercent.TabIndex = 18;
@@ -140,7 +140,7 @@ namespace CIS153FinalProject
             this.lbl_AIPercent.AutoSize = true;
             this.lbl_AIPercent.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_AIPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_AIPercent.Location = new System.Drawing.Point(309, 299);
+            this.lbl_AIPercent.Location = new System.Drawing.Point(419, 299);
             this.lbl_AIPercent.Name = "lbl_AIPercent";
             this.lbl_AIPercent.Size = new System.Drawing.Size(191, 46);
             this.lbl_AIPercent.TabIndex = 17;
@@ -151,7 +151,7 @@ namespace CIS153FinalProject
             this.lbl_PlayerWins.AutoSize = true;
             this.lbl_PlayerWins.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_PlayerWins.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_PlayerWins.Location = new System.Drawing.Point(12, 147);
+            this.lbl_PlayerWins.Location = new System.Drawing.Point(14, 147);
             this.lbl_PlayerWins.Name = "lbl_PlayerWins";
             this.lbl_PlayerWins.Size = new System.Drawing.Size(244, 46);
             this.lbl_PlayerWins.TabIndex = 16;
@@ -162,7 +162,7 @@ namespace CIS153FinalProject
             this.lbl_AIWin.AutoSize = true;
             this.lbl_AIWin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_AIWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_AIWin.Location = new System.Drawing.Point(23, 223);
+            this.lbl_AIWin.Location = new System.Drawing.Point(94, 223);
             this.lbl_AIWin.Name = "lbl_AIWin";
             this.lbl_AIWin.Size = new System.Drawing.Size(164, 46);
             this.lbl_AIWin.TabIndex = 15;
@@ -173,7 +173,7 @@ namespace CIS153FinalProject
             this.lbl_Tie.AutoSize = true;
             this.lbl_Tie.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_Tie.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_Tie.Location = new System.Drawing.Point(23, 299);
+            this.lbl_Tie.Location = new System.Drawing.Point(12, 299);
             this.lbl_Tie.Name = "lbl_Tie";
             this.lbl_Tie.Size = new System.Drawing.Size(246, 46);
             this.lbl_Tie.TabIndex = 14;
@@ -184,7 +184,7 @@ namespace CIS153FinalProject
             this.lbl_TotalPlayed.AutoSize = true;
             this.lbl_TotalPlayed.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_TotalPlayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_TotalPlayed.Location = new System.Drawing.Point(309, 147);
+            this.lbl_TotalPlayed.Location = new System.Drawing.Point(383, 147);
             this.lbl_TotalPlayed.Name = "lbl_TotalPlayed";
             this.lbl_TotalPlayed.Size = new System.Drawing.Size(254, 46);
             this.lbl_TotalPlayed.TabIndex = 13;

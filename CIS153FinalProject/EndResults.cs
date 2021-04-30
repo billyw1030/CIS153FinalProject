@@ -23,8 +23,8 @@ namespace CIS153FinalProject
         public TwoPlayer RefToTwoPlayer { get; set; }
         //This is new to me and I'm experimenting with this {get; set;} thing -- Billy
         private int gamemode;
-        float playerPercent1 = 0.0F;
-        float aiPercent1 = 0.0F;
+        double playerPercent1;
+        double aiPercent1;
         string playerWins;
         string aiWins;
         string tie;
@@ -122,7 +122,7 @@ namespace CIS153FinalProject
                 string line;
                 //line = inputfile.ReadLine();
 
-                //Console.WriteLine("just before loop");
+                Console.WriteLine("endresults load");
                 while ((line = inputfile.ReadLine()) != null)
                 {
                     //Console.WriteLine("in loop");
@@ -170,10 +170,10 @@ namespace CIS153FinalProject
                 //====================STOP READING TEXT FILE==================================
 
                 //====================PERFORM MATH============================================
-                playerWinNum = Convert.ToInt32(playerWins);
-                aiWinNum = Convert.ToInt32(aiWins);
-                tieNum = Convert.ToInt32(tie);
-                totalNum = Convert.ToInt32(totalPlayed) + 1;
+                playerWinNum = Convert.ToInt16(playerWins);
+                aiWinNum = Convert.ToInt16(aiWins);
+                tieNum = Convert.ToInt16(tie);
+                totalNum = Convert.ToInt16(totalPlayed) + 1;
 
                 if (whoWon == 1)
                 {
@@ -188,11 +188,18 @@ namespace CIS153FinalProject
                 {
                     tieNum++;
                 }
-                playerPercent1 = ((float)playerWinNum / (float)totalNum) * 100;
-                aiPercent1 = ((float)aiWinNum / (float)totalNum) * 100;
+                Console.WriteLine(playerPercent1);
+                Console.WriteLine(aiPercent1);
+                Console.WriteLine(totalNum);
+                Console.WriteLine(playerWinNum);
+                playerPercent1 = (playerWinNum / totalNum) * 100;
+                aiPercent1 = (aiWinNum / totalNum) * 100;
+               // Math.Round(playerPercent1, 2);
+                //Math.Round(aiPercent1, 2);
                 playerPercent = playerPercent1.ToString();
                 aiPercent = aiPercent1.ToString();
-
+                Console.WriteLine(playerPercent1);
+                Console.WriteLine(aiPercent1);
 
                 //===============================START WRITING TO TEXT FILE===================================================
                 StreamWriter inputFile = new StreamWriter("../../Resources/statsfile.txt");

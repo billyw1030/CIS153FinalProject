@@ -14,12 +14,7 @@ namespace CIS153FinalProject
     public partial class Statistics : Form
     {
         private new WelcomeForm Menu;
-        private string playerWins;
-        private string aiWins;
-        private string tie;
-        private string totalPlayed;
-        private string playerPercent;
-        private string aiPercent;
+       
         //bool srClosed = false;
 
         List<Playerstats> listofplayerstats = new List<Playerstats>();

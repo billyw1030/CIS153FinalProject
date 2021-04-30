@@ -163,7 +163,7 @@
             this.Btn_P2ColorSP.Name = "Btn_P2ColorSP";
             this.Btn_P2ColorSP.Size = new System.Drawing.Size(89, 44);
             this.Btn_P2ColorSP.TabIndex = 95;
-            this.Btn_P2ColorSP.Text = "Player 2 Color";
+            this.Btn_P2ColorSP.Text = "AI Color";
             this.Btn_P2ColorSP.UseVisualStyleBackColor = false;
             this.Btn_P2ColorSP.Click += new System.EventHandler(this.Btn_P2Color_Click);
             // 
