@@ -14,20 +14,12 @@ namespace CIS153FinalProject
     public partial class Statistics : Form
     {
         private new WelcomeForm Menu;
-       
-        //bool srClosed = false;
 
         List<Playerstats> listofplayerstats = new List<Playerstats>();
 
         public Statistics()
         {
             InitializeComponent();
-
-            
-            //srClosed = true;
-
-            //Set labels
-            //labelSetter(playerWins, aiWins, tie, totalPlayed, playerPercent, aiPercent);
         }
         private void labelSetter(string pWin, string aWin, string tie, string total, string pPercent, string aPercent)
         {
@@ -63,21 +55,12 @@ namespace CIS153FinalProject
             System.Environment.Exit(0);
         }
 
-
-
-        //private void Statistics_Load(object sender, EventArgs e)
-        //{
-
-        //}
-
         private void Statistics_Load_1(object sender, EventArgs e)
         {
             Console.WriteLine("Load");
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
 
-            //string text = " ";
             string line;
-            //line = inputfile.ReadLine();
 
             Console.WriteLine("just before loop");
             while ((line = inputfile.ReadLine()) != null)
@@ -130,10 +113,8 @@ namespace CIS153FinalProject
         {
             StreamWriter inputFile = new StreamWriter("../../Resources/statsfile.txt");
 
-            //string currentLine;
-
             string[] lines = {"Player Wins: 0", "AI Wins: 0", "Tied Games: 0", "Total Played: 0", "Player Percent: 0", "AI Percent: 0"};
-
+            //RESETS STATS
             for (int i = 0; i < 6; i++)
             {
                 inputFile.WriteLineAsync(lines[i]);
@@ -170,9 +151,7 @@ namespace CIS153FinalProject
 
             StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
 
-            //string text = " ";
             string line;
-            //line = inputfile.ReadLine();
 
             Console.WriteLine("just before loop");
             while ((line = inputfile.ReadLine()) != null)
@@ -222,75 +201,3 @@ namespace CIS153FinalProject
         }
     }
 }
-
-
-//int count1 = 0;
-//int count2 = 0;
-//int count3 = 0;
-//int count4 = 0;
-//while (line != null)
-//{
-
-//    if (line.Equals("1"))
-//    {
-//        count1++;
-
-//    }
-
-//    if (line.Equals("2"))
-//    {
-//        count2++;
-
-
-//    }
-//    if (line.Equals("3"))
-//    {
-//        count3++;
-
-
-//    }
-//    if (line.Equals("4"))
-//    {
-//        count4++;
-
-
-//    }
-
-//    text = text + line + "\n";
-//    line = inputfile.ReadLine();
-//    inputfile.Close();
-//    //srClosed = true;
-
-//}
-
-
-//text is changed
-//Console.WriteLine("Entered TextChanged");
-//string txt = "";
-//StreamWriter sw = new StreamWriter("../../Resources/statsfile.txt");
-//Playerstats user1 = new Playerstats();
-//user1.SetPlayerwins(playerWins);
-//user1.SetAiwins(aiWins);
-//user1.SetTie(tie);
-//user1.SetTotalplayed(totalPlayed);
-//user1.SetPlayerpercent(playerPercent);
-//user1.SetAipercent(aiPercent);
-//if (user1.GetPlayerwins().Length > 0 && user1.GetAiwins().Length > 0 && user1.GetTie().Length > 0 && user1.GetTotalplayed().Length > 0 && user1.GetPlayerpercent().Length > 0 && user1.GetAipercent().Length > 0)
-//{
-
-//    listofplayerstats.Add(user1);
-
-//    for (int i = 0; i < listofplayerstats.Count(); i++)
-//    {
-//        lbl_PlayerWins.Text = "Player Wins: " + listofplayerstats[i].GetPlayerwins();
-//        //txt_stats.Text = "";
-//        //txt = txt + "Player Wins: " + listofplayerstats[i].GetPlayerwins() + Environment.NewLine + "AI wins: " + listofplayerstats[i].GetAiwins() + Environment.NewLine + "Tie: " + listofplayerstats[i].GetTie()
-//        //    + Environment.NewLine + "Total games played: " + listofplayerstats[i].GetTotalplayed() + Environment.NewLine + "Player percentage: " + listofplayerstats[i].GetPlayerpercent() + Environment.NewLine + "AI percentage: " + listofplayerstats[i].GetAipercent();
-//        //txt_stats.Text = txt;
-
-
-//    }
-
-
-//}
-//sw.Close();

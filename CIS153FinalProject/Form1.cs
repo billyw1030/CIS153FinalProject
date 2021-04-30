@@ -23,22 +23,22 @@ namespace CIS153FinalProject
         }
 
         private void btn_SinglePlayer_Click(object sender, EventArgs e)
-        {
+        {//Single player game
             loadSinglePlayerForm();
         }
 
         private void btn_TwoPlayer_Click(object sender, EventArgs e)
-        {
+        {//Two player game
             loadTwoPlayerForm();
         }
 
         private void btn_Stats_Click(object sender, EventArgs e)
-        {
+        {//Stats page
             loadStatisticsForm();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
-        {
+        {//exit game
             Application.Exit();
         }
 

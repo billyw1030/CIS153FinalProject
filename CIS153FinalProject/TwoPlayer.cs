@@ -223,7 +223,7 @@ namespace CIS153FinalProject
         }
 
         public void GameIsOver()
-        {
+        {//makes buttons unable to click/change because game is over
             Btn_c0r0TwoP.Enabled = false;
             Btn_c1r0TwoP.Enabled = false;
             Btn_c2r0TwoP.Enabled = false;
@@ -269,7 +269,7 @@ namespace CIS153FinalProject
         }
 
         private void EndGame()
-        {
+        {//checks if a player has one the game
         
             //Horizontal Posibilities for Player One
 
@@ -1020,10 +1020,10 @@ namespace CIS153FinalProject
         {
 
             if (cell.GetR() != 5)
-            {
+            {//if the cell is not on the bottom row
 
                 while (cell.GetR() != 5 && cell.GetCellBelow().GetFill() == 0)
-                {
+                {//places cell at the lowest cell where no player has taken that spot
                     cell = cell.GetCellBelow();
                 }
 
@@ -1031,13 +1031,13 @@ namespace CIS153FinalProject
             }
 
             else
-            {
+            {//return it if the cell is at the bottom already
                 return cell;
             }
         }
 
         private void DeclareButton(Cell cell, int playerTurn)
-        {
+        {//makes the button color the player color
             if (cell == One && playerTurn == 1)
             {
                 Btn_c0r0TwoP.ButtonColor = PlayerOneColor;
@@ -1459,7 +1459,7 @@ namespace CIS153FinalProject
             }
 
         }
-
+        //THIS STARTS THE PREVIEW PLAY IN GAME
         private void Btn_c0r0TwoP_MouseEnter(object sender, EventArgs e)
         {
             Cell cell = ChipFall(One);
@@ -4322,7 +4322,7 @@ namespace CIS153FinalProject
         }
 
         private void Btn_P1Color_Click(object sender, EventArgs e)
-        {
+        {//CHANGES PLAYER ONE COLOR
             if (One.GetFill() == 0 && Two.GetFill() == 0 && Three.GetFill() == 0 && Four.GetFill() == 0 && Five.GetFill() == 0 && Six.GetFill() == 0
                  && Seven.GetFill() == 0 && Eight.GetFill() == 0 && Nine.GetFill() == 0 && Ten.GetFill() == 0 && Eleven.GetFill() == 0 && Twelve.GetFill() == 0
                  && Thirteen.GetFill() == 0 && Fourteen.GetFill() == 0 && Fifteen.GetFill() == 0 && Sixteen.GetFill() == 0 && Seventeen.GetFill() == 0
@@ -4360,7 +4360,7 @@ namespace CIS153FinalProject
         }
 
         private void Btn_P2Color_Click(object sender, EventArgs e)
-        {
+        {//CHANGES PLAYER TWO COLOR
             if (One.GetFill() == 0 && Two.GetFill() == 0 && Three.GetFill() == 0 && Four.GetFill() == 0 && Five.GetFill() == 0 && Six.GetFill() == 0
                  && Seven.GetFill() == 0 && Eight.GetFill() == 0 && Nine.GetFill() == 0 && Ten.GetFill() == 0 && Eleven.GetFill() == 0 && Twelve.GetFill() == 0
                  && Thirteen.GetFill() == 0 && Fourteen.GetFill() == 0 && Fifteen.GetFill() == 0 && Sixteen.GetFill() == 0 && Seventeen.GetFill() == 0

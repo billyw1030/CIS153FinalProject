@@ -45,7 +45,6 @@ namespace CIS153FinalProject
             InitializeComponent();
             Lbl_Results.Text = results;
             gamemode = playedBoard;
-            //mainMenu = menu;
             whoWon = winner;
 
             if (gamemode == 1)
@@ -118,14 +117,10 @@ namespace CIS153FinalProject
                 //=====================START READING TEXT FILE TO GRAB VALUES==============================
                 StreamReader inputfile = new StreamReader("../../Resources/statsfile.txt");
 
-                //string text = " ";
                 string line;
-                //line = inputfile.ReadLine();
 
-                //Console.WriteLine("just before loop");
                 while ((line = inputfile.ReadLine()) != null)
                 {
-                    //Console.WriteLine("in loop");
                     if (line.Contains("Player Wins:"))
                     {
                         playerWins = line;
@@ -164,7 +159,6 @@ namespace CIS153FinalProject
                         aiPercent = line.Substring(position + 2);
                     }
                 }
-                //Console.WriteLine(playerWins);
 
                 inputfile.Close();
                 //====================STOP READING TEXT FILE==================================
@@ -197,7 +191,6 @@ namespace CIS153FinalProject
                 //===============================START WRITING TO TEXT FILE===================================================
                 StreamWriter inputFile = new StreamWriter("../../Resources/statsfile.txt");
 
-                //string currentLine;
 
                 string[] lines = {"Player Wins: " + playerWinNum.ToString(), "AI Wins: " + aiWinNum.ToString(), "Tied Games: " + tieNum.ToString(),
                                   "Total Played: " + totalNum.ToString(), "Player Percent: " + playerPercent, "AI Percent: " + aiPercent};
@@ -252,8 +245,7 @@ namespace CIS153FinalProject
 
         private void btn_MainMenuEnd_Click(object sender, EventArgs e)
         {
-            //Menu.Show();
-            //this.RefToTwoPlayer.Menu.Show();
+            
             if (gamemode == 1)
             {
                 this.RefToSinglePlayer.getMenu().Show();

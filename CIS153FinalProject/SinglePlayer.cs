@@ -4097,7 +4097,7 @@ namespace CIS153FinalProject
         }
 
         private void AiMove()
-        {
+        {//I COULD NOT GET THE SWITCH TO WORK
             while (AiTurn)
             // AI chooses a random place to put the chip if:
             //    -cant take a win
