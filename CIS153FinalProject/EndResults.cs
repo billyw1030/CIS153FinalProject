@@ -190,8 +190,8 @@ namespace CIS153FinalProject
                 }
                 playerPercent1 = ((float)playerWinNum / (float)totalNum) * 100;
                 aiPercent1 = ((float)aiWinNum / (float)totalNum) * 100;
-                playerPercent = playerPercent1.ToString();
-                aiPercent = aiPercent1.ToString();
+                playerPercent = playerPercent1.ToString("0.0");
+                aiPercent = aiPercent1.ToString("0.0");
 
 
                 //===============================START WRITING TO TEXT FILE===================================================
