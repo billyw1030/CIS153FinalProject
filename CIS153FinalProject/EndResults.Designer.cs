@@ -184,7 +184,7 @@ namespace CIS153FinalProject
             this.lbl_TotalPlayed.AutoSize = true;
             this.lbl_TotalPlayed.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_TotalPlayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.lbl_TotalPlayed.Location = new System.Drawing.Point(326, 147);
+            this.lbl_TotalPlayed.Location = new System.Drawing.Point(362, 147);
             this.lbl_TotalPlayed.Name = "lbl_TotalPlayed";
             this.lbl_TotalPlayed.Size = new System.Drawing.Size(254, 46);
             this.lbl_TotalPlayed.TabIndex = 13;

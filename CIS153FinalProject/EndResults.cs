@@ -193,7 +193,7 @@ namespace CIS153FinalProject
                 playerPercent = playerPercent1.ToString("0.0");
                 aiPercent = aiPercent1.ToString("0.0");
 
-
+                
                 //===============================START WRITING TO TEXT FILE===================================================
                 StreamWriter inputFile = new StreamWriter("../../Resources/statsfile.txt");
 
